@@ -2,6 +2,7 @@ var ogf = OGFUtil();
 var map
 var layer;
 var mapOptions = {};
+var synconst = 1000;
 
 // const airports = require("./airports");
 
@@ -25,7 +26,20 @@ function loadMap(){
     }
    
 
+    //timeshadow
+    var t = L.terminator();
+    t.addTo(map);
+    setInterval(function(){updateTerminator(t)}, synconst); 
 
+    function updateTerminator(t) {
+        t.setTime();
+    }
+
+    //icons
+    // airport classification by:
+    //      primary hub of the country
+    //      regional hubs
+    //      minor airports/bases (if important)
 
     var primaryAirport = L.icon({
         iconUrl: 'resources/greymarker.png',
@@ -39,10 +53,22 @@ function loadMap(){
         iconAnchor: [7, 15],
         popupAnchor: [-3, -76],
     });
-    
-    L.marker([-33.09557, 35.44311], {icon: primaryAirport}).addTo(map);
-    L.marker([-35.29846, 45.04518], {icon: primaryAirport}).addTo(map);
 
+    //type of airplane model/size
+    
+
+        //need to find way to store airports into js (import, or require) without breaking map
+    L.marker([-33.09557, 35.44311], {icon: primaryAirport}).addTo(map); //soprasser: home
+    L.marker([-35.29846, 45.04518], {icon: primaryAirport}).addTo(map); //layr
+
+    L.marker([-39.0626, 17.247], {icon: primaryAirport}).addTo(map); //guai
+    L.marker([-40.2958, 14.9975], {icon: primaryAirport}).addTo(map); //guai
+
+    L.marker([-40.0207, 159.5987], {icon: primaryAirport}).addTo(map); //fsa stanton
+
+    L.marker([-38.74783, 32.14310], {icon: secondaryAirport}).addTo(map); //flying school
+
+    
     
 
     }
