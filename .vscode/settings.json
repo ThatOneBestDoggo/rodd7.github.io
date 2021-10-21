@@ -13,5 +13,7 @@
     // http://bl.ocks.org/awoodruff/1dc36a658a2e24e01b12
     // https://codepen.io/afalciano/full/mqBYPQ/
     // https://stackoverflow.com/questions/53502953/how-to-make-curved-line-for-2-points-in-leaflet
+    // https://gis.stackexchange.com/questions/258515/show-hide-markers-depending-on-zoom-level //buggy as hell
+    // https://www.py4u.net/discuss/312057
 
 }
