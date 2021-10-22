@@ -18,4 +18,11 @@ var primaryAirport = L.icon({
 //     popupAnchor: [-3, -76],
 // });
 
+var airplane = L.icon({
+    iconUrl: 'resources/airplane.png',
+    iconSize: [10, 10],
+    iconAnchor: [5, 10],
+    popupAnchor: [-3, -76],
+});
+
 

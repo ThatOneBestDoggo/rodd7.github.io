@@ -3,3 +3,9 @@
     height:95%;
     float:right
 }
+
+#utcTime{
+    color: rgb(255, 255, 255);
+    font-size: 20pt;
+    font-family: sans-serif;
+}
