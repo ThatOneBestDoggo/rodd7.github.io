@@ -20,9 +20,17 @@ function loadMap() {
     }
     // var marker = new L.marker([-40.99497,17]).bindPopup('7C6B07').addTo(map);
 
+    globalThis._CRS = L.marker(CRS, { icon: primaryAirport }).addTo(map);
+    _CRS.bindPopup(CRSpopup);
+    globalThis._STI = L.marker(STI, { icon: primaryAirport }).addTo(map);
+    _STI.bindPopup(STIpopup);
+
+
     L.marker([-35.29846, 45.04518], { icon: primaryAirport }).addTo(map); //layr
+
+    
     L.marker([-33.09586, 35.44253], { icon: primaryAirport }).addTo(map); //soprasser
-    L.marker([-34.85432, 35.80759], { icon: primaryAirport }).addTo(map); //corrostance
+    
     
     L.marker([-41.98565, 28.46029], { icon: primaryAirport }).addTo(map); //frank trostel paxtar
 
@@ -31,19 +39,22 @@ function loadMap() {
     L.marker([-39.0626, 17.247], { icon: primaryAirport }).addTo(map); //guai
     L.marker([-40.2958, 14.9975], { icon: primaryAirport }).addTo(map); //guai
 
-    L.marker([-40.0207, 159.5987], { icon: primaryAirport }).addTo(map); //fsa stanton
+    
+
+
+    
 
     L.marker([-38.74783, 32.14310], { icon: secondaryAirport }).addTo(map); //flying school
 
-    L.marker([-35.6412, 161.4885], { icon: primaryAirport }).addTo(map); //Juliana Hálison International Airport
-    L.marker([-41.5628, 141.3036], { icon: primaryAirport }).addTo(map); //Lake City International Airport
-    L.marker([-42.4362, 145.9547], { icon: primaryAirport }).addTo(map); //Jonnequiel International Airport
-    L.marker([-41.8326, 143.7994], { icon: primaryAirport }).addTo(map); //Foley-Fillmore International Airport
-    L.marker([-40.0147, 159.981], { icon: primaryAirport }).addTo(map); //E Benjamin K. Hedstrom International Airport
+    // L.marker([-35.6412, 161.4885], { icon: primaryAirport }).addTo(map); //Juliana Hálison International Airport
+    // L.marker([-41.5628, 141.3036], { icon: primaryAirport }).addTo(map); //Lake City International Airport
+    // L.marker([-42.4362, 145.9547], { icon: primaryAirport }).addTo(map); //Jonnequiel International Airport
+    // L.marker([-41.8326, 143.7994], { icon: primaryAirport }).addTo(map); //Foley-Fillmore International Airport
+    // L.marker([-40.0147, 159.981], { icon: primaryAirport }).addTo(map); //E Benjamin K. Hedstrom International Airport
 
-    function LY500() { //soprasser to layritan
+    function LY500() { //soprasser to layritan 916KM 800kmh 1hr 10min
         var myMovingMarker = L.Marker.movingMarker([[-33.09586, 35.44253], [-35.29846, 45.04518]],
-            [10000], { rotationAngle: 60, icon: airplane_largeY }).addTo(map)
+            [70*60*1000], { rotationAngle: 60, icon: airplane_largeY }).addTo(map)
         myMovingMarker.start();
         myMovingMarker.bindPopup("<b>Hello world!</b><br>I am a popup.")
     }

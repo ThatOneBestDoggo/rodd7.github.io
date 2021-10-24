@@ -8,21 +8,21 @@ var primaryAirport = L.icon({
     iconUrl: 'resources/redmarker.png',
     iconSize: [14, 14],
     iconAnchor: [7, 14],
-    popupAnchor: [-3, -76],
+    popupAnchor: [0, -15],
 });
 
 var secondaryAirport = L.icon({
     iconUrl: 'resources/bluemarker.png',
     iconSize: [14, 14],
     iconAnchor: [7, 14],
-    popupAnchor: [-3, -76],
+    popupAnchor: [0, -15],
 });
 
 var airplane_large = L.icon({
     iconUrl: 'resources/airplane_large.png',
     iconSize: [16, 16],
-    iconAnchor: [8, 16],
-    popupAnchor: [-3, -76],
+    iconAnchor: [8, 10],
+    popupAnchor: [10, -20],
 });
 
 var airplane_largeY = L.icon({
@@ -31,6 +31,3 @@ var airplane_largeY = L.icon({
     iconAnchor: [8, 10],
     popupAnchor: [10, -20],
 });
-
-
-
