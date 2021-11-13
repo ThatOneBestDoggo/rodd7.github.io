@@ -159,6 +159,7 @@ L.Marker.MovingMarker = L.Marker.extend({
         var distances = [];
         var totalDistance = 0;
         var distance = 0;
+        // console.log(distance);
 
         // compute array of distances between points
         for (var i = 0; i < lastIndex; i++) {
@@ -168,12 +169,10 @@ L.Marker.MovingMarker = L.Marker.extend({
         }
 
         var ratioDuration = duration / totalDistance;
-
         var durations = [];
         for (i = 0; i < distances.length; i++) {
             durations.push(distances[i] * ratioDuration);
         }
-
         return durations;
     },
 

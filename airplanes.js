@@ -1,0 +1,1 @@
+const standardairplane = 800;
