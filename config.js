@@ -18,90 +18,85 @@ function loadMap() {
     function updateTerminator(t) {
         t.setTime();
     }
-    // var marker = new L.marker([-40.99497,17]).bindPopup('7C6B07').addTo(map);
+    const airports = JSON.parse(airport);
+    L.marker(airports.CRS.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.STI.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.SIA.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.layrcraft.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.PEP.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.QWI.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.TZY.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.AMB.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.TSA.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.DIA.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.ELR.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.LON.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.SDA.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.ARC.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.SJA.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.SCR.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.RBC.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.KRI.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.SEL.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.IPS.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.ICI.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.LOC.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.BSG.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.JBA.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.AVG.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.MAH.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.PHA.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.SBD.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.MAT.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.LCX.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.MAT.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.GNN.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.BUX.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.NMN.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.BRR.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.SUL.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.WRH.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.KNU.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.PTR.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.HCO.coord, { icon: primaryAirport }).addTo(map);
 
-    L.marker(CRS, { icon: primaryAirport }).addTo(map).bindPopup(CRSpopup);
-    L.marker(STI, { icon: primaryAirport }).addTo(map).bindPopup(STIpopup);
-    L.marker(SIA, { icon: primaryAirport }).addTo(map).bindPopup(SIApopup); //soprasser
-    L.marker(MRM, { icon: primaryAirport }).addTo(map).bindPopup(MRMpopup);
 
+    L.marker([-38.74783, 32.14310], { icon: tertiaryAirport }).addTo(map); //flying school
 
-    L.marker(layrcraft, { icon: primaryAirport }).addTo(map).bindPopup(layrcraftpopup);
+    function live() {
+        var today = new Date();
+        var now = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours(), today.getUTCMinutes(), today.getUTCSeconds());
+        //TIMETABLE
 
+        const LY500start = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 10, 0, 0);
+
+        console.log((LY500start - now)/1000);
+        if ((LY500start-now)/1000 > -1 * duration(getDistanceFromLatLonInKm(airports.SIA.coord, airports.layrcraft.coord),standardairplane) && (LY500start-now)/1000 < 0 && !(LY500.isRunning())){
+            var LY500new = L.Marker.movingMarker([positionRetrieval(airports.SIA.coord,airports.layrcraft.coord,duration(getDistanceFromLatLonInKm(airports.SIA.coord,airports.layrcraft.coord),standardairplane),(LY500start-now)/1000), airports.layrcraft.coord], [(duration(getDistanceFromLatLonInKm(airports.SIA.coord, airports.layrcraft.coord),standardairplane) + (LY500start - now)/1000) * 1000], { rotationAngle: 60, icon: airplane_largeY }).addTo(map);
+            LY500new.start(); LY500new.bindPopup(LY500popup); 
+        }
+    }
     
-    
-    L.marker([-41.98565, 28.46029], { icon: primaryAirport }).addTo(map); //frank trostel paxtar
-
-    L.marker([-50.1564, 72.9446], { icon: primaryAirport }).addTo(map); //bakohuz
-
-    L.marker([-39.0626, 17.247], { icon: primaryAirport }).addTo(map); //guai
-    L.marker([-40.2958, 14.9975], { icon: primaryAirport }).addTo(map); //guai
-
-
-
-    L.marker([-38.74783, 32.14310], { icon: secondaryAirport }).addTo(map); //flying school
-
-    // L.marker([-35.6412, 161.4885], { icon: primaryAirport }).addTo(map); //Juliana Hálison International Airport
-    // L.marker([-41.5628, 141.3036], { icon: primaryAirport }).addTo(map); //Lake City International Airport
-    // L.marker([-42.4362, 145.9547], { icon: primaryAirport }).addTo(map); //Jonnequiel International Airport
-    // L.marker([-41.8326, 143.7994], { icon: primaryAirport }).addTo(map); //Foley-Fillmore International Airport
-    // L.marker([-40.0147, 159.981], { icon: primaryAirport }).addTo(map); //E Benjamin K. Hedstrom International Airport
-
-    function LY500() { //soprasser to layritan 916KM 800kmh 1hr 10min (4200 seconds)
-        var myMovingMarker = L.Marker.movingMarker([SIA, layrcraft],
-            [duration(getDistanceFromLatLonInKm(SIA, layrcraft),standardairplane)], { rotationAngle: 60, icon: airplane_largeY }).addTo(map)
-        myMovingMarker.start(); //visible
-        myMovingMarker.bindPopup("<b>Hello world!</b><br>I am a popup.")
-        var x = 0;
+    function schedule(){
+        var today = new Date();
+        var now = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours(), today.getUTCMinutes(), today.getUTCSeconds());
         
-        
-        // setInterval(function() {
-            
-        //     x++;
-        //     console.log(myMovingMarker.getLatLng());
-        //     console.log(x);
-        // }, 1000);
-        
-        
-            //track x and y coordinates on console(log)
-            //visible at 0900 UTC
-            //move at 1000 UTC
-            //stop at 1110 UTC
-            //invisible at 1200 UTC
-        
+        const LY500schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 10, 0, 0);
+        if ((LY500schedule-now)/1000 <= 60*60 && (LY500schedule-now)/1000 > 0){LY500.setOpacity(1);}
+        if ((LY500schedule-now) == 0){ LY500.start(); LY500.setOpacity(1); LY500.bindPopup(LY500popup);}
+      
+        setTimeout(function () { schedule()}, 1000);
     }
 
-    function PX500() { //CRS to paxtar (TEST)
-        var myMovingMarker = L.Marker.movingMarker([CRS, [-41.98565, 28.46029]],
-            [10000], { rotationAngle: 170, icon: airplane_largeY }).addTo(map)
-        myMovingMarker.start();
-        myMovingMarker.bindPopup("<b>Hello world!</b><br>I am a popup.")
-    }
+    var LY500 = L.Marker.movingMarker([airports.SIA.coord, airports.layrcraft.coord], [duration(getDistanceFromLatLonInKm(airports.SIA.coord, airports.layrcraft.coord),standardairplane) * 1000], { rotationAngle: 60, icon: airplane_largeY }).addTo(map);
+    LY500.setOpacity(0);
+
+   
 
 
-    // setTimeout(function () { }, millisTill10);
+    live();
+    schedule();
 
-    // var eta_ms = new Date(2021, 9, 23, 17, 0).getTime() - Date.now();
-    // setTimeout(function () { }, eta_ms);
-
-    LY500();
-    PX500();
-
-    // console.log(uMonths + " " + uDates + " " + uDays); //it works
-
-    // $(document).ready(function () {
-    //     liveTime();
-    // });
-
-    // function liveTime() {
-    //     var h = today.getUTCHours();
-    //     var m = today.getUTCMinutes();
-    //     t = setTimeout(function () { liveTime() }, 500);
-
-
-
-
-    // }
 
 
 

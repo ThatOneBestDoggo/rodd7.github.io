@@ -1,4 +1,4 @@
-function getDistanceFromLatLonInKm(from,to) {
+function getDistanceFromLatLonInKm (from, to) {
     var R = 6371; // Radius of the earth in km
     var dLat = deg2rad(to[0]-from[0]);  // deg2rad below
     var dLon = deg2rad(to[1]-from[1]); 
@@ -18,10 +18,28 @@ function getDistanceFromLatLonInKm(from,to) {
 
 
   function duration(distance, speed){
-      return distance/speed * 60 * 60 * 1000;
+      return distance/speed * 60 * 60;
       
     
     }
-    
-    // console.log(duration(getDistanceFromLatLonInKm(SIA, layrcraft),standardairplane));
-    // console.log(getDistanceFromLatLonInKm(SIA, layrcraft));
+
+  // function bearing(from, to){
+
+  // }
+
+  function positionRetrieval (from, to, duration, elapsed){
+    var latPosition = Math.abs(from[0]-to[0]) / duration; //y axis (latitude)
+    var longPosition = Math.abs(from[1]-to[1]) / duration; //y axis (latitude)
+    if (from[0] > to[0] && from[1] > to[1]){
+      return [from[0] - (Math.abs(elapsed) * latPosition), from[1] - (Math.abs(elapsed) * longPosition)];
+    }
+    if (from[0] > to[0] && from[1] < to[1]){
+      return [from[0] - (Math.abs(elapsed) * latPosition), from[1] + (Math.abs(elapsed) * longPosition)];
+    }
+    if (from[0] < to[0] && from[1] > to[1]){
+      return [from[0] + (Math.abs(elapsed) * latPosition), from[1] - (Math.abs(elapsed) * longPosition)];
+    }
+    if (from[0] < to[0] && from[1] < to[1]){
+      return [from[0] - (Math.abs(elapsed) * latPosition), from[1] + (Math.abs(elapsed) * longPosition)];
+    }
+  }

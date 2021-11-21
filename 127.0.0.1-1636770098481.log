@@ -23,8 +23,10 @@ o @ contentInject.js:23333
 (anonymous) @ contentInject.js:23354
 (anonymous) @ contentInject.js:23355
 config.js:65 M {lat: -33.09639317656443, lng: 35.44485448376301}
+!!!!!!!!![-33.09533557142857, 35.444816345238095]
 config.js:66 1
 config.js:65 M {lat: -33.096917629784, lng: 35.447140936459334}
+!!!!!!!!![-33.09481114285715, 35.447102690476186]
 config.js:66 2
 config.js:65 M {lat: -33.097442108176146, lng: 35.44942749890022}
 config.js:66 3

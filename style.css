@@ -1,5 +1,5 @@
 #map{
-    width:80%;
+    width:85%;
     height:95%;
     float:right
 }
@@ -24,4 +24,11 @@ td {
   table{
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+  }
+
+  b{
+    text-align:center;
+    height: 50%;
+
   }

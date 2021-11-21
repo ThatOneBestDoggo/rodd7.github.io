@@ -18,6 +18,13 @@ var secondaryAirport = L.icon({
     popupAnchor: [0, -15],
 });
 
+var tertiaryAirport = L.icon({
+    iconUrl: 'resources/greymarker.png',
+    iconSize: [14, 14],
+    iconAnchor: [7, 14],
+    popupAnchor: [0, -15],
+});
+
 var airplane_large = L.icon({
     iconUrl: 'resources/airplane_large.png',
     iconSize: [16, 16],
@@ -27,7 +34,7 @@ var airplane_large = L.icon({
 
 var airplane_largeY = L.icon({
     iconUrl: 'resources/airplane_largeY.png',
-    iconSize: [16, 16],
+    iconSize: [17, 17],
     iconAnchor: [8, 10],
-    popupAnchor: [10, -20],
+    popupAnchor: [5, -20],
 });
