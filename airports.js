@@ -1,7 +1,8 @@
+
 const flag = `
 {
-    "Ohemia" : "<img src='https://wiki.opengeofiction.net/images/9/94/Ohemian_Imperial_Flag_Large.png' width='30'>",
-    "FSA" : "<img src='https://wiki.opengeofiction.net/images/thumb/6/6f/Flag_of_the_FSA.svg/2880px-Flag_of_the_FSA.svg.png' width='30'>"
+    "Ohemia" : "<img src='https://wiki.opengeofiction.net/images/9/94/Ohemian_Imperial_Flag_Large.png' width='35' >",
+    "FSA" : "<img src='https://wiki.opengeofiction.net/images/thumb/6/6f/Flag_of_the_FSA.svg/2880px-Flag_of_the_FSA.svg.png' width='35'>"
 }
 `
 const airport = `
@@ -52,7 +53,7 @@ const airport = `
         "runway": 1
     },
     "TZY": {
-        "name": "Tazów-Tymeń Airport", 
+        "name": "Port Lotniczy Tazów-Tymeń im. Mieczysława Wielkiego", 
         "coord": [58.96928, 77.26251], 
         "country": "Lany",
         "class": "B",
@@ -357,6 +358,28 @@ const airport = `
         "ANACA" : "CGHC",
         "runway": 2
     },
+
+    "TEM": {
+        "name": "Aeroporto Internazionale di Temisa Daniele Vuluta", 
+        "coord": [45.3892, 57.6216], 
+        "country": "Plevia",
+        "city":" Temisa",
+        "class": "A",
+        "WAAT": "TEM",
+        "ANACA" : "GPTM",
+        "runway": 2
+    },
+
+    "OSI": {
+        "name": "Aeroporto Internazionale di Osianopoli Francesco Balti", 
+        "coord": [45.5486, 64.0302], 
+        "country": "Plevia",
+        "city":" Osianopoli",
+        "class": "A",
+        "WAAT": "OSI",
+        "ANACA" : "GPOP",
+        "runway": 3
+    },
     
     "STI": {
         "name": "Stanton International Airport", 
@@ -366,7 +389,143 @@ const airport = `
         "WAAT": "STI",
         "ANACA" : "BASI",
         "runway": "unknown"
+    },
+
+    "BKD": {
+        "name": "飞航战胜 Phi Hàng Chiến Thắng", 
+        "coord": [28.4726,158.4604], 
+        "country": "Kuehong",
+        "city":"Bakdep",
+        "class": "B",
+        "WAAT": "BKD",
+        "ANACA" : "CQBD",
+        "runway": 2
+    },
+    "NMI": {
+        "name": "飞航南美 Phi hàng Nam Mĩ", 
+        "coord": [26.5674,160.2376], 
+        "country": "Kuehong",
+        "city":"Namthinhvuong",
+        "class": "B",
+        "WAAT": "NMI",
+        "ANACA" : "CQMI",
+        "runway": 2
+    },
+    "CHT": {
+        "name": "飞航樟宜 Phi hàng Chương Ngơi", 
+        "coord": [30.1844,160.6164], 
+        "country": "Kuehong",
+        "city":"Vang Ngat",
+        "class": "C",
+        "WAAT": "CHT",
+        "ANACA" : "CQVN",
+        "runway": 2
+    },
+    "BDN": {
+        "name": "北端机场 (Beiduan International Airport", 
+        "coord": [22.2727,150.0995], 
+        "country": "Bai Empire",
+        "city":"Xiongjing",
+        "class": "C",
+        "WAAT": "BDN",
+        "ANACA" : "CBXJ",
+        "runway": 1
+    }, 
+    "DGY": {
+        "name": "雄京东越国际机场 (Xiongjing Dongyue International Airport", 
+        "coord": [21.9575,150.2395], 
+        "country": "Bai Empire",
+        "city":"Xiongjing",
+        "class": "A",
+        "WAAT": "DGY",
+        "ANACA" : "CBXD",
+        "runway": 2
+    },
+    "LOR": {
+        "name": "Leiran Revithin Duthaiçak Adhair", 
+        "coord": [35.8082, 85.8043], 
+        "country": "Lorantis",
+        "city": "Neril",
+        "class": "B",
+        "WAAT": "LOR",
+        "ANACA" : "GLNR",
+        "runway": 2
+    },
+    "DRG": {
+        "name": "Aeraport Cara Aliaksandra IV", 
+        "coord": [42.7770, 73.8200], 
+        "country": "White Dregovine",
+        "city": "Litusava",
+        "class": "B",
+        "WAAT": "DRG",
+        "ANACA" : "GDRG",
+        "runway": 2
+    },
+    "DDA": {
+        "name": "Erdoğan Ahmet Paşa Havalimanı", 
+        "coord": [39.2479, 84.3387], 
+        "country": "Demirhan Empire",
+        "city": "Ardeşehir",
+        "class": "A",
+        "WAAT": "DDA",
+        "ANACA" : "GDAR",
+        "runway": 4
+    },
+    "DDT": {
+        "name": "Sultan II. Selim Ulasrarası Havalimanı", 
+        "coord": [37.6816, 81.1658], 
+        "country": "Demirhan Empire",
+        "city": "Tarsınar",
+        "class": "B",
+        "WAAT": "DDT",
+        "ANACA" : "GDTR",
+        "runway": 1
+    },
+    "DDI": {
+        "name": "Sultan Bayezid Havalimanı", 
+        "coord": [39.0036, 79.6632], 
+        "country": "Demirhan Empire",
+        "city": "İslahisar",
+        "class": "B",
+        "WAAT": "DDI",
+        "ANACA" : "GDIS",
+        "runway": 2
+    },
+    "DDK": {
+        "name": "Sultan III. Demirhan Havalimanı", 
+        "coord": [38.1795, 77.6603], 
+        "country": "Demirhan Empire",
+        "city": "Kayramtor",
+        "class": "B",
+        "WAAT": "DDK",
+        "ANACA" : "GDKR",
+        "runway": 1
+    },
+    "DDN": {
+        "name": "Sultan VI. Mehmet Havalimanı", 
+        "coord": [40.2858,76.3676], 
+        "country": "Demirhan Empire",
+        "city": "Nehirhisar",
+        "class": "B",
+        "WAAT": "DDN",
+        "ANACA" : "GDNH",
+        "runway": 2
     }
 
 }`
+var airports = JSON.parse(airport);
+var flags = JSON.parse(flag);
+var now = new Date();
+function addZero(x) {
+    if (x < 10) {
+        x = "0" + x;
+    }
+    return x;
+}
+
+var CRSpopup = "<b class='airportname'>" + airports.CRS.name + "</b> <p class= 'location'> <i>Corrostance Federal City, " + airports.CRS.country + "</i> &nbsp  " + flags.Ohemia + "</p> <hr> <p class= 'location'> <b>Coordinates: </b>" + airports.CRS.coord + "</p> <table> <th></th><th></th>  <tr><td><b>WAAT: </b>" + airports.CRS.WAAT +"</td> <td><b>ANACA: </b>" + airports.CRS.ANACA +"</td> </tr> <tr><td><b>Runways: </b>" + airports.CRS.runway +"</td><td><b>Class: </b>" + airports.CRS.class +"</td> </tr></table> <p class= 'location'><b>Local Time: </b>" + (now.getUTCHours()+2) + ":" + addZero(now.getUTCMinutes()) + " (WUT+2) </p>";
+var STIpopup = "<b class='airportname'>" + airports.STI.name + "</b> <p class= 'location'> <i>Stanton, " + airports.STI.country + "</i> &nbsp  " + flags.FSA + "</p> <hr> <p class= 'location'> <b>Coordinates: </b>" + airports.STI.coord + "</p> <table> <th></th><th></th>  <tr><td><b>WAAT: </b>" + airports.STI.WAAT +"</td> <td><b>ANACA: </b>" + airports.STI.ANACA +"</td> </tr> <tr><td><b>Runways: </b>" + airports.STI.runway +"</td><td><b>Class: </b>" + airports.STI.class +"</td> </tr></table> <p class= 'location'><b>Local Time: </b>" + (now.getUTCHours()+9) + ":" + addZero(now.getUTCMinutes()) + " (WUT+2) </p>";
+var SIApopup = "<b class='airportname'>" + airports.SIA.name + "</b> <p class= 'location'> <i>Soprasser Federal City, " + airports.SIA.country + "</i> &nbsp  " + flags.Ohemia + "</p> <hr> <p class= 'location'> <b>Coordinates: </b>" + airports.SIA.coord + "</p> <table> <th></th><th></th>  <tr><td><b>WAAT: </b>" + airports.SIA.WAAT +"</td> <td><b>ANACA: </b>" + airports.SIA.ANACA +"</td> </tr> <tr><td><b>Runways: </b>" + airports.SIA.runway +"</td><td><b>Class: </b>" + airports.SIA.class +"</td> </tr></table> <p class= 'location'><b>Local Time: </b>" + (now.getUTCHours()+2) + ":" + addZero(now.getUTCMinutes()) + " (WUT+2) </p>";
+
+
 

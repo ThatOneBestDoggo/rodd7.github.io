@@ -15,17 +15,27 @@ function getDistanceFromLatLonInKm (from, to) {
   function deg2rad(deg) {
     return deg * (Math.PI/180)
   }
-
-
+  function rad2deg(rad) {
+    return rad * 180 / Math.PI;
+  }
   function duration(distance, speed){
-      return distance/speed * 60 * 60;
-      
-    
-    }
+      return distance/speed * 60 * 60; 
+  }
 
-  // function bearing(from, to){
+  function bearing(from, to){
+    var from0 = deg2rad(from[0]);
+    var from1 = deg2rad(from[1]);
+    var to0 = deg2rad(to[0]);
+    var to1 = deg2rad(to[1]);
 
-  // }
+    var y = Math.sin(to1 - from1) * Math.cos(to0);
+    var x = Math.cos(from0) * Math.sin(to0) - Math.sin(from0) * Math.cos(to0) * Math.cos(to1 - from1);
+
+    var bearing = Math.atan2(y,x);
+    bearing = rad2deg(bearing);
+
+    return Math.floor((bearing + 360) % 360);
+  }
 
   function positionRetrieval (from, to, duration, elapsed){
     var latPosition = Math.abs(from[0]-to[0]) / duration; //y axis (latitude)
