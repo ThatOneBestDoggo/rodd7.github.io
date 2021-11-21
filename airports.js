@@ -510,7 +510,78 @@ const airport = `
         "WAAT": "DDN",
         "ANACA" : "GDNH",
         "runway": 2
-    }
+    },
+    "BAK": {
+        "name": "Bako-Huz International Airport", 
+        "coord": [-50.15606, 72.94397], 
+        "country": "Kofuku",
+        "city": "Bako-Huz",
+        "class": "A",
+        "WAAT": "BAK",
+        "ANACA" : "OKBK",
+        "runway": 2
+    },
+    "SJC": {
+        "name": "Jack Sánchez (San Juan) Airport", 
+        "coord": [-49.53862, 71.32645], 
+        "country": "San Juan de Castellán",
+        "city": "San Juan",
+        "class": "B",
+        "WAAT": "SJC",
+        "ANACA" : "OSJC",
+        "runway": 1
+    },
+    "FYR": {
+        "name": "Filosoyer Airbase", 
+        "coord": [-48.69522, 72.28110], 
+        "country": "Kofuku",
+        "city": "Safport",
+        "class": "C",
+        "WAAT": "FYR",
+        "ANACA" : "OFYR",
+        "runway": 1
+    },
+    "AUS": {
+        "name": "Kof-GT Airfield", 
+        "coord": [-68.06527, 21.27300], 
+        "country": "Southern Islands",
+        "city": "Australis Base",
+        "class": "C",
+        "WAAT": "AUS",
+        "ANACA" : "OAUS",
+        "runway": 1
+    },
+    "EZV": {
+        "name": "Aerspiņiă Intersapală Erez - Vadar", 
+        "coord": [39.7482,83.8436], 
+        "country": "Qennes",
+        "city": "Erez",
+        "class": "C",
+        "WAAT": "EZV",
+        "ANACA" : "GQEV",
+        "runway": 1
+    },
+    "MTA":{
+        "name": "Aerspiņiă Intersapală Keptoș", 
+        "coord": [39.6863,84.1939], 
+        "country": "Qennes",
+        "city": "Malvertta",
+        "class": "B",
+        "WAAT": "MTA",
+        "ANACA" : "GQKE",
+        "runway": 1
+    },
+    "ALJ": {
+        "name": "Aljaraf Airport", 
+        "coord": [31.80878, 56.84462], 
+        "country": "Mazan",
+        "city":" Aljaraf",
+        "class": "B",
+        "WAAT": "ALJ",
+        "ANACA" : "GALJ",
+        "runway": 1
+    } 
+
 
 }`
 var airports = JSON.parse(airport);

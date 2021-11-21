@@ -74,6 +74,13 @@ function loadMap() {
     L.marker(airports.DDI.coord, { icon: secondaryAirport }).addTo(map);
     L.marker(airports.DDK.coord, { icon: secondaryAirport }).addTo(map);
     L.marker(airports.DDN.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.BAK.coord, { icon: primaryAirport }).addTo(map);
+    L.marker(airports.SJC.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.FYR.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.AUS.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.MTA.coord, { icon: secondaryAirport }).addTo(map);
+    L.marker(airports.EZV.coord, { icon: tertiaryAirport }).addTo(map);
+    L.marker(airports.ALJ.coord, { icon: secondaryAirport }).addTo(map);
     
 
     L.marker([-38.74783, 32.14310], { icon: tertiaryAirport }).addTo(map); //flying school
