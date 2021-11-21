@@ -13,7 +13,7 @@ const airport = `
         "country": "Ohemia",
         "class": "A",
         "WAAT": "CRS",
-        "ANACA" : "NCRS",
+        "ANACA" : "NOCR",
         "runway": 3
     },
     "SIA": {
@@ -22,7 +22,7 @@ const airport = `
         "country": "Ohemia",
         "class": "A",
         "WAAT": "SIA",
-        "ANACA" : "NSIA",
+        "ANACA" : "NOSO",
         "runway": 2
     },
     "PEP": {
