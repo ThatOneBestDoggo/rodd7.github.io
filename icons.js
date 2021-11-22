@@ -72,5 +72,5 @@ var Spārtesôr = L.icon({
     iconUrl: 'resources/Spārtesôr-21.png',
     iconSize: [18, 18],
     iconAnchor: [8, 10],
-    popupAnchor: [5, -20],
+    popupAnchor: [-1, -20],
 });
