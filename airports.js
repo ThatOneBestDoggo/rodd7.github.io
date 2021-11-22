@@ -7,7 +7,24 @@ const flag = `
     "Izaland": "<img src='https://wiki.opengeofiction.net/images/7/79/Izaland_flag.png' width='35'>",
     "Layr": "<img src='https://wiki.opengeofiction.net/images/thumb/f/f2/LayrFlag.svg/932px-LayrFlag.svg.png' width='35'>",
     "Demirhan": "<img src='https://wiki.opengeofiction.net/images/4/43/Flag_of_Demirhan_Empire.png' width='35'>",
-    "Kofuku": "<img src='https://wiki.opengeofiction.net/images/b/b9/FlagKofuku.jpg' width='35'>"
+    "Kofuku": "<img src='https://wiki.opengeofiction.net/images/b/b9/FlagKofuku.jpg' width='35'>",
+    "Allendea": "<img src='https://wiki.opengeofiction.net/images/b/b1/Allendea-Flag.png' width='35'>",
+    "Barzona": "<img src='https://wiki.opengeofiction.net/images/7/79/Bandiera_na_Barzona.png' width='35'>",
+    "Airannia": "<img src='https://wiki.opengeofiction.net/images/e/e4/AiranniaFlag.png' width='35'>",
+    "Freedemia": "<img src='https://wiki.opengeofiction.net/images/6/62/FreedemianFlag.png' width='35'>",
+    "Teotiyolcan": "<img src='https://wiki.opengeofiction.net/images/f/f6/Teotiyolcan-flag.png' width='35'>",
+    "GT": "<img src='https://wiki.opengeofiction.net/images/a/a2/Gt-flag.png' width='35'>",
+    "Iscu": "<img src='https://wiki.opengeofiction.net/images/a/ab/Iscu.png' width='35'>",
+    "Kuehong": "<img src='https://wiki.opengeofiction.net/images/0/02/Flag_of_Kuehong.png' width='35'>",
+    "Lany": "<img src='https://wiki.opengeofiction.net/images/9/9e/Flag_Lany.png' width='35'>",
+    "Mazan": "<img src='https://wiki.opengeofiction.net/images/8/81/Mazan_Flag.png' width='35'>",
+    "Qennes": "<img src='https://wiki.opengeofiction.net/images/d/d5/FlagQennes.png' width='35'>",
+    "Arecales": "<img src='https://old.opengeofiction.wiki/images/thumb/8/83/Flag_of_Arecales_1.png/1200px-Flag_of_Arecales_1.png' width='35'>",
+    "Wallea": "<img src='https://old.opengeofiction.wiki/images/thumb/d/d1/Walleanflag.jpg/1200px-Walleanflag.jpg' width='35'>",
+    "CCA": "<img src='https://old.opengeofiction.wiki/images/thumb/4/4e/CCA-Flag2-01.jpg/1200px-CCA-Flag2-01.jpg' width='35'>",
+    "Majesia": "<img src='https://old.opengeofiction.wiki/images/thumb/5/50/Majesia_flag.png/1200px-Majesia_flag.png' width='35'>"
+    
+    
     
 }
 `
@@ -57,6 +74,7 @@ const airport = `
         "name": "Qawari International Airport", 
         "coord": [31.91718, 55.33781], 
         "country": "Mazan",
+        "city": "Qawari",
         "class": "B",
         "WAAT": "QWI",
         "ANACA" : "KQWI",
@@ -385,8 +403,8 @@ const airport = `
     "PTR": {
         "name": "Pyapyor Teranej Airport", 
         "coord": [22.4421, 139.6870], 
-        "country": "Pyapyor",
-        "city":" Sainðaul",
+        "country": "Grinzez",
+        "city":" Pyapyor",
         "class": "A",
         "WAAT": "PTR",
         "ANACA" : "CGTR",
@@ -675,7 +693,97 @@ const airport = `
         "WAAT": "TVM",
         "ANACA" : "FCTM",
         "runway": 1
-    }
+    },
+    "FJA": {
+        "name": "Fojenica-Abayabuque Airport", 
+        "coord": [-17.7454, 18.7938], 
+        "country": "Allendea",
+        "city":" Fojenica",
+        "class": "B",
+        "WAAT": "FJA",
+        "ANACA" : "MAFA",
+        "runway": 2
+    },
+    "SNM": { 
+        "name": "Raja Damai International Airport",
+        "coord": [-15.1642,128.4531], 
+        "country": "Wallea", 
+        "city":"San Martin", 
+        "class": "A", 
+        "WAAT": "SNM", 
+        "ANACA" : "EWRD", 
+        "runway": 2 
+    },
+    "TGR": { 
+        "name": "Tinggipura Airport",
+        "coord": [-10.59087,128.82986], 
+        "country": "Wallea", 
+        "city":"Tinggipura", 
+        "class": "C", 
+        "WAAT": "TGR", 
+        "ANACA" : "EWTP", 
+        "runway": 1
+    },
+    "PLB": { 
+        "name": "John Mbazwazan International Airport",
+        "coord": [-19.4795,136.0465], 
+        "country": "Commonwealth of Central Archanta", 
+        "city":"Port Lagbard", 
+        "class": "A", 
+        "WAAT": "PLB", 
+        "ANACA" : "ECPL", 
+        "runway": 2
+    },
+    "BMO": { 
+        "name": "Robert Meleku International Airport",
+        "coord": [-16.6629,136.3036], 
+        "country": "Commonwealth of Central Archanta", 
+        "city":"Bambusho", 
+        "class": "A", 
+        "WAAT": "BMO", 
+        "ANACA" : "ECBO", 
+        "runway": 4
+    },
+    "MTB": { 
+        "name": "Matsaamabeli International Airport",
+        "coord": [-10.9504,142.6816], 
+        "country": "Kwinatu", 
+        "city":"Matsaamabeli", 
+        "class": "A", 
+        "WAAT": "MTB", 
+        "ANACA" : "EKMB", 
+        "runway": 1
+    },
+    "MJP": { 
+        "name": "Sultan Mustafa International Airport",
+        "coord": [-6.6916,125.7277], 
+        "country": "Majesia", 
+        "city":"Majapura", 
+        "class": "B", 
+        "WAAT": "MJP", 
+        "ANACA" : "EMJP", 
+        "runway": 2
+    },
+    "RJP": { 
+        "name": "Sultan Mashmidan International Airport",
+        "coord": [-5.5027,125.6606], 
+        "country": "Majesia", 
+        "city":"Rajapura", 
+        "class": "A", 
+        "WAAT": "RJP", 
+        "ANACA" : "EMRP", 
+        "runway": 4
+    },
+    "BRN": { 
+        "name": "J. P. Atkins International Airport",
+        "coord": [-38.5750,143.2917], 
+        "country": "Federal States", 
+        "city":"Barstone", 
+        "class": "B", 
+        "WAAT": "BRN", 
+        "ANACA" : "BABN", 
+        "runway": 3
+}
 
 
 
