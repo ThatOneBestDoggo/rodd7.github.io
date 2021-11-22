@@ -2,21 +2,21 @@ var primaryAirport = L.icon({
     iconUrl: 'resources/redmarker.png',
     iconSize: [17, 17],
     iconAnchor: [7, 14],
-    popupAnchor: [0, -15],
+    popupAnchor: [2, -18],
 });
 
 var secondaryAirport = L.icon({
     iconUrl: 'resources/bluemarker.png',
     iconSize: [17, 17],
     iconAnchor: [7, 14],
-    popupAnchor: [0, -15],
+    popupAnchor: [2, -18],
 });
 
 var tertiaryAirport = L.icon({
     iconUrl: 'resources/greymarker.png',
     iconSize: [17, 17],
     iconAnchor: [7, 14],
-    popupAnchor: [0, -15],
+    popupAnchor: [2, -18],
 });
 
 //aircraft icon

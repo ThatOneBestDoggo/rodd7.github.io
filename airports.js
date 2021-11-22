@@ -2,7 +2,13 @@
 const flag = `
 {
     "Ohemia" : "<img src='https://wiki.opengeofiction.net/images/9/94/Ohemian_Imperial_Flag_Large.png' width='35' >",
-    "FSA" : "<img src='https://wiki.opengeofiction.net/images/thumb/6/6f/Flag_of_the_FSA.svg/2880px-Flag_of_the_FSA.svg.png' width='35'>"
+    "Default" : "<img src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/56/black-question-mark-ornament_2753.png' width='15' height='15' >",
+    "FSA" : "<img src='https://wiki.opengeofiction.net/images/thumb/6/6f/Flag_of_the_FSA.svg/2880px-Flag_of_the_FSA.svg.png' width='35'>",
+    "Izaland": "<img src='https://wiki.opengeofiction.net/images/7/79/Izaland_flag.png' width='35'>",
+    "Layr": "<img src='https://wiki.opengeofiction.net/images/thumb/f/f2/LayrFlag.svg/932px-LayrFlag.svg.png' width='35'>",
+    "Demirhan": "<img src='https://wiki.opengeofiction.net/images/4/43/Flag_of_Demirhan_Empire.png' width='35'>",
+    "Kofuku": "<img src='https://wiki.opengeofiction.net/images/b/b9/FlagKofuku.jpg' width='35'>"
+    
 }
 `
 const airport = `
@@ -37,13 +43,14 @@ const airport = `
         "ANACA" : "MTPE",
         "runway": 3
     },
-    "layrcraft": {
-        "name": "Layr", 
+    "LYR": {
+        "name": "Layrìtyan International Airport", 
         "coord": [-35.29846, 45.04518], 
         "country": "Layr",
+        "city": "Layrìtyan",
         "class": "A",
-        "WAAT": "layrcraft",
-        "ANACA" : "layrcraft",
+        "WAAT": "LYR",
+        "ANACA" : "NLYN",
         "runway": 2
     },
     "QWI": {
@@ -69,6 +76,7 @@ const airport = `
         "name": "Aeroport Marescal Belmont, Barzona", 
         "coord": [-14.3329, 19.4918], 
         "country": "Barzona",
+        "city": "Belmont",
         "class": "B",
         "WAAT": "AMB",
         "ANACA" : "MBCA",
@@ -78,6 +86,7 @@ const airport = `
         "name": "Toussaint Airport", 
         "coord": [9.5737, 177.1767], 
         "country": "Arecales",
+        "city": "Toussaint",
         "class": "C",
         "WAAT": "TSA",
         "ANACA" : "CTSA",
@@ -87,6 +96,7 @@ const airport = `
         "name": "Dennison International Airport", 
         "coord": [-32.6952, 140.9003], 
         "country": "FSA",
+        "city": "Dennison",
         "class": "A",
         "WAAT": "DIA",
         "ANACA" : "BADE",
@@ -96,6 +106,7 @@ const airport = `
         "name": "Elvira Regional Airport", 
         "coord": [-32.9856, 141.1414], 
         "country": "FSA",
+        "city": "Elvira",
         "class": "C",
         "WAAT": "ELR",
         "ANACA" : "BAEL",
@@ -105,6 +116,7 @@ const airport = `
         "name": "Lola-Fort Nickerson Regional Airport", 
         "coord": [-33.4628, 141.0138], 
         "country": "FSA",
+        "city": "Lola",
         "class": "C",
         "WAAT": "LON",
         "ANACA" : "BALN",
@@ -114,6 +126,7 @@ const airport = `
         "name": "San Daniel Airport", 
         "coord": [-33.1804, 142.6472], 
         "country": "FSA",
+        "city": "San Daniel",
         "class": "C",
         "WAAT": "SDA",
         "ANACA" : "BASD",
@@ -123,6 +136,7 @@ const airport = `
         "name": "Arecales International Airport", 
         "coord": [9.4313, 178.6601], 
         "country": "Arecales",
+        "city": "Arecales Air Force Base",
         "class": "B",
         "WAAT": "ARC",
         "ANACA" : "CARE",
@@ -132,6 +146,7 @@ const airport = `
         "name": "Lyndon W. Barnet Saint John Airport", 
         "coord": [10.4665, 174.4073], 
         "country": "Arecales",
+        "city": "Saint John",
         "class": "C",
         "WAAT": "SJA",
         "ANACA" : "CSJA",
@@ -141,6 +156,7 @@ const airport = `
         "name": "St Catherine Regional Airport", 
         "coord": [10.1349, 176.2697], 
         "country": "Arecales",
+        "city": "Kaetown",
         "class": "C",
         "WAAT": "SCR",
         "ANACA" : "CSCR",
@@ -150,6 +166,7 @@ const airport = `
         "name": "Rock Bottom Airport", 
         "coord": [10.5883, 175.1788], 
         "country": "Arecales",
+        "city": "Rock Bottom Cay",
         "class": "C",
         "WAAT": "RBC",
         "ANACA" : "CRBC",
@@ -159,6 +176,7 @@ const airport = `
         "name": "Cretra International Airport", 
         "coord": [16.5943, 53.6345], 
         "country": "Arion",
+        "city": "Cretra",
         "class": "A",
         "WAAT": "KRI",
         "ANACA" : "KARK",
@@ -168,6 +186,7 @@ const airport = `
         "name": "Selebes International Airport", 
         "coord": [17.2902, 51.8192], 
         "country": "Arion",
+        "city": "Selebes",
         "class": "A",
         "WAAT": "SEL",
         "ANACA" : "KARS",
@@ -177,6 +196,7 @@ const airport = `
         "name": "Ipsore International Airport", 
         "coord": [18.1641, 49.5668], 
         "country": "Arion",
+        "city": "Ispore",
         "class": "B",
         "WAAT": "IPS",
         "ANACA" : "KARI",
@@ -186,6 +206,7 @@ const airport = `
         "name": "Orlioni International Airport", 
         "coord": [18.4782, 51.9263], 
         "country": "Arion",
+        "city": "Orlioni",
         "class": "B",
         "WAAT": "ONI",
         "ANACA" : "KARO",
@@ -195,6 +216,7 @@ const airport = `
         "name": "Escu Enternatonal Aerport", 
         "coord": [2.1014, 92.2974], 
         "country": "Iscu",
+        "city": "Escu",
         "class": "A",
         "WAAT": "ICI",
         "ANACA" : "GICI",
@@ -204,6 +226,7 @@ const airport = `
         "name": "Loconon Airstrip", 
         "coord": [1.69991, 91.54221], 
         "country": "Iscu",
+        "city": "Lonocon",
         "class": "C",
         "WAAT": "LOC",
         "ANACA" : "GICL",
@@ -588,7 +611,7 @@ const airport = `
         "coord": [39.6863,84.1939], 
         "country": "Qennes",
         "city": "Malvertta",
-        "class": "B",
+        "class": "C",
         "WAAT": "MTA",
         "ANACA" : "GQKE",
         "runway": 1
@@ -602,7 +625,59 @@ const airport = `
         "WAAT": "ALJ",
         "ANACA" : "GALJ",
         "runway": 1
-    } 
+    },
+    "HAR": {
+        "name": "Hanif Al Rabahi International Airport", 
+        "coord": [26.36854, 57.44427], 
+        "country": "Mazan",
+        "city":" Hanif",
+        "class": "A",
+        "WAAT": "HAR",
+        "ANACA" : "KHAR",
+        "runway": 7
+    }, 
+    "SAR": {
+        "name": "Sarai International Airport", 
+        "coord": [-46.46845, 65.45245], 
+        "country": "Grisean-Thrirranic Commonwealth",
+        "city":" Aragansa",
+        "class": "B",
+        "WAAT": "SAR",
+        "ANACA" : "OSAR",
+        "runway": 1
+    },
+    "NCH": {
+        "name": "Nichiuri 4th of May International Airport", 
+        "coord": [-24.60210,132.15087], 
+        "country": "Adaria",
+        "city":"Nichiuri",
+        "class": "A",
+        "WAAT": "NCH",
+        "ANACA" : "FINI",
+        "runway": 2
+    },
+    "MOE": {
+        "name": "Aeropuerto de Moépolis", 
+        "coord": [-21.70927,132.09219], 
+        "country": "Adaria",
+        "city":"Moépolis",
+        "class": "B",
+        "WAAT": "MOE",
+        "ANACA" : "FIMO",
+        "runway": 1
+    },
+    "TVM": {
+        "name": "Torrevega-Maldín International Airport", 
+        "coord": [-20.16600,130.79019], 
+        "country": "Cordinia",
+        "city":"Torrevega",
+        "class": "B",
+        "WAAT": "TVM",
+        "ANACA" : "FCTM",
+        "runway": 1
+    }
+
+
 
 
 }`
@@ -615,10 +690,25 @@ function addZero(x) {
     }
     return x;
 }
+function appendzone(x){
+    if (x == 0){
+        return "WUT+0"
+    }
+    if (x > 0){
+        return "WUT+" + x.toString();
+    } else {
+        "WUT" + x.toString();
+    }
+}
+function cityplaceholder(x){
+    x = (typeof x !== 'undefined') ?  x : "";
+    return x.toString();
+}
 
-var CRSpopup = "<b class='airportname'>" + airports.CRS.name + "</b> <p class= 'location'> <i>Corrostance Federal City, " + airports.CRS.country + "</i> &nbsp  " + flags.Ohemia + "</p> <hr> <p class= 'location'> <b>Coordinates: </b>" + airports.CRS.coord + "</p> <table> <th></th><th></th>  <tr><td><b>WAAT: </b>" + airports.CRS.WAAT +"</td> <td><b>ANACA: </b>" + airports.CRS.ANACA +"</td> </tr> <tr><td><b>Runways: </b>" + airports.CRS.runway +"</td><td><b>Class: </b>" + airports.CRS.class +"</td> </tr></table> <p class= 'location'><b>Local Time: </b>" + (now.getUTCHours()+2) + ":" + addZero(now.getUTCMinutes()) + " (WUT+2) </p>";
-var STIpopup = "<b class='airportname'>" + airports.STI.name + "</b> <p class= 'location'> <i>Stanton, " + airports.STI.country + "</i> &nbsp  " + flags.FSA + "</p> <hr> <p class= 'location'> <b>Coordinates: </b>" + airports.STI.coord + "</p> <table> <th></th><th></th>  <tr><td><b>WAAT: </b>" + airports.STI.WAAT +"</td> <td><b>ANACA: </b>" + airports.STI.ANACA +"</td> </tr> <tr><td><b>Runways: </b>" + airports.STI.runway +"</td><td><b>Class: </b>" + airports.STI.class +"</td> </tr></table> <p class= 'location'><b>Local Time: </b>" + (now.getUTCHours()+9) + ":" + addZero(now.getUTCMinutes()) + " (WUT+2) </p>";
-var SIApopup = "<b class='airportname'>" + airports.SIA.name + "</b> <p class= 'location'> <i>Soprasser Federal City, " + airports.SIA.country + "</i> &nbsp  " + flags.Ohemia + "</p> <hr> <p class= 'location'> <b>Coordinates: </b>" + airports.SIA.coord + "</p> <table> <th></th><th></th>  <tr><td><b>WAAT: </b>" + airports.SIA.WAAT +"</td> <td><b>ANACA: </b>" + airports.SIA.ANACA +"</td> </tr> <tr><td><b>Runways: </b>" + airports.SIA.runway +"</td><td><b>Class: </b>" + airports.SIA.class +"</td> </tr></table> <p class= 'location'><b>Local Time: </b>" + (now.getUTCHours()+2) + ":" + addZero(now.getUTCMinutes()) + " (WUT+2) </p>";
+function details (insert, flag, zone, text){
+    return "<b class='airportname'>" + insert.name + "</b> <p class= 'location'> <i>" + cityplaceholder(text) + " " + insert.city + ", " + insert.country + "</i> &nbsp  " + flag + "</p> <hr> <p class= 'location'> <b>Coordinates: </b>" + insert.coord + "</p> <table> <th></th><th></th>  <tr><td><b>WAAT: </b>" + insert.WAAT +"</td> <td><b>ANACA: </b>" + insert.ANACA +"</td> </tr> <tr><td><b>Runways: </b>" + insert.runway +"</td><td><b>Class: </b>" + insert.class +"</td> </tr></table> <p class= 'location'><b>Local Time: </b>" + (now.getUTCHours()+ zone)%24  + ":" + addZero(now.getUTCMinutes()) + " (" +  appendzone(zone) + ")</p>";
+
+}
 
 
 
