@@ -783,9 +783,237 @@ const airport = `
         "WAAT": "BRN", 
         "ANACA" : "BABN", 
         "runway": 3
-}
-
-
+    },
+    "DAI": {
+        "name": "Daishin Ennuntawi International Airport", 
+        "coord": [33.5923, 126.9804], 
+        "country": "Izaland",
+        "city":"Daishin",
+        "class": "B",
+        "WAAT": "DAI",
+        "ANACA" : "DZEW",
+        "runway": 2
+    },
+    "GTN": {
+        "name": "Izaland North International Airport", 
+        "coord": [37.6495, 128.5791], 
+        "country": "Izaland",
+        "city":"Gaintei",
+        "class": "B",
+        "WAAT": "GTN",
+        "ANACA" : "DZGT",
+        "runway": 1
+    },
+    "ILL": {
+        "name": "Illashiya Rikotān International Airport", 
+        "coord": [35.6516, 128.2819], 
+        "country": "Izaland",
+        "city":"Illashiya",
+        "class": "B",
+        "WAAT": "ILL",
+        "ANACA" : "DZIS",
+        "runway": 2
+    },
+    "ISA": {
+        "name": "Isadashi International Airport", 
+        "coord": [37.1494, 128.9634], 
+        "country": "Izaland",
+        "city":"Isadashi",
+        "class": "B",
+        "WAAT": "ISA",
+        "ANACA" : "DZID",
+        "runway": 2
+    },
+    "KLS": {
+        "name": "Kanlisahna Makohei International Airport", 
+        "coord": [34.5074, 128.4736], 
+        "country": "Izaland",
+        "city":"Kanlisahna",
+        "class": "B",
+        "WAAT": "KLS",
+        "ANACA" : "DZKG",
+        "runway": 2
+    },
+    "KTS": {
+        "name": "Warohan Katasogi International Airport", 
+        "coord": [34.5074, 128.4736], 
+        "country": "Izaland",
+        "city":"Warohan, Katasogi",
+        "class": "B",
+        "WAAT": "KLS",
+        "ANACA" : "DZKS",
+        "runway": 1
+    },
+    "NKV": {
+        "name": "Nukusavo Arotsāi Regional Airport", 
+        "coord": [33.6795, 124.2044], 
+        "country": "Izaland",
+        "city":"Nukusavo",
+        "class": "C",
+        "WAAT": "NKV",
+        "ANACA" : "DZNV",
+        "runway": 1
+    },
+    "NTS": {
+        "name": "Nutsuno Pedonka Regional Airport", 
+        "coord": [33.6024, 127.5693], 
+        "country": "Izaland",
+        "city":"Nutsuno",
+        "class": "C",
+        "WAAT": "NTSV",
+        "ANACA" : "DZNS",
+        "runway": 1
+    },
+    "OGO": {
+        "name": "Oingos Regional Airport", 
+        "coord": [32.9153, 125.5518], 
+        "country": "Izaland",
+        "city":"Oingos",
+        "class": "C",
+        "WAAT": "OGO",
+        "ANACA" : "DZOO",
+        "runway": 1
+    },
+    "OGT": {
+        "name": "Ogamoton Otsumihama International Airport", 
+        "coord": [31.7986, 126.4066], 
+        "country": "Izaland",
+        "city":"Ogamoton",
+        "class": "B",
+        "WAAT": "OGT",
+        "ANACA" : "DZOT",
+        "runway": 1
+    },
+    "RYO": {
+        "name": "Rimayoshi Regional Airport", 
+        "coord": [34.2303, 127.0948], 
+        "country": "Izaland",
+        "city":"Ma-su-hu metropolitan area",
+        "class": "C",
+        "WAAT": "RYO",
+        "ANACA" : "DZRY",
+        "runway": 1
+    },
+    "SAG": {
+        "name": "Sagoma International Airport", 
+        "coord": [33.7304, 124.689], 
+        "country": "Izaland",
+        "city":"Sagoma",
+        "class": "B",
+        "WAAT": "SAG",
+        "ANACA" : "DZSO",
+        "runway": 2
+    },
+    "SKM": {
+        "name": "Shirukami Hongō International Airport", 
+        "coord": [36.9769, 128.5312], 
+        "country": "Izaland",
+        "city":"Shirukami",
+        "class": "B",
+        "WAAT": "SKM",
+        "ANACA" : "DZSK",
+        "runway": 2
+    },
+    "BSC": {
+        "name": "Basotachi Regional Airport", 
+        "coord": [32.5041, 126.8053], 
+        "country": "Izaland",
+        "city":"Basotachi",
+        "class": "C",
+        "WAAT": "BSC",
+        "ANACA" : "DZBT",
+        "runway": 1
+     },
+    "FUE": {
+        "name": "Fuendaru International Airport", 
+        "coord": [36.6492, 128.0036], 
+        "country": "Izaland",
+        "city":"Fuendaru",
+        "class": "C",
+        "WAAT": "FUE",
+        "ANACA" : "DZFD",
+        "runway": 1
+     },
+    "FUK": {
+        "name": "Fukuyau Nurihara Negari Sau International Airport", 
+        "coord": [36.1780, 127.2400], 
+        "country": "Izaland",
+        "city":"Fukuyau",
+        "class": "B",
+        "WAAT": "FUK",
+        "ANACA" : "DZFK",
+        "runway": 2
+     },
+    "KIX": {
+        "name": "Kichatsura International Airport", 
+        "coord": [35.5144, 127.0946], 
+        "country": "Izaland",
+        "city":"Kichatsura",
+        "class": "B",
+        "WAAT": "KIX",
+        "ANACA" : "DZKR",
+        "runway": 1
+    },
+    "AJL": {
+        "name": "Atsujīl International Airport", 
+        "coord": [33.1338, 124.5080], 
+        "country": "Izaland",
+        "city":"Atsujīl",
+        "class": "B",
+        "WAAT": "AJL",
+        "ANACA" : "DZAL",
+        "runway": 1
+    },
+    "KKK": {
+        "name": "Kikknās International Airport", 
+        "coord": [33.0337, 125.1020], 
+        "country": "Izaland",
+        "city":"Kikknās",
+        "class": "B",
+        "WAAT": "KKK",
+        "ANACA" : "DZKK",
+        "runway": 1
+    },
+    "LUE": {
+        "name": "Luminoe Regional Airport", 
+        "coord": [33.3199, 125.3022], 
+        "country": "Izaland",
+        "city":"Luminoe",
+        "class": "C",
+        "WAAT": "LUE",
+        "ANACA" : "DZLM",
+        "runway": 1
+    },
+    "SDR": {
+        "name": "Saðuren Regional Airport", 
+        "coord": [33.3156, 125.0385], 
+        "country": "Izaland",
+        "city":"Saðuren",
+        "class": "C",
+        "WAAT": "SDR",
+        "ANACA" : "DZSR",
+        "runway": 1
+    },
+    "STY": {
+        "name": "Suritanma Regional Airport", 
+        "coord": [32.3376, 125.5605], 
+        "country": "Izaland",
+        "city":"Ovāsa",
+        "class": "C",
+        "WAAT": "STY",
+        "ANACA" : "DZSA",
+        "runway": 1
+    },
+    "EHU": {
+        "name": "Eharau Regional Airport", 
+        "coord": [37.4540, 129.6363], 
+        "country": "Izaland",
+        "city":"Eharau",
+        "class": "C",
+        "WAAT": "EHU",
+        "ANACA" : "DZEH",
+        "runway": 1
+    }
 
 
 }`
