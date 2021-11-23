@@ -27,7 +27,9 @@ const flag = `
     "Bromley": "<img src='https://wiki.opengeofiction.net/images/3/3f/Bromley_Flag_Update_August_2021.png' width='35'>",
     "Suria": "<img src='https://wiki.opengeofiction.net/images/a/a4/Flag_of_Suria.png' width='35'>",
     "Mauretia": ".",
-    "Adaria": "<img src='https://wiki.opengeofiction.net/images/1/17/Adariaflag.png' width='35'>"
+    "Adaria": "<img src='https://wiki.opengeofiction.net/images/1/17/Adariaflag.png' width='35'>",
+    "Aden": "<img src='https://wiki.opengeofiction.net/images/2/2d/Aden_New_Flag.png' width='35'>"
+    
    
     
     
@@ -376,7 +378,7 @@ const airport = `
         "runway": 2
     },
     "SUL": {
-        "name": "Sainðaul Kanui Kūnkō", 
+        "name": "Sainðaul Asunahama Kukujai Kūnkō", 
         "coord":  [36.1119, 128.6506], 
         "country": "Izaland",
         "city":" Sainðaul",
@@ -386,7 +388,7 @@ const airport = `
         "runway": 3
     },
     "KNU": {
-        "name": "Sainðaul Asunahama Kukujai Kūnkō", 
+        "name": "Sainðaul Kanui Kūnkō", 
         "coord": [35.999, 129.0767], 
         "country": "Izaland",
         "city":" Sainðaul",
@@ -1158,7 +1160,317 @@ const airport = `
         "WAAT": "MIR",
         "ANACA" : "ISMI",
         "runway": 3
-    }
+    },
+    "BTR": {
+        "name": "Adnan Shamas International Airport", 
+        "coord": [21.2022, 51.5159], 
+        "country": "Aden",
+        "city": "Baytrouh",
+        "class": "A",
+        "WAAT": "BTR",
+        "ANACA" : "KABT",
+        "runway": 2
+    },
+    "ADM": {
+        "name": "Aden Mdin International Airport", 
+        "coord": [20.2574, 51.9953], 
+        "country": "Aden",
+        "city": "Aden Mdin",
+        "class": "A",
+        "WAAT": "ADM",
+        "ANACA" : "KADM",
+        "runway": 3
+    },
+    "NDL":{
+        "name": "Nadal International Airport", 
+        "coord": [19.2971, 52.7608], 
+        "country": "Aden",
+        "city": "Nadal",
+        "class": "B",
+        "WAAT": "NDL",
+        "ANACA" : "KANL",
+        "runway": 1
+    },
+    "OSN":{
+        "name": "Hussein Hijazi International Airport", 
+        "coord": [19.9000, 53.6791], 
+        "country": "Aden",
+        "city": "Ousayn",
+        "class": "B",
+        "WAAT": "OSN",
+        "ANACA" : "KAOS",
+        "runway": 2
+    },
+    "ALN":{
+        "name": "Lynn El Aghar International Airport", 
+        "coord": [20.9027, 52.6901], 
+        "country": "Aden",
+        "city": "Allyn",
+        "class": "B",
+        "WAAT": "ALN",
+        "ANACA" : "KAAL",
+        "runway": 1
+    },
+    "INR": {
+        "name": "Inraak Domestic Airport", 
+        "coord": [18.6943, 48.9459], 
+        "country": "Aden",
+        "city": "Inraak",
+        "class": "C",
+        "WAAT": "INR",
+        "ANACA" : "KAIR",
+        "runway": 1
+    },
+    "TBH": {
+        "name": "Sayyidi Yanim Rifai International Airport", 
+        "coord": [25.6106, 54.4479], 
+        "country": "Mazan",
+        "city": "Tabah",
+        "class": "A",
+        "WAAT": "TBH",
+        "ANACA" : "KMTB",
+        "runway": 2
+    },
+    "TRS": {
+        "name": "Tursalam International Airport", 
+        "coord": [29.8758, 57.7082], 
+        "country": "Mazan",
+        "city": "Tursalam",
+        "class": "A",
+        "WAAT": "TRS",
+        "ANACA" : "KMTR",
+        "runway": 1
+    },
+    "ARS": {
+        "name": "Arsam Domestic Airport", 
+        "coord": [30.6602, 57.5763], 
+        "country": "Mazan",
+        "city": "Arsam",
+        "class": "B",
+        "WAAT": "ARS",
+        "ANACA" : "KMAR",
+        "runway": 1
+    },
+    "MWJ": {
+        "name": "Amwal-Jawahir International Airport", 
+        "coord": [-29.1410, 167.2686], 
+        "country": "Unesia",
+        "city":" Amwal",
+        "class": "B",
+        "WAAT": "MWJ",
+        "ANACA" : "BMWJ",
+        "runway": 3
+    },
+    "DCX": {
+        "name": "Draxton-Cameron International Airport", 
+        "coord": [-31.7384, 165.1251], 
+        "country": "Unesia",
+        "city": "Draxton",
+        "class": "A",
+        "WAAT": "DCX",
+        "ANACA" : "BDCX",
+        "runway": 5
+    },
+    "CFL": {
+        "name": "Mustafá Garcia Regional Airport", 
+        "coord": [-31.6520, 165.8496], 
+        "country": "Unesia",
+        "city": "Confluencia del Sur",
+        "class": "C",
+        "WAAT": "CFL",
+        "ANACA" : "BCFL",
+        "runway": 2
+    },
+    "SVX": {
+        "name": "South Valley International Airport", 
+        "coord": [-32.9437, 167.1297], 
+        "country": "Unesia",
+        "city": "Zakia",
+        "class": "B",
+        "WAAT": "SVX",
+        "ANACA" : "BSVX",
+        "runway": 2 
+    },
+    "SKN": {
+        "name": "Záhid Husain International Airport", 
+        "coord": [-33.2350, 168.6911], 
+        "country": "Unesia",
+        "city": "Sakina",
+        "class": "B",
+        "WAAT": "SKN",
+        "ANACA" : "BSKN",
+        "runway": 2
+    },
+    "MPX": {
+        "name": "Musawar-Pradera Transcontinental Airport", 
+        "coord": [-29.9610, 166.9524], 
+        "country": "Unesia",
+        "city": "Musawar",
+        "class": "A",
+        "WAAT": "MPX",
+        "ANACA" : "BMPX",
+        "runway": 2
+    },
+    "FRP": {
+        "name": "Freeport-Riverpool International Airport", 
+        "coord": [-35.0842, 164.7911], 
+        "country": "Unesia",
+        "city": "Freeport",
+        "class": "B",
+        "WAAT": "FRP",
+        "ANACA" : "BFRP",
+        "runway": 2
+    },
+    "BST": {
+        "name": "Adam Haris International Airport", 
+        "coord": [-34.8323, 162.9126], 
+        "country": "Unesia",
+        "city": "Bistari",
+        "class": "B",
+        "WAAT": "BST",
+        "ANACA" : "BBST",
+        "runway": 1
+    },
+    "NEU": {
+        "name": "Hector Osmán Regional Airport", 
+        "coord": [-28.8732, 168.1030], 
+        "country": "Unesia",
+        "city": "Navarro",
+        "class": "C",
+        "WAAT": "NEU",
+        "ANACA" : "BNEU",
+        "runway": 1
+    },
+    "SBR": {
+        "name": "Jebediah Wright Regional Airport", 
+        "coord": [-33.6116, 164.1121], 
+        "country": "Unesia",
+        "city": "Salem",
+        "class": "C",
+        "WAAT": "SBR",
+        "ANACA" : "BSBR",
+        "runway": 3 
+    },
+    "NMT": {
+        "name": "Bustan Regional Airport", 
+        "coord": [28.5241, 62.0137], 
+        "country": "Almahrus",
+        "city": "Bandar Hilal",
+        "class": "C",
+        "WAAT": "NMT",
+        "ANACA" : "GNMT",
+        "runway": 2
+    },
+    "KRM": {
+        "name": "Karamat Regional Airport", 
+        "coord": [28.9026, 63.3677], 
+        "country": "Almahrus",
+        "city": "Ishara",
+        "class": "B",
+        "WAAT": "KRM",
+        "ANACA" : "GKRM",
+        "runway": 1
+    },
+    "ALM": {
+        "name": "Hafidz Salim International Airport", 
+        "coord": [28.7010, 64.2552], 
+        "country": "Almahrus",
+        "city": "Bayshebek",
+        "class": "A",
+        "WAAT": "ALM",
+        "ANACA" : "GALM",
+        "runway": 2
+    },
+    "MMD": {
+        "name": "Mumaddan International Airport", 
+        "coord": [28.8725, 53.3146], 
+        "country": "Mazan",
+        "city": "Mumaddan",
+        "class": "B",
+        "WAAT": "MMD",
+        "ANACA" : "KMMD",
+        "runway": 2 
+    },
+    "JWR": {
+        "name": "Sidi Ibrahim Al-Jiwari International Airport", 
+        "coord": [22.8632, 54.7264], 
+        "country": "Mazan",
+        "city": "Maad",
+        "class": "A",
+        "WAAT": "JWR",
+        "ANACA" : "KJWR",
+        "runway": 3
+    },
+    "CVL": {
+        "name": "Aeroporto Internazionale di Civitelle \\"Baia Dorata\\"", 
+        "coord": [43.3249, 61.2563], 
+        "country": "Plevia",
+        "city": "Civitelle",
+        "class": "B",
+        "WAAT": "CVL",
+        "ANACA" : "GPCV",
+        "runway": 2
+    },
+    "MVZ": {
+        "name": "Aeroporto Internazionale di Mavezia \\"Nicola Canedai\\"", 
+        "coord": [45.5553, 64.2163], 
+        "country": "Plevia",
+        "city": "Mavezia",
+        "class": "B",
+        "WAAT": "MVZ",
+        "ANACA" : "GPMV",
+        "runway": 1
+    },
+    "CVR": {
+        "name": "Aeroporto dell'Alto Alamo", 
+        "coord": [50.6981, 61.9184], 
+        "country": "Plevia",
+        "city": "Coveria",
+        "class": "C",
+        "WAAT": "DVR",
+        "ANACA" : "GPCV",
+        "runway": 1
+    }, 
+    "PBS": {
+        "name": "Aeroporto Internazionale di Pradibosco \\"Lago Pretannico\\"", 
+        "coord": [50.8333, 59.1394], 
+        "country": "Plevia",
+        "city": "Pradibosco",
+        "class": "C",
+        "WAAT": "PBS",
+        "ANACA" : "GPPB",
+        "runway": 1
+    },
+    "NRZ": {
+        "name": "Aeroporto di Norenzo \\"Enrico Saggioli\\"", 
+        "coord": [47.3908, 64.5399], 
+        "country": "Plevia",
+        "city": "Norenzo",
+        "class": "C",
+        "WAAT": "NRZ",
+        "ANACA" : "GPNZ",
+        "runway": 1
+    },
+    "COD": {
+        "name": "Aeroporto Internazionale di Condona \\"Alessandra Tormiani\\"", 
+        "coord": [44.5069, 63.8522], 
+        "country": "Plevia",
+        "city": "Condona",
+        "class": "B",
+        "WAAT": "COD",
+        "ANACA" : "GPCD",
+        "runway": 1
+    },
+    "COS": {
+        "name": "Aeroporto Internazionale di Costa",
+        "coord": [44.2867, 59.0064], 
+        "country": "Plevia",
+        "city": "Costa",
+        "class": "B",
+        "WAAT": "COS",
+        "ANACA" : "GPCO",
+        "runway": 1
+    } 
 
 
 }`

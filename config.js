@@ -12,6 +12,9 @@ function loadMap() {
     });
     map.addControl(loadingControl);
     var ogfMap = ogf.map(map, { layers: 'Standard,TopoMap' });
+    var visible = new ZoomShowHide();
+    visible.addTo(map);
+    //https://github.com/auto-mat/leaflet-zoom-show-hide/blob/master/demo.html
     //night shade
     var t = L.terminator({fillOpacity: 0.1});
     var shade1 = L.terminator({fillOpacity: 0.1, time: Date.UTC(nightshow.getUTCFullYear(), nightshow.getUTCMonth(), nightshow.getUTCDate(), nightshow.getUTCHours()+1,nightshow.getUTCMinutes(), nightshow.getUTCSeconds())});
@@ -19,7 +22,7 @@ function loadMap() {
     var shade3 = L.terminator({fillOpacity: 0.1, time: Date.UTC(nightshow.getUTCFullYear(), nightshow.getUTCMonth(), nightshow.getUTCDate(), nightshow.getUTCHours()+2,nightshow.getUTCMinutes(), nightshow.getUTCSeconds())});
     var shade4 = L.terminator({fillOpacity: 0.1, time: Date.UTC(nightshow.getUTCFullYear(), nightshow.getUTCMonth(), nightshow.getUTCDate(), nightshow.getUTCHours()-2,nightshow.getUTCMinutes(), nightshow.getUTCSeconds())});
     t.addTo(map);
-
+    
     function nightzone(){
         shade1.addTo(map);
         shade2.addTo(map);
@@ -37,13 +40,12 @@ function loadMap() {
     const airports = JSON.parse(airport);
     const flags = JSON.parse(flag);
     const aircrafts = JSON.parse(aircraft);
-
-    L.marker(airports.CRS.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.CRS, flags.Ohemia, 2, "Federal City of"));
+    var test = L.marker(airports.CRS.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.CRS, flags.Ohemia, 2, "Federal City of"));
     L.marker(airports.STI.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.STI, flags.FSA, 3));
     L.marker(airports.SIA.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.SIA, flags.Ohemia, 2, "Federal City of"));
     L.marker(airports.LYR.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.LYR, flags.Layr, 3, "Bi Leregk,"));
     L.marker(airports.PEP.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.PEP, flags.Teotiyolcan, 0));
-    L.marker(airports.QWI.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.QWI, flags.Mazan, 0));
+    L.marker(airports.QWI.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.QWI, flags.Mazan, 3));
     L.marker(airports.TZY.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.TZY, flags.Lany, 5));
     L.marker(airports.AMB.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.AMB, flags.Barzona, 1));
     L.marker(airports.TSA.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.TSA, flags.Arecales, 0));
@@ -97,8 +99,8 @@ function loadMap() {
     L.marker(airports.AUS.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.AUS, flags.Kofuku, 0));
     L.marker(airports.MTA.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.MTA, flags.Qennes, 5));
     L.marker(airports.EZV.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.EZV, flags.Qennes, 5));
-    L.marker(airports.ALJ.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.ALJ, flags.Mazan, 0));
-    L.marker(airports.HAR.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.HAR, flags.Mazan, 0));
+    L.marker(airports.ALJ.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.ALJ, flags.Mazan, 3));
+    L.marker(airports.HAR.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.HAR, flags.Mazan, 3));
     L.marker(airports.SAR.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.SAR, flags.GT, 4));
     L.marker(airports.NCH.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.NCH, flags.Adaria, 0));
     L.marker(airports.MOE.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.MOE, flags.Adaria, 0));
@@ -148,8 +150,39 @@ function loadMap() {
     L.marker(airports.MKX.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.MKX, flags.FSA, 0));
     L.marker(airports.JDN.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.JDN, flags.Default, 3));
     L.marker(airports.MIR.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.MIR, flags.Suria, 4));
+    L.marker(airports.BTR.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.BTR, flags.Aden, 3));
+    L.marker(airports.ADM.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.ADM, flags.Aden, 3));
+    L.marker(airports.NDL.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.NDL, flags.Aden, 3));
+    L.marker(airports.OSN.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.OSN, flags.Aden, 3));
+    L.marker(airports.ALN.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.ALN, flags.Aden, 3));
+    L.marker(airports.INR.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.INR, flags.Aden, 3));
+    L.marker(airports.TBH.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.TBH, flags.Mazan, 3));
+    L.marker(airports.TRS.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.TRS, flags.Mazan, 3));
+    L.marker(airports.ARS.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.ARS, flags.Mazan, 3));
+    L.marker(airports.ARS.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.ARS, flags.Mazan, 3));
+    L.marker(airports.MWJ.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.MWJ, flags.Default, 0));
+    L.marker(airports.DCX.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.DCX, flags.Default, 0));
+    L.marker(airports.CFL.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.CFL, flags.Default, 0));
+    L.marker(airports.SVX.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.SVX, flags.Default, 0));
+    L.marker(airports.SKN.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.SKN, flags.Default, 0));
+    L.marker(airports.MPX.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.MPX, flags.Default, 0));
+    L.marker(airports.FRP.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.FRP, flags.Default, 0));
+    L.marker(airports.BST.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.BST, flags.Default, 0));
+    L.marker(airports.NEU.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.NEU, flags.Default, 0));
+    L.marker(airports.SBR.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.SBR, flags.Default, 0));
+    L.marker(airports.NMT.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.NMT, flags.Default, 0));
+    L.marker(airports.KRM.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.KRM, flags.Default, 0));
+    L.marker(airports.ALM.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.ALM, flags.Default, 0));
+    L.marker(airports.MMD.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.MMD, flags.Default, 0));
+    L.marker(airports.JWR.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.JWR, flags.Mazan, 0));
+    L.marker(airports.CVL.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.CVL, flags.Plevia, 0));
+    L.marker(airports.MVZ.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.MVZ, flags.Plevia, 0));
+    L.marker(airports.CVR.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.CVR, flags.Plevia, 0));
+    L.marker(airports.PBS.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.PBS, flags.Plevia, 0));
+    L.marker(airports.NRZ.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.NRZ, flags.Plevia, 0));
+    L.marker(airports.COD.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.COD, flags.Plevia, 0));
+    L.marker(airports.COS.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.COS, flags.Plevia, 0));
 
-    
 
     L.marker([-38.74783, 32.14310], { icon: tertiaryAirport }).addTo(map); //flying school
 
@@ -158,10 +191,11 @@ function loadMap() {
         var today = new Date();
         var now = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours(), today.getUTCMinutes(), today.getUTCSeconds());
         //schedule
-        const LY500live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 10, 0, 0);
-        const OA990live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 8, 10, 0);
+        const LY500live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 15, 0, 0);
+        const OA990live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 16, 10, 0);
         const test_01 = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 8, 5, 0);
         const sbdlcx = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 7, 0, 0);
+        const lcxbak = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 13, 30, 0);
         
         //main
         function createDuringFlight(scheduleVar,popup,from,to,aircraft,otherflight, resource_name){
@@ -178,6 +212,7 @@ function loadMap() {
         createDuringFlight(test_01,LY500popup,airports.STI.coord,airports.PHA.coord,DG_86,test0,large);
 
         createDuringFlight(sbdlcx,LY500popup,airports.SBD.coord,airports.LCX.coord,Contair_001,test222,contair001);
+        createDuringFlight(lcxbak,LY500popup,airports.LCX.coord,airports.BAK.coord,aircrafts.DG_70.speed,test222,medium);
 
 
 
@@ -191,16 +226,17 @@ function loadMap() {
         var today = new Date();
         var now = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours(), today.getUTCMinutes(), today.getUTCSeconds());
         //schedule
-        const LY500schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 10, 0, 0);
-        const OA990schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 8, 10, 0);
+        const LY500schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 15, 0, 0);
+        const OA990schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 16, 10, 0);
         const test_01 = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 8, 5, 0);
 
         const sbdlcx = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 7, 0, 0);
+        const lcxbak = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 13, 30, 0);
 
         //main
         function createBeforeLift(scheduleVar,visibleBeforeSeconds,invisibleAfterSeconds,markerVar,popup,from,to,aircraft){
             if ((scheduleVar-now)/1000 <= visibleBeforeSeconds && (scheduleVar-now)/1000 > 0){markerVar.setOpacity(1);} if ((scheduleVar-now) == 0){ markerVar.start(); markerVar.setOpacity(1); markerVar.bindPopup(popup);}
-            if ((scheduleVar-now)/1000 <= -1 * duration(getDistanceFromLatLonInKm(from, to),aircraft)  && (scheduleVar-now)/1000 >=  (-1 * duration(getDistanceFromLatLonInKm(from, to),aircraft) - invisibleAfterSeconds)){markerVar.setOpacity(1)} else { if ((scheduleVar-now)/1000 < (-1 * duration(getDistanceFromLatLonInKm(from, to),aircraft) - invisibleAfterSeconds)){ markerVar.setOpacity(0)}};
+            if ((scheduleVar-now)/1000 <= -1 * duration(getDistanceFromLatLonInKm(from, to),aircraft)  && (scheduleVar-now)/1000 >=  (-1 * duration(getDistanceFromLatLonInKm(from, to),aircraft) - invisibleAfterSeconds)){markerVar.stop(); markerVar.setOpacity(1)} else { if ((scheduleVar-now)/1000 < (-1 * duration(getDistanceFromLatLonInKm(from, to),aircraft) - invisibleAfterSeconds)){ markerVar.setOpacity(0)}};
         }
         //functions
         createBeforeLift(LY500schedule,60*60,60*30,LY500,LY500popup,airports.SIA.coord,airports.LYR.coord,aircrafts.DG_80.speed);
@@ -208,7 +244,8 @@ function loadMap() {
         createBeforeLift(test_01,60*60,60*30,test0,LY500popup,airports.SIA.coord,airports.CRS.coord,DG_86);
 
         createBeforeLift(sbdlcx,60*60,60*30,test222,LY500popup,airports.SBD.coord,airports.LCX.coord,Contair_001);
-
+        createBeforeLift(lcxbak,60*60,60*30,test555,LY500popup,airports.LCX.coord,airports.BAK.coord,aircrafts.DG_70.speed);
+        
 
 
         // if ((LY500schedule-now)/1000 <= 60*60 && (LY500schedule-now)/1000 > 0){LY500.setOpacity(1);} if ((LY500schedule-now) == 0){ LY500.start(); LY500.setOpacity(1); LY500.bindPopup(LY500popup);}
@@ -234,6 +271,10 @@ function loadMap() {
 
     var test222 = makeMarker(airports.SBD.coord, airports.LCX.coord, Contair_001, contair001)
     test222.setOpacity(0);
+
+    var test555 = makeMarker(airports.LCX.coord, airports.BAK.coord, aircrafts.DG_70.speed, medium)
+    test555.setOpacity(0);
+
     live();
     schedule();
 
