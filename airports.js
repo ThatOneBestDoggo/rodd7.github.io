@@ -22,8 +22,10 @@ const flag = `
     "Arecales": "<img src='https://old.opengeofiction.wiki/images/thumb/8/83/Flag_of_Arecales_1.png/1200px-Flag_of_Arecales_1.png' width='35'>",
     "Wallea": "<img src='https://old.opengeofiction.wiki/images/thumb/d/d1/Walleanflag.jpg/1200px-Walleanflag.jpg' width='35'>",
     "CCA": "<img src='https://old.opengeofiction.wiki/images/thumb/4/4e/CCA-Flag2-01.jpg/1200px-CCA-Flag2-01.jpg' width='35'>",
-    "Majesia": "<img src='https://old.opengeofiction.wiki/images/thumb/5/50/Majesia_flag.png/1200px-Majesia_flag.png' width='35'>"
-    
+    "Majesia": "<img src='https://old.opengeofiction.wiki/images/thumb/5/50/Majesia_flag.png/1200px-Majesia_flag.png' width='35'>",
+    "Ruoguovvas": "<img src='https://old.opengeofiction.wiki/images/6/63/Ruoguovv%C3%A1s_flag.png' width='35'>",
+    "Bromley": "<img src='https://wiki.opengeofiction.net/images/3/3f/Bromley_Flag_Update_August_2021.png' width='35'>"
+   
     
     
 }
@@ -278,23 +280,23 @@ const airport = `
         "class": "A",
         "WAAT": "AVG",
         "ANACA" : "BAAV",
-        "runway": 1
+        "runway": 3
     },
     "MAH": {
         "name": "Mahhájohk - AhkaaVuoi Girdišillju", 
-        "coord":  [63.7721587, 63.0467157], 
-        "country": "Mahhájohk",
-        "city" : "Mathers, Quentinsburgh",
+        "coord": [63.7721587, 63.0467157], 
+        "country": "Ruoguovvás",
+        "city": "Mahhájohk",
         "class": "C",
         "WAAT": "MAH",
         "ANACA" : "EFMA",
-        "runway": 2
+        "runway": 1
     },
     "PHA": {
         "name": "Pohhállakksót Girdišillju", 
-        "coord":  [65.8761, 69.7305], 
+        "coord": [65.87962, 69.73205], 
         "country": "Ruoguovvás",
-        "city" : "Pohhállakksót",
+        "city": "Pohhállaksót",
         "class": "C",
         "WAAT": "PHA",
         "ANACA" : "ESPH",
@@ -317,7 +319,7 @@ const airport = `
         "city" : "Mathers, Quentinsburgh",
         "class": "B",
         "WAAT": "MAT",
-        "ANACA" : "MFMT",
+        "ANACA" : "MFMA",
         "runway": 2
     },
     "LCX": {
@@ -598,7 +600,7 @@ const airport = `
         "name": "Filosoyer Airbase", 
         "coord": [-48.69522, 72.28110], 
         "country": "Kofuku",
-        "city": "Safport",
+        "city": "Safeport",
         "class": "C",
         "WAAT": "FYR",
         "ANACA" : "OFYR",
@@ -629,7 +631,7 @@ const airport = `
         "coord": [39.6863,84.1939], 
         "country": "Qennes",
         "city": "Malvertta",
-        "class": "C",
+        "class": "A",
         "WAAT": "MTA",
         "ANACA" : "GQKE",
         "runway": 1
@@ -641,7 +643,7 @@ const airport = `
         "city":" Aljaraf",
         "class": "B",
         "WAAT": "ALJ",
-        "ANACA" : "GALJ",
+        "ANACA" : "KALJ",
         "runway": 1
     },
     "HAR": {
@@ -1013,6 +1015,26 @@ const airport = `
         "WAAT": "EHU",
         "ANACA" : "DZEH",
         "runway": 1
+    },
+    "LGD": {
+        "name": "Luollagirddán Riikkaidgaskasaš Girdišillju", 
+        "coord": [64.782230, 66.266327], 
+        "country": "Ruoguovvás",
+        "city": "Jiemie",
+        "class": "A",
+        "WAAT": "LGD",
+        "ANACA" : "ESLG",
+        "runway": 2
+    },
+    "BLM": {
+        "name": "Bellamcole Airport", 
+        "coord": [-36.4402954, 45.9088258], 
+        "country": "Bromley",
+        "city": "Crwatham, Bellamcole",
+        "class": "B",
+        "WAAT": "BLM",
+        "ANACA" : "NBRB",
+        "runway": 1
     }
 
 
@@ -1036,12 +1058,17 @@ function appendzone(x){
         "WUT" + x.toString();
     }
 }
+
+
 function cityplaceholder(x){
     x = (typeof x !== 'undefined') ?  x : "";
     return x.toString();
 }
 
 function details (insert, flag, zone, text){
+    if (zone%1 != 0){
+        return "<b class='airportname'>" + insert.name + "</b> <p class= 'location'> <i>" + cityplaceholder(text) + " " + insert.city + ", " + insert.country + "</i> &nbsp  " + flag + "</p> <hr> <p class= 'location'> <b>Coordinates: </b>" + insert.coord + "</p> <table> <th></th><th></th>  <tr><td><b>WAAT: </b>" + insert.WAAT +"</td> <td><b>ANACA: </b>" + insert.ANACA +"</td> </tr> <tr><td><b>Runways: </b>" + insert.runway +"</td><td><b>Class: </b>" + insert.class +"</td> </tr></table> <p class= 'location'><b>Local Time: </b>" + Math.floor((now.getUTCHours()+ zone%1)%24)  + ":" + addZero(now.getUTCMinutes() + 60*(zone%1))%60 + " (" +  appendzone(zone) + ")</p>";
+    }
     return "<b class='airportname'>" + insert.name + "</b> <p class= 'location'> <i>" + cityplaceholder(text) + " " + insert.city + ", " + insert.country + "</i> &nbsp  " + flag + "</p> <hr> <p class= 'location'> <b>Coordinates: </b>" + insert.coord + "</p> <table> <th></th><th></th>  <tr><td><b>WAAT: </b>" + insert.WAAT +"</td> <td><b>ANACA: </b>" + insert.ANACA +"</td> </tr> <tr><td><b>Runways: </b>" + insert.runway +"</td><td><b>Class: </b>" + insert.class +"</td> </tr></table> <p class= 'location'><b>Local Time: </b>" + (now.getUTCHours()+ zone)%24  + ":" + addZero(now.getUTCMinutes()) + " (" +  appendzone(zone) + ")</p>";
 
 }

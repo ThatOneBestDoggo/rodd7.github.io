@@ -21,7 +21,8 @@ const aircraft = `
         "name": "AhkaaVuoi GlobeMAX900",
         "speed": 1,
         "class": "Heavy Business Jet", 
-        "range": "medium"
+        "type": "medium",
+        "range":
         "capacity": 62,
         "image": 'none'
     },
