@@ -28,7 +28,7 @@ function loadMap() {
     L.marker(airports.QWI.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.QWI, flags.Mazan, 0));
     L.marker(airports.TZY.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.TZY, flags.Lany, 5));
     L.marker(airports.AMB.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.AMB, flags.Barzona, 1));
-    L.marker(airports.TSA.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.TSA, flags.Arecales, 11.5));
+    L.marker(airports.TSA.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.TSA, flags.Arecales, 0));
     L.marker(airports.DIA.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.DIA, flags.FSA, 0));
     L.marker(airports.ELR.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.ELR, flags.FSA, 0));
     L.marker(airports.LON.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.LON, flags.FSA, 0));
@@ -129,6 +129,7 @@ function loadMap() {
         const LY500live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 10, 0, 0);
         const OA990live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 13, 50, 0);
         const test_01 = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 22, 14, 0, 0);
+        const sbdlcx = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 5, 0, 0);
         
         //main
         function createDuringFlight(scheduleVar,popup,from,to,aircraft,otherflight, resource_name){
@@ -143,6 +144,8 @@ function loadMap() {
         createDuringFlight(LY500live,LY500popup,airports.SIA.coord,airports.LYR.coord,DG_80,LY500,large);
         createDuringFlight(OA990live,LY500popup,airports.SIA.coord,airports.CRS.coord,Spārtesôr_21,OA990,Spārtesôr);
         createDuringFlight(test_01,LY500popup,airports.STI.coord,airports.PHA.coord,DG_86,test0,large);
+
+        createDuringFlight(sbdlcx,LY500popup,airports.SBD.coord,airports.LCX.coord,Contair_001,test222,contair001);
 
 
 
@@ -160,6 +163,8 @@ function loadMap() {
         const OA990schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 13, 50, 0);
         const test_01 = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 22, 14, 0, 0);
 
+        const sbdlcx = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 5, 0, 0);
+
         //main
         function createBeforeLift(scheduleVar,visibleBeforeSeconds,invisibleAfterSeconds,markerVar,popup,from,to,aircraft){
             if ((scheduleVar-now)/1000 <= visibleBeforeSeconds && (scheduleVar-now)/1000 > 0){markerVar.setOpacity(1);} if ((scheduleVar-now) == 0){ markerVar.start(); markerVar.setOpacity(1); markerVar.bindPopup(popup);}
@@ -170,6 +175,7 @@ function loadMap() {
         createBeforeLift(OA990schedule,60*60,60*30,OA990,LY500popup,airports.SIA.coord,airports.CRS.coord,Spārtesôr_21);
         createBeforeLift(test_01,60*60,60*30,test0,LY500popup,airports.SIA.coord,airports.CRS.coord,DG_86);
 
+        createBeforeLift(sbdlcx,60*60,60*30,test222,LY500popup,airports.SBD.coord,airports.LCX.coord,Contair_001);
 
 
         // if ((LY500schedule-now)/1000 <= 60*60 && (LY500schedule-now)/1000 > 0){LY500.setOpacity(1);} if ((LY500schedule-now) == 0){ LY500.start(); LY500.setOpacity(1); LY500.bindPopup(LY500popup);}
@@ -186,12 +192,14 @@ function loadMap() {
     function makeMarker(from, to, aircraft, resource_name){
         var offset = 0;
         if (resource_name===large){offset = -45;}
-        return point = L.Marker.movingMarker([from, to], [duration(getDistanceFromLatLonInKm(from, to),aircraft) * 1000], { rotationAngle: bearing(from, to) + offset, icon: resource_name }).addTo(map); point.setOpacity(0);
+        return point = L.Marker.movingMarker([from, to], [duration(getDistanceFromLatLonInKm(from, to),aircraft) * 1000], { rotationAngle: bearing(from, to) + offset, icon: resource_name }).addTo(map);
     }
    
     var test0 = makeMarker(airports.STI.coord, airports.PHA.coord, DG_86, large)
+    test0.setOpacity(0);
 
-
+    var test222 = makeMarker(airports.SBD.coord, airports.LCX.coord, Contair_001, contair001)
+    test222.setOpacity(0);
     live();
     schedule();
 
