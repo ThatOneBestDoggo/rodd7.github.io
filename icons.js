@@ -48,7 +48,7 @@ var contair001 = L.icon({
     iconUrl: 'resources/contair001.png',
     iconSize: [21, 21],
     iconAnchor: [8, 10],
-    popupAnchor: [5, -20],
+    popupAnchor: [-5, -20],
 });
 var luxury = L.icon({
     iconUrl: 'resources/luxury.png',

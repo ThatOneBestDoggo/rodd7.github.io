@@ -3,6 +3,7 @@ globalThis.map;
 var layer;
 var mapOptions = {};
 var synconst = 1000;
+var nightshow = new Date();
 
 function loadMap() {
     map = L.map('map', mapOptions).setView([17.95, 91.29], 3);
@@ -12,14 +13,31 @@ function loadMap() {
     map.addControl(loadingControl);
     var ogfMap = ogf.map(map, { layers: 'Standard,TopoMap' });
     //night shade
-    var t = L.terminator();
+    var t = L.terminator({fillOpacity: 0.1});
+    var shade1 = L.terminator({fillOpacity: 0.1, time: Date.UTC(nightshow.getUTCFullYear(), nightshow.getUTCMonth(), nightshow.getUTCDate(), nightshow.getUTCHours()+1,nightshow.getUTCMinutes(), nightshow.getUTCSeconds())});
+    var shade2 = L.terminator({fillOpacity: 0.1, time: Date.UTC(nightshow.getUTCFullYear(), nightshow.getUTCMonth(), nightshow.getUTCDate(), nightshow.getUTCHours()-1,nightshow.getUTCMinutes(), nightshow.getUTCSeconds())});
+    var shade3 = L.terminator({fillOpacity: 0.1, time: Date.UTC(nightshow.getUTCFullYear(), nightshow.getUTCMonth(), nightshow.getUTCDate(), nightshow.getUTCHours()+2,nightshow.getUTCMinutes(), nightshow.getUTCSeconds())});
+    var shade4 = L.terminator({fillOpacity: 0.1, time: Date.UTC(nightshow.getUTCFullYear(), nightshow.getUTCMonth(), nightshow.getUTCDate(), nightshow.getUTCHours()-2,nightshow.getUTCMinutes(), nightshow.getUTCSeconds())});
     t.addTo(map);
+
+    function nightzone(){
+        shade1.addTo(map);
+        shade2.addTo(map);
+        shade3.addTo(map);
+        shade4.addTo(map);
+        setTimeout(function () { nightzone()}, 1000);
+    }
+    nightzone();
+    
     setInterval(function () { updateTerminator(t) }, synconst);
     function updateTerminator(t) {
         t.setTime();
     }
+
     const airports = JSON.parse(airport);
     const flags = JSON.parse(flag);
+    const aircrafts = JSON.parse(aircraft);
+
     L.marker(airports.CRS.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.CRS, flags.Ohemia, 2, "Federal City of"));
     L.marker(airports.STI.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.STI, flags.FSA, 3));
     L.marker(airports.SIA.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.SIA, flags.Ohemia, 2, "Federal City of"));
@@ -82,8 +100,8 @@ function loadMap() {
     L.marker(airports.ALJ.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.ALJ, flags.Mazan, 0));
     L.marker(airports.HAR.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.HAR, flags.Mazan, 0));
     L.marker(airports.SAR.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.SAR, flags.GT, 4));
-    L.marker(airports.NCH.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.NCH, flags.Default, 0));
-    L.marker(airports.MOE.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.MOE, flags.Default, 0));
+    L.marker(airports.NCH.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.NCH, flags.Adaria, 0));
+    L.marker(airports.MOE.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.MOE, flags.Adaria, 0));
     L.marker(airports.TVM.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.TVM, flags.Default, 0));
     L.marker(airports.FJA.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.FJA, flags.Allendea, 1));
     L.marker(airports.SNM.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.SNM, flags.Wallea, 0));
@@ -118,6 +136,20 @@ function loadMap() {
     L.marker(airports.EHU.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.EHU, flags.Izaland, 8));
     L.marker(airports.LGD.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.LGD, flags.Ruoguovvas, 2, "<img src='https://old.opengeofiction.wiki/images/f/ff/Jiemiasflag.png' width='35'> &nbsp"));
     L.marker(airports.BLM.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.BLM, flags.Bromley, 3));
+    L.marker(airports.VDL.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.VDL, flags.Freedemia, 2));
+    L.marker(airports.SVD.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.SVD, flags.FSA, 0));
+    L.marker(airports.IOL.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.IOL, flags.Mauretia, 0));
+    L.marker(airports.POM.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.POM, flags.Mauretia, 0));
+    L.marker(airports.SKY.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.SKY, flags.Mauretia, 0));
+    L.marker(airports.MSY.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.MSY, flags.Mauretia, 0));
+    L.marker(airports.KSM.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.KSM, flags.Mauretia, 0));
+    L.marker(airports.TAN.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.TAN, flags.Mauretia, 0));
+    L.marker(airports.MEG.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.MEG, flags.Mauretia, 0));
+    L.marker(airports.MKX.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.MKX, flags.FSA, 0));
+    L.marker(airports.JDN.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.JDN, flags.Default, 3));
+    L.marker(airports.MIR.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.MIR, flags.Suria, 4));
+
+    
 
     L.marker([-38.74783, 32.14310], { icon: tertiaryAirport }).addTo(map); //flying school
 
@@ -127,21 +159,21 @@ function loadMap() {
         var now = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours(), today.getUTCMinutes(), today.getUTCSeconds());
         //schedule
         const LY500live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 10, 0, 0);
-        const OA990live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 13, 50, 0);
-        const test_01 = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 22, 14, 0, 0);
-        const sbdlcx = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 5, 0, 0);
+        const OA990live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 8, 10, 0);
+        const test_01 = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 8, 5, 0);
+        const sbdlcx = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 7, 0, 0);
         
         //main
         function createDuringFlight(scheduleVar,popup,from,to,aircraft,otherflight, resource_name){
             var offset = 0;
             if (resource_name===large){offset = -45;}
             if ((scheduleVar-now)/1000 > -1 * duration(getDistanceFromLatLonInKm(from, to), aircraft) && (scheduleVar-now)/1000 < 0 && !(otherflight.isRunning())){
-                var point = L.Marker.movingMarker([positionRetrieval(from,to,duration(getDistanceFromLatLonInKm(from,to),aircraft),(scheduleVar-now)/1000), to], [(duration(getDistanceFromLatLonInKm(from, to),aircraft) + (scheduleVar - now)/1000) * 1000], { rotationAngle: bearing(from, to) + offset, icon: resource_name}).addTo(map);
+                var point = L.Marker.movingMarker([positionRetrieval(from,to,duration(getDistanceFromLatLonInKm(from,to),aircraft),(scheduleVar-now)/1000), to], [(duration(getDistanceFromLatLonInKm(from, to),aircraft) + (scheduleVar - now)/1000) * 1000], { rotationAngle: angle(from, to) + offset, icon: resource_name}).addTo(map);
                 point.start(); point.bindPopup(popup);}
         }
 
         //functions
-        createDuringFlight(LY500live,LY500popup,airports.SIA.coord,airports.LYR.coord,DG_80,LY500,large);
+        createDuringFlight(LY500live,LY500popup,airports.SIA.coord,airports.LYR.coord,aircrafts.DG_80.speed,LY500,large);
         createDuringFlight(OA990live,LY500popup,airports.SIA.coord,airports.CRS.coord,Spārtesôr_21,OA990,Spārtesôr);
         createDuringFlight(test_01,LY500popup,airports.STI.coord,airports.PHA.coord,DG_86,test0,large);
 
@@ -150,7 +182,7 @@ function loadMap() {
 
 
         // if ((LY500live-now)/1000 > -1 * duration(getDistanceFromLatLonInKm(airports.SIA.coord, airports.LYR.coord),DG_80) && (LY500live-now)/1000 < 0 && !(LY500.isRunning())){
-        //     var LY500new = L.Marker.movingMarker([positionRetrieval(airports.SIA.coord,airports.LYR.coord,duration(getDistanceFromLatLonInKm(airports.SIA.coord,airports.LYR.coord),DG_80),(LY500live-now)/1000), airports.LYR.coord], [(duration(getDistanceFromLatLonInKm(airports.SIA.coord, airports.LYR.coord),DG_80) + (LY500live - now)/1000) * 1000], { rotationAngle: bearing(airports.SIA.coord, airports.LYR.coord) - 45, icon: large }).addTo(map);
+        //     var LY500new = L.Marker.movingMarker([positionRetrieval(airports.SIA.coord,airports.LYR.coord,duration(getDistanceFromLatLonInKm(airports.SIA.coord,airports.LYR.coord),DG_80),(LY500live-now)/1000), airports.LYR.coord], [(duration(getDistanceFromLatLonInKm(airports.SIA.coord, airports.LYR.coord),DG_80) + (LY500live - now)/1000) * 1000], { rotationAngle: angle(airports.SIA.coord, airports.LYR.coord) - 45, icon: large }).addTo(map);
         //     LY500new.start(); LY500new.bindPopup(LY500popup); }}
     }
     
@@ -160,10 +192,10 @@ function loadMap() {
         var now = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours(), today.getUTCMinutes(), today.getUTCSeconds());
         //schedule
         const LY500schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 10, 0, 0);
-        const OA990schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 13, 50, 0);
-        const test_01 = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 22, 14, 0, 0);
+        const OA990schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 8, 10, 0);
+        const test_01 = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 8, 5, 0);
 
-        const sbdlcx = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 5, 0, 0);
+        const sbdlcx = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 23, 7, 0, 0);
 
         //main
         function createBeforeLift(scheduleVar,visibleBeforeSeconds,invisibleAfterSeconds,markerVar,popup,from,to,aircraft){
@@ -171,28 +203,30 @@ function loadMap() {
             if ((scheduleVar-now)/1000 <= -1 * duration(getDistanceFromLatLonInKm(from, to),aircraft)  && (scheduleVar-now)/1000 >=  (-1 * duration(getDistanceFromLatLonInKm(from, to),aircraft) - invisibleAfterSeconds)){markerVar.setOpacity(1)} else { if ((scheduleVar-now)/1000 < (-1 * duration(getDistanceFromLatLonInKm(from, to),aircraft) - invisibleAfterSeconds)){ markerVar.setOpacity(0)}};
         }
         //functions
-        createBeforeLift(LY500schedule,60*60,60*30,LY500,LY500popup,airports.SIA.coord,airports.LYR.coord,DG_80);
+        createBeforeLift(LY500schedule,60*60,60*30,LY500,LY500popup,airports.SIA.coord,airports.LYR.coord,aircrafts.DG_80.speed);
         createBeforeLift(OA990schedule,60*60,60*30,OA990,LY500popup,airports.SIA.coord,airports.CRS.coord,Spārtesôr_21);
         createBeforeLift(test_01,60*60,60*30,test0,LY500popup,airports.SIA.coord,airports.CRS.coord,DG_86);
 
         createBeforeLift(sbdlcx,60*60,60*30,test222,LY500popup,airports.SBD.coord,airports.LCX.coord,Contair_001);
 
 
+
         // if ((LY500schedule-now)/1000 <= 60*60 && (LY500schedule-now)/1000 > 0){LY500.setOpacity(1);} if ((LY500schedule-now) == 0){ LY500.start(); LY500.setOpacity(1); LY500.bindPopup(LY500popup);}
         // if ((LY500schedule-now)/1000 <= -1 * duration(getDistanceFromLatLonInKm(airports.SIA.coord, airports.LYR.coord),DG_80)  && (LY500schedule-now)/1000 >=  -1 * duration(getDistanceFromLatLonInKm(airports.SIA.coord, airports.LYR.coord),DG_80) - 60*10 /*layoff time*/){LY500.setOpacity(1)};
         setTimeout(function () { schedule()}, 1000);
 
+
     }
 
 
-    var LY500 = L.Marker.movingMarker([airports.SIA.coord, airports.LYR.coord], [duration(getDistanceFromLatLonInKm(airports.SIA.coord, airports.LYR.coord),DG_80) * 1000], { rotationAngle: bearing(airports.SIA.coord, airports.LYR.coord) - 45, icon: large }).addTo(map); LY500.setOpacity(0);
-    var OA990 = L.Marker.movingMarker([airports.SIA.coord, airports.CRS.coord], [duration(getDistanceFromLatLonInKm(airports.SIA.coord, airports.CRS.coord),Spārtesôr_21) * 1000], { rotationAngle: bearing(airports.SIA.coord, airports.CRS.coord), icon: Spārtesôr}).addTo(map); OA990.setOpacity(0);
-    // var test0 = L.Marker.movingMarker([airports.STI.coord, airports.PHA.coord], [duration(getDistanceFromLatLonInKm(airports.STI.coord, airports.PHA.coord),DG_86) * 1000], { rotationAngle: bearing(airports.STI.coord, airports.PHA.coord) - 45, icon: large}).addTo(map); test0.setOpacity(0);
+    var LY500 = L.Marker.movingMarker([airports.SIA.coord, airports.LYR.coord], [duration(getDistanceFromLatLonInKm(airports.SIA.coord, airports.LYR.coord),aircrafts.DG_80.speed) * 1000], { rotationAngle: angle(airports.SIA.coord, airports.LYR.coord) - 45, icon: large }).addTo(map); LY500.setOpacity(0);
+    var OA990 = L.Marker.movingMarker([airports.SIA.coord, airports.CRS.coord], [duration(getDistanceFromLatLonInKm(airports.SIA.coord, airports.CRS.coord),Spārtesôr_21) * 1000], { rotationAngle: angle(airports.SIA.coord, airports.CRS.coord), icon: Spārtesôr}).addTo(map); OA990.setOpacity(0);
+    // var test0 = L.Marker.movingMarker([airports.STI.coord, airports.PHA.coord], [duration(getDistanceFromLatLonInKm(airports.STI.coord, airports.PHA.coord),DG_86) * 1000], { rotationAngle: angle(airports.STI.coord, airports.PHA.coord) - 45, icon: large}).addTo(map); test0.setOpacity(0);
 
     function makeMarker(from, to, aircraft, resource_name){
         var offset = 0;
         if (resource_name===large){offset = -45;}
-        return point = L.Marker.movingMarker([from, to], [duration(getDistanceFromLatLonInKm(from, to),aircraft) * 1000], { rotationAngle: bearing(from, to) + offset, icon: resource_name }).addTo(map);
+        return point = L.Marker.movingMarker([from, to], [duration(getDistanceFromLatLonInKm(from, to),aircraft) * 1000], { rotationAngle: angle(from, to) + offset, icon: resource_name }).addTo(map);
     }
    
     var test0 = makeMarker(airports.STI.coord, airports.PHA.coord, DG_86, large)

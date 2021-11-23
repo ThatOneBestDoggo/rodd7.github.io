@@ -37,6 +37,15 @@ function getDistanceFromLatLonInKm (from, to) {
     return Math.floor((bearing + 360) % 360);
   }
 
+  function angle(from, to) {
+    var dy = to[1] - from[1];
+    var dx = to[0] - from[0];
+    var theta = Math.atan2(dy, dx); 
+    theta *= 180 / Math.PI; 
+    //if (theta < 0) theta = 360 + theta; // range [0, 360)
+    return theta;
+  }
+
   function positionRetrieval (from, to, duration, elapsed){
     var latPosition = Math.abs(from[0]-to[0]) / duration; //y axis (latitude)
     var longPosition = Math.abs(from[1]-to[1]) / duration; //y axis (latitude)

@@ -24,7 +24,10 @@ const flag = `
     "CCA": "<img src='https://old.opengeofiction.wiki/images/thumb/4/4e/CCA-Flag2-01.jpg/1200px-CCA-Flag2-01.jpg' width='35'>",
     "Majesia": "<img src='https://old.opengeofiction.wiki/images/thumb/5/50/Majesia_flag.png/1200px-Majesia_flag.png' width='35'>",
     "Ruoguovvas": "<img src='https://old.opengeofiction.wiki/images/6/63/Ruoguovv%C3%A1s_flag.png' width='35'>",
-    "Bromley": "<img src='https://wiki.opengeofiction.net/images/3/3f/Bromley_Flag_Update_August_2021.png' width='35'>"
+    "Bromley": "<img src='https://wiki.opengeofiction.net/images/3/3f/Bromley_Flag_Update_August_2021.png' width='35'>",
+    "Suria": "<img src='https://wiki.opengeofiction.net/images/a/a4/Flag_of_Suria.png' width='35'>",
+    "Mauretia": ".",
+    "Adaria": "<img src='https://wiki.opengeofiction.net/images/1/17/Adariaflag.png' width='35'>"
    
     
     
@@ -1035,6 +1038,126 @@ const airport = `
         "WAAT": "BLM",
         "ANACA" : "NBRB",
         "runway": 1
+    },
+    "VDL": { 
+        "name": "Vandoveur-Laneston Baum National Airport",
+        "coord": [-19.3467,26.5691], 
+        "country": "Freedemia", 
+        "city":"Vandoveur", 
+        "class": "B", 
+        "WAAT": "VDL", 
+        "ANACA" : "MFVL", 
+        "runway": 2
+    },
+    "SVD": { 
+        "name": "Silverdale National Airport",
+        "coord": [-33.27132,143.98514], 
+        "country": "FSA", 
+        "city":"Silverdale", 
+        "class": "C", 
+        "WAAT": "SVD", 
+        "ANACA" : "BASD", 
+        "runway": 1
+    },
+    "IOL": { 
+        "name": "Iola International Skyport",
+        "coord": [27.7651, 43.6113],
+        "country": "Mauretia",
+        "city":"Iola",
+        "class": "A",
+        "WAAT": "IOL",
+        "ANACA" : "KIOL",
+        "runway": 3
+    },
+    "POM": { 
+        "name": "King Massuna International Skyport",
+        "coord": [26.3806, 44.0197],
+        "country": "Mauretia",
+        "city":"Pomalia",
+        "class": "B",
+        "WAAT": "POM",
+        "ANACA" : "KPOM",
+        "runway": 1
+    },
+    "SKY": { 
+        "name": "Salda–Kabyea International Skyport",
+        "coord": [29.0902, 43.979],
+        "country": "Mauretia",
+        "city":"Pomalia",
+        "class": "B",
+        "WAAT": "SKY",
+        "ANACA" : "KSKY",
+        "runway": 1
+    },
+    "MSY": { 
+        "name": "Sansa Yosefa Skyport",
+        "coord": [27.3187, 48.3804],
+        "country": "Mauretia",
+        "city":"Pomalia",
+        "class": "C",
+        "WAAT": "MSY",
+        "ANACA" : "NMSY",
+        "runway": 1
+    },
+    "KSM": { 
+        "name": "Sansu Mattiaù Skyport",
+        "coord": [28.8412, 43.5514],
+        "country": "Mauretia",
+        "city":"Pomalia",
+        "class": "C",
+        "WAAT": "KSM",
+        "ANACA" : "KMSM",
+        "runway": 1
+    },
+    "TAN": { 
+        "name": "Tangerine Coast International Skyport",
+        "coord": [24.3599, 44.3622],
+        "country": "Mauretia",
+        "city":"Tangia",
+        "class": "B",
+        "WAAT": "TAN",
+        "ANACA" : "KTAN",
+        "runway": 1
+    },
+    "MEG": { 
+        "name": "Gorgaya Islands Skyport",
+        "coord": [13.8817, 52.7912],
+        "country": "Mauretia",
+        "city":"Ilm Gorgaya",
+        "class": "C",
+        "WAAT": "MEG",
+        "ANACA" : "KMEG",
+        "runway": 1
+    },
+    "MKX": {
+        "name": "Minneuka International Airport",
+        "coord": [-37.8052, 148.762],
+        "country": "Federal States",
+        "city":"Minneuka",
+        "class": "A",
+        "WAAT": "MKX",
+        "ANACA" : "BAMK",
+        "runway": 3
+    },
+    "JDN": {
+        "name": "Jeidan Atârstaciunur",
+        "coord": [-58.70214, 54.87404],
+        "country": "Kwelede-peir",
+        "city":"Jeidan",
+        "class": "A",
+        "WAAT": "JDN",
+        "ANACA" : "OPJE",
+        "runway": 4
+    },
+    "MIR": {
+        "name": "Aèroport Mirgorod-Podlipovo",
+        "coord": [54.36229, 73.03692],
+        "country": "Suria",
+        "city":"Mirgorod",
+        "class": "A",
+        "WAAT": "MIR",
+        "ANACA" : "ISMI",
+        "runway": 3
     }
 
 
