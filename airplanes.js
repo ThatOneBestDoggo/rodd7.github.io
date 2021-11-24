@@ -1,13 +1,4 @@
-const standardairplane = 800;
 
-const Spārtesôr_21 = 1000; //Vistulin Spārtesôr 21
-const Contair_001 = 2200 //Contair 001 Superjet
-
-// const AV_Nie
-
-const DG_70 = 730; // MacDougall Graham DG-70 medium
-// const DG_80 = 800; // MacDougall Graham DG-80 medium
-const DG_86 = 820; // MacDougall Graham DG-86 large
 const W39_A = 825; // Watanabe W39-A large
 const W39_B = 828; // Watanabe W39-B large
 const AC51 = 835; // Aerotheon AC51 large
@@ -19,76 +10,149 @@ const aircraft = `
     "AV_GlobeMAX900": {
         "model": "AV-GlobeMAX900",
         "name": "AhkaaVuoi GlobeMAX900",
-        "speed": 1,
+        "speed": 900,
         "class": "Heavy Business Jet", 
-        "type": "medium",
-        "range": 1,
-        "capacity": 62,
-        "image": "none"
+        "type": "luxury",
+        "capacity": 62
     },
     "AV_Luossa400": {
         "model": "AV-Luossa400",
         "name": "AhkaaVuoi Luossa400",
         "speed": 1,
         "class": "Twin Turboprop", 
-        "range": "small",
-        "capacity": 8,
-        "image": "https://old.opengeofiction.wiki/images/thumb/5/57/AV-Luossa400_Allendean.png/1200px-AV-Luossa400_Allendean.png"
+        "type": "small",
+        "capacity": 8
     },
-    "AV_Blizzard-C50": {
+    "AV_Blizzard_C50": {
         "model": "AV-Blizzard-C50",
         "name": "AhkaaVuoi Blizzard-C50",
-        "speed": 1,
+        "speed": 550,
         "class": "Standard Turboprop", 
-        "range": "medium",
-        "capacity": 58,
-        "image": "https://old.opengeofiction.wiki/images/thumb/6/69/FreedemiAir_AhkaaVuoi_Blizzard.png/800px-FreedemiAir_AhkaaVuoi_Blizzard.png"
+        "type": "jet",
+        "capacity": 58
     },
     "AV_CLJ200": {
         "model": "AV-CLJ200",
         "name": "AhkaaVuoi CLJ200",
-        "speed": 1,
+        "speed": 870,
         "class": "Standard Business Jet", 
-        "range": "medium",
-        "capacity": 47,
-        "image": "https://old.opengeofiction.wiki/images/thumb/b/b8/Arctic_Airways_AV-CLJ200.png/1200px-Arctic_Airways_AV-CLJ200.png"
+        "type": "luxury",
+        "capacity": 47
     },
     "AV_Nieida200": {
         "model": "AV-Nieida200",
         "name": "AhkaaVuoi Nieida200",
-        "speed": 260,
+        "speed": 255,
         "class": "Twin Turboprop", 
-        "range": "small",
-        "capacity": 8,
-        "image": "https://old.opengeofiction.wiki/images/thumb/9/91/Island_Air_AV-Nieida200.png/1199px-Island_Air_AV-Nieida200.png"
+        "type": "small",
+        "capacity": 8
     },
     "DG_70": {
         "model": "DG-70",
         "name": "MacDougall Graham DG-70",
-        "speed": 730,
+        "speed": 775,
         "class": "Standard Jet Airliner", 
-        "range": "medium",
-        "capacity": 222,
-        "image": "none"
+        "type": "medium",
+        "capacity": 212
     },
     "DG_80": {
         "model": "DG-80",
         "name": "MacDougall Graham DG-80",
-        "speed": 800,
+        "speed": 820,
         "class": "Standard Jet Airliner", 
-        "range": "large",
-        "capacity": 292,
-        "image": "none"
+        "type": "medium",
+        "capacity": 292
     },
     "DG_86": {
         "model": "DG-86",
         "name": "MacDougall Graham DG-86",
+        "speed": 835,
+        "class": "Standard Jet Airliner", 
+        "type": "large",
+        "capacity": 372
+    },
+    "NM70": {
+        "model": "NM70",
+        "name": "Shobetsuki Aerospace \\"Nulbimyūha\\" NM70",
+        "speed": 810,
+        "class": "Standard Jet Airliner", 
+        "type": "medium",
+        "capacity": 75
+    },
+    "NM90": {
+        "model": "NM90",
+        "name": "Shobetsuki Aerospace \\"Nulbimyūha\\" NM90",
+        "speed": 810,
+        "class": "Standard Jet Airliner", 
+        "type": "medium",
+        "capacity": 94
+    },
+    "AV_Storm400": {
+        "model": "AV-Storm400",
+        "name": "AhkaaVuoi AV-Storm400",
+        "speed": 920,
+        "class": "Standard Business Jet", 
+        "type": "luxury",
+        "capacity": 28
+    },
+    "Contair_B20a": {
+        "model": "B20a",
+        "name": "Contair B20a",
+        "speed": 500,
+        "class": "Turboprop Regional Plane", 
+        "type": "small",
+        "capacity": 48
+    },
+    "SPT_21":{
+        "model": "SPT-21",
+        "name": "Vistulin Spārtesôr 21",
+        "speed": 943,
+        "class": "Light Business Jet", 
+        "type": "luxury",
+        "capacity": 26
+    },
+    "Contair_001":{
+        "model": "Contair 001",
+        "name": "Contair 001 SuperJet",
+        "speed": 2200,
+        "class": "Heavy Custom Jet", 
+        "type": "medium/contair-001",
+        "capacity": 112
+    },
+    "W34":{
+        "model": "W34",
+        "name": "Wātānābe Ärospás W34",
         "speed": 825,
         "class": "Standard Jet Airliner", 
-        "range": "large",
-        "capacity": 372,
-        "image": "https://old.opengeofiction.wiki/images/thumb/d/db/DG86_hetzair001a.jpg/450px-DG86_hetzair001a.jpg"
+        "type": "medium/contair-001",
+        "capacity": 172
+    },
+    "W36":{
+        "model": "W36",
+        "name": "Wātānābe Ärospás W36",
+        "speed": 835,
+        "class": "Standard Jet Airliner", 
+        "type": "medium/contair-001",
+        "capacity": 204
+    },
+    "W39":{
+        "model": "W39",
+        "name": "Wātānābe Ärospás W39",
+        "speed": 935,
+        "class": "Standard Jet Airliner", 
+        "type": "large",
+        "capacity": 292
+    },
+    "W39_B":{
+        "model": "W39-B",
+        "name": "Wātānābe Ärospás W39-B",
+        "speed": 935,
+        "class": "Standard Jet Airliner", 
+        "type": "large",
+        "capacity": 312
     }
+
+    
 }
 `
 
@@ -113,9 +177,8 @@ const aircraft = `
 
 
 //flights
-LY500popup = "<b>Yo</b>";
+// LY500popup = "<b>Yo</b>";
 
 
 //OhemiAir
 //Air Spi̊ritsā
-//Paxair 

@@ -28,7 +28,10 @@ const flag = `
     "Suria": "<img src='https://wiki.opengeofiction.net/images/a/a4/Flag_of_Suria.png' width='35'>",
     "Mauretia": "<img src='https://old.opengeofiction.wiki/images/c/c5/MauretiaFlag.svg' width='35'>",
     "Adaria": "<img src='https://wiki.opengeofiction.net/images/1/17/Adariaflag.png' width='35'>",
+    "Bai": "<img src='https://wiki.opengeofiction.net/images/d/d1/Bai_flag.png' width='35'>",
     "Aden": "<img src='https://wiki.opengeofiction.net/images/2/2d/Aden_New_Flag.png' width='35'>"
+
+    
     
     
     
@@ -1470,7 +1473,17 @@ const airport = `
         "WAAT": "COS",
         "ANACA" : "GPCO",
         "runway": 1
-    } 
+    },
+    "TOI": { 
+        "name": "Teotialtecoyan International Airport",
+        "coord": [-7.3969, 14.9629],
+        "country": "Teotiyolcan",
+        "city":"Teotialtecoyan",
+        "class": "A",
+        "WAAT": "TOI",
+        "ANACA" : "MTET",
+        "runway": 3
+}
 
 
 }`
@@ -1495,16 +1508,27 @@ function appendzone(x){
 }
 
 
+function zoneAdjust(x){
+    var zonenow = new Date();
+    var value = zonenow.addHours(x);
+
+
+    return value.getUTCHours() + ":" + value.getUTCMinutes();
+}
+
+Date.prototype.addHours = function(h) {
+    this.setTime(this.getTime() + (h*60*60*1000));
+    return this;
+  }
+
+
 function cityplaceholder(x){
     x = (typeof x !== 'undefined') ?  x : "";
     return x.toString();
 }
 
 function details (insert, flag, zone, text){
-    if (zone%1 != 0){
-        return "<b class='airportname'>" + insert.name + "</b> <p class= 'location'> <i>" + cityplaceholder(text) + " " + insert.city + ", " + insert.country + "</i> &nbsp  " + flag + "</p> <hr> <p class= 'location'> <b>Coordinates: </b>" + insert.coord + "</p> <table> <th></th><th></th>  <tr><td><b>WAAT: </b>" + insert.WAAT +"</td> <td><b>ANACA: </b>" + insert.ANACA +"</td> </tr> <tr><td><b>Runways: </b>" + insert.runway +"</td><td><b>Class: </b>" + insert.class +"</td> </tr></table> <p class= 'location'><b>Local Time: </b>" + Math.ceil((now.getUTCHours()+ zone%1 + 2)%24)  + ":" + addZero(now.getUTCMinutes() + 60*(zone%1))%60 + " (" +  appendzone(zone) + ")</p>";
-    }
-    return "<b class='airportname'>" + insert.name + "</b> <p class= 'location'> <i>" + cityplaceholder(text) + " " + insert.city + ", " + insert.country + "</i> &nbsp  " + flag + "</p> <hr> <p class= 'location'> <b>Coordinates: </b>" + insert.coord + "</p> <table> <th></th><th></th>  <tr><td><b>WAAT: </b>" + insert.WAAT +"</td> <td><b>ANACA: </b>" + insert.ANACA +"</td> </tr> <tr><td><b>Runways: </b>" + insert.runway +"</td><td><b>Class: </b>" + insert.class +"</td> </tr></table> <p class= 'location'><b>Local Time: </b>" + (now.getUTCHours()+ zone)%24  + ":" + addZero(now.getUTCMinutes()) + " (" +  appendzone(zone) + ")</p>";
+    return "<b class='airportname'>" + insert.name + "</b> <p class= 'location'> <i>" + cityplaceholder(text) + " " + insert.city + ", " + insert.country + "</i> &nbsp  " + flag + "</p> <hr> <p class= 'location'> <b>Coordinates: </b>" + insert.coord + "</p> <table> <th></th><th></th>  <tr><td><b>WAAT: </b>" + insert.WAAT +"</td> <td><b>ANACA: </b>" + insert.ANACA +"</td> </tr> <tr><td><b>Runways: </b>" + insert.runway +"</td><td><b>Class: </b>" + insert.class +"</td> </tr></table> <p class= 'location'><b>Local Time: </b>" + addZero(zoneAdjust(zone)) + " (" +  appendzone(zone) + ")</p>";
 
 }
 
