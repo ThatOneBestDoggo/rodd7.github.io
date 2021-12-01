@@ -9,7 +9,7 @@ function getDistanceFromLatLonInKm (from, to) {
       ; 
     var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
     var d = R * c; // Distance in km
-    return Math.round(d);
+    return d;
   }
   
   function deg2rad(deg) {

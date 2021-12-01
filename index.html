@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://wiki.opengeofiction.net/util/Leaflet.loading/src/Control.Loading.css" />
     <script src="https://wiki.opengeofiction.net/util/Leaflet.loading/src/Control.Loading.js"></script>
     <script src="https://wiki.opengeofiction.net/util/OGFUtil.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tools/style.css">
     <script src=" https://unpkg.com/@joergdietrich/leaflet.terminator@1.0.0/L.Terminator.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -16,19 +16,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     
-    <script src="leaflet.rotatedMarker.js"></script>
-    <script type="text/javascript" src="MovingMarker.js"></script>
+    <script src="tools/leaflet.rotatedMarker.js"></script>
+    <script src="tools/MovingMarker.js"></script>
     
     <script src="config.js"></script> <!--configuration and airports-->
     
     <script src="icons.js"></script> <!--icons for all markers-->
     <script src="time.js"></script> <!--dynamic time on browser-->
     <script src="airports.js"></script> <!--all airports-->
-    <script src="flights.js"></script> <!--all flight names for popup-->
+    <script src="airlines.js"></script> <!--airline list and logos-->
     <script src="airplanes.js"></script> <!--airplane models and speeds-->
-    
     <script src="math.js"></script> <!--math calculations-->
-    <script src="leaflet-zoom-show-hide.js"></script> <!--hide/show zoom dynamic-->
+    <script src="flights.js"></script> <!--all flight names for popup-->
+    <script src="popups.js"></script> <!--flight data for popups on map-->
+    
+
     
 </head>
 
@@ -41,6 +43,9 @@
     <div id="map"></div>
     <br><br><br>
     <b>Data pane under construction</b>
+
+    
+    
     
 </body>
 </html>

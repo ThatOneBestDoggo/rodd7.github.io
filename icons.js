@@ -13,6 +13,20 @@ var secondaryAirport = L.icon({
 });
 
 var tertiaryAirport = L.icon({
+    iconUrl: 'resources/greenmarker.png',
+    iconSize: [17, 17],
+    iconAnchor: [7, 14],
+    popupAnchor: [2, -18],
+});
+
+var militaryAirport = L.icon({
+    iconUrl: 'resources/blackmarker.png',
+    iconSize: [17, 17],
+    iconAnchor: [7, 14],
+    popupAnchor: [2, -18],
+});
+
+var generalAirport = L.icon({
     iconUrl: 'resources/greymarker.png',
     iconSize: [17, 17],
     iconAnchor: [7, 14],
@@ -24,7 +38,7 @@ var small = L.icon({
     iconUrl: 'resources/small.png',
     iconSize: [15, 15],
     iconAnchor: [8, 10],
-    popupAnchor: [5, -20],
+    popupAnchor: [6, -20],
 });
 var jet = L.icon({
     iconUrl: 'resources/luxury.png',
@@ -42,7 +56,7 @@ var large = L.icon({
     iconUrl: 'resources/airplane_largeY.png',
     iconSize: [17, 17],
     iconAnchor: [8, 10],
-    popupAnchor: [5, -20],
+    popupAnchor: [0, -20],
 });
 
 
@@ -69,4 +83,11 @@ var luxury = L.icon({
     iconSize: [16, 16],
     iconAnchor: [8, 10],
     popupAnchor: [-1, -20],
+});
+
+var nofly = L.icon({
+    iconUrl: 'resources/noflyzone.png',
+    iconSize: [20, 20],
+    iconAnchor: [8, 10],
+    popupAnchor: [5, -10],
 });

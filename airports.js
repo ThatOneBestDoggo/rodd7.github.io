@@ -55,7 +55,7 @@ const airport = `
         "coord": [-33.09586, 35.44253], 
         "country": "Ohemia",
         "city" : "Soprasser",
-        "class": "A",
+        "class": "B",
         "WAAT": "SIA",
         "ANACA" : "NOSO",
         "runway": 2
@@ -205,7 +205,7 @@ const airport = `
         "coord": [16.5943, 53.6345], 
         "country": "Arion",
         "city": "Cretra",
-        "class": "A",
+        "class": "B",
         "WAAT": "KRI",
         "ANACA" : "KARK",
         "runway": 2
@@ -1061,7 +1061,7 @@ const airport = `
         "city":"Silverdale", 
         "class": "C", 
         "WAAT": "SVD", 
-        "ANACA" : "BASD", 
+        "ANACA" : "BASV", 
         "runway": 1
     },
     "IOL": { 
@@ -1483,7 +1483,177 @@ const airport = `
         "WAAT": "TOI",
         "ANACA" : "MTET",
         "runway": 3
-}
+    },
+    "LIS": { 
+        "name": "Aérogare Line - Sandra Baudoin",
+        "coord": [60.8528,48.4490],
+        "country": "Vilvetia",
+        "city":"Line",
+        "class": "B",
+        "WAAT": "LIS",
+        "ANACA" : "JVSB",
+        "runway": 2
+    },
+    "TTD": { 
+        "name": "Aéroport International de Thamistyr - Théo Drasson",
+        "coord": [60.05941,49.46487],
+        "country": "Vilvetia",
+        "city":"Thamistyr",
+        "class": "A",
+        "WAAT": "TTD",
+        "ANACA" : "JTTD",
+        "runway": 4
+    },
+    "WCA": { 
+        "name": "Wytusky Commerce Airport",
+        "coord": [-42.5771,142.0275],
+        "country": "Federal States of Archanta",
+        "city":"Wytusky",
+        "class": "B",
+        "WAAT": "WCA",
+        "ANACA" : "WCEA",
+        "runway": 2
+    },
+    "WMD": { 
+        "name": "Wychelle Mark Dairy International Airport",
+        "coord": [-42.6023,140.9472],
+        "country": "Federal States of Archanta",
+        "city":"Wychelle",
+        "class": "B",
+        "WAAT": "WMD",
+        "ANACA" : "WMDI",
+        "runway": 2
+    },
+    "CCR": { 
+        "name": "Copper Creek Regional Airport",
+        "coord": [-42.1593,141.4169],
+        "country": "Federal States of Archanta",
+        "city":"Copper Creek",
+        "class": "C",
+        "WAAT": "CCR",
+        "ANACA" : "COCR",
+        "runway": 1
+    },
+    "VMW": { 
+        "name": "Varnel Marcus Wong Regional Airport",
+        "coord": [-42.6871, 143.0631],
+        "country": "Federal States of Archanta",
+        "city":"Varnel",
+        "class": "C",
+        "WAAT": "VMW",
+        "ANACA" : "VMWR",
+        "runway": 2
+    },
+    "MGX": { 
+        "name": "Margaux Airport",
+        "coord": [-44.2752, 143.2485],
+        "country": "Federal States of Archanta",
+        "city":"Ste. Margaux",
+        "class": "B",
+        "WAAT": "MGX",
+        "ANACA" : "MRGX",
+        "runway": 1
+    },
+    "WFF": { 
+        "name": "Wallawaukee Foley-Fillmore International Airport",
+        "coord": [ -41.8268, 143.8076],
+        "country": "Federal States of Archanta",
+        "city":"Wallawaukee",
+        "class": "A",
+        "WAAT": "WFF",
+        "ANACA" : "BAWF",
+        "runway": 4
+    },
+    "WVN": { 
+        "name": "Wallawaukee Vernon International Airport",
+        "coord": [ -41.7064, 144.0846],
+        "country": "Federal States of Archanta",
+        "city":"Wallawaukee",
+        "class": "B",
+        "WAAT": "WVN",
+        "ANACA" : "BAWV",
+        "runway": 1
+    },
+    "KSE": { 
+        "name": "Kaiiroti a Kaselai - Krapatai",
+        "coord": [ -33.8826, 76.6963],
+        "country": "Taranrii",
+        "city":"Kaselai",
+        "class": "A",
+        "WAAT": "KSE",
+        "ANACA" : "OTKS",
+        "runway": 1
+    },
+    "WHN": { 
+        "name": "Whangiora Airport", 
+        "coord": [-55.05670, 219.81114], 
+        "country": "Aorangēa", 
+        "city":"Whangiora", 
+        "class": "A", 
+        "WAAT": "WHN", 
+        "ANACA" : "????", 
+        "runway": 3 
+    },  
+    "NAO": { 
+        "name": "Nao Rānga Airport", 
+        "coord": [-56.6503,220.7886], 
+        "country": "Aorangēa", 
+        "city":"Otāngia", 
+        "class": "A", 
+        "WAAT": "NAO", 
+        "ANACA" : "????", 
+        "runway": 1 
+    },
+    "FWM": { 
+        "name": "Fawltryncham Airport", 
+        "coord": [-55.6053115,221.2533186], 
+        "country": "East Anglesbury", 
+        "city":"Fawltryncham", 
+        "class": "A", 
+        "WAAT": "FWM", 
+        "ANACA" : "????", 
+        "runway": 1 
+    }, 
+    "BBH": { 
+        "name": " Blueberry Hill", 
+        "coord": [-33.0751,223.443], 
+        "country": "Aorangēa", 
+        "city":"Rainbow's End", 
+        "class": "A", 
+        "WAAT": "BBH", 
+        "ANACA" : "????", 
+        "runway": 1 
+    }, 
+    "RBI": { 
+        "name": "Redbeard's Island Airport", 
+        "coord": [-56.6662268,218.8500593], 
+        "country": "Aorangēa", 
+        "city":"Redbeard's Island", 
+        "class": "B", 
+        "WAAT": "RBI", 
+        "ANACA" : "????", 
+        "runway": 1 
+    }, 
+    "YOU": { 
+        "name": "Youcester Airport", 
+        "coord": [-57.1597057,222.295303], 
+        "country": "Aorangēa", 
+        "city":"Youcester ", 
+        "class": "B", 
+        "WAAT": "YOU", 
+        "ANACA" : "????", 
+        "runway": 1 
+    },
+    "ACS": { 
+        "name": "Astoria Cedric Stewart International Airport", 
+        "coord": [43.5687,138.1599], 
+        "country": "Lucenius", 
+        "city":"Astoria", 
+        "class": "A", 
+        "WAAT": "ACS", 
+        "ANACA" : "????", 
+        "runway": 4
+    }
 
 
 }`
@@ -1511,9 +1681,14 @@ function appendzone(x){
 function zoneAdjust(x){
     var zonenow = new Date();
     var value = zonenow.addHours(x);
+    var temp;
+    if (value.getUTCMinutes() < 10) {
+        temp = "0" + value.getUTCMinutes();
+    } else{
+        temp = value.getUTCMinutes();
+    }
 
-
-    return value.getUTCHours() + ":" + value.getUTCMinutes();
+    return value.getUTCHours() + ":" + temp;
 }
 
 Date.prototype.addHours = function(h) {
