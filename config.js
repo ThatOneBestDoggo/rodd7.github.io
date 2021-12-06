@@ -214,6 +214,7 @@ function loadMap() {
 
         //functions
         createDuringFlight(LY500live,LY500popup,airports.SIA.coord,airports.LYR.coord,aircrafts.AV_Nieida200.speed,LY500,small);
+
         createDuringFlight(UE403live,UE403popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed,UE403,medium);
         createDuringFlight(UE405live,UE405popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed,UE405,medium);
         createDuringFlight(UE407live,UE407popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W34.speed,UE407,medium);
@@ -221,7 +222,7 @@ function loadMap() {
         createDuringFlight(UE411live,UE411popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed,UE411,medium);
         createDuringFlight(UE413live,UE413popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed,UE413,medium);
         createDuringFlight(UE415live,UE415popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed,UE415,medium);
-        createDuringFlight(UE4017live,UE417popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36_B.speed,UE417,medium);
+        createDuringFlight(UE417live,UE417popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W39_B.speed,UE417,medium);
         createDuringFlight(UE419live,UE419popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed,UE419,medium);
 
     }
