@@ -1,5 +1,5 @@
 const worldstar = "<img src='https://old.opengeofiction.wiki/images/thumb/c/cd/WorldstarLogo.png/515px-WorldstarLogo.png' width='15'";
-
+const onesky = "<img src='https://old.opengeofiction.wiki/images/thumb/0/0b/OneSkyLogo.png/1198px-OneSkyLogo.png' width='65'";
 const airline = `
 {
     "LY": {
@@ -106,7 +106,22 @@ const airline = `
         "callsign": "Allendea",
         "image": "https://media.discordapp.net/attachments/823549222347472916/914611154758828122/unknown.png",
         "alliance": "WorldStar"
-    }
+    },
+    "PV": {
+        "name": "Air Plevia",
+        "WAAT": "PV", 
+        "callsign": "Pleviair",
+        "image": "https://cdn.discordapp.com/attachments/801828295661584444/915939321549303879/unknown.png ",
+        "alliance": ""
+    },
+    "VO": {
+        "name": "Volare Barzona",
+        "WAAT": "VO", 
+        "callsign": "Volare",
+        "image": "https://media.discordapp.net/attachments/913558405220802592/915807410281644042/unknown.png ",
+        "alliance": ""
+    } 
+
 
 
 }

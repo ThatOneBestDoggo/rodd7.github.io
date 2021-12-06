@@ -59,6 +59,6 @@ function getDistanceFromLatLonInKm (from, to) {
       return [from[0] + (Math.abs(elapsed) * latPosition), from[1] - (Math.abs(elapsed) * longPosition)];
     }
     if (from[0] < to[0] && from[1] < to[1]){
-      return [from[0] - (Math.abs(elapsed) * latPosition), from[1] + (Math.abs(elapsed) * longPosition)];
+      return [from[0] + (Math.abs(elapsed) * latPosition), from[1] + (Math.abs(elapsed) * longPosition)];
     }
   }

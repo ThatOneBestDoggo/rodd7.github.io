@@ -1653,7 +1653,88 @@ const airport = `
         "WAAT": "ACS", 
         "ANACA" : "????", 
         "runway": 4
+    },
+    "JHD": {
+        "name": "Jhuandan International Airport", 
+        "coord":  [-23.9094, 32.7266], 
+        "country": "Freedemia",
+        "city" : "Jhuandan",
+        "class": "A",
+        "WAAT": "JHD",
+        "ANACA" : "MFJD",
+        "runway": 3
+    },
+    "JHA": {
+        "name": "Jhuandan Peninsula Airfield", 
+        "coord":  [-23.7600, 32.9208], 
+        "country": "Freedemia",
+        "city" : "Jhuandan",
+        "class": "B",
+        "WAAT": "JHA",
+        "ANACA" : "MFJA",
+        "runway": 2
+    },
+    "GWP": {
+        "name": "Gobras City International Worldport", 
+        "coord":  [20.7109, 86.5735], 
+        "country": "Gobrassanya",
+        "city" : "Gobras City",
+        "class": "A",
+        "WAAT": "GWP",
+        "ANACA" : "GGWP",
+        "runway": 5
+    },
+    "BAB": {
+        "name": "Aeroport Internacional na Barzona Almirante Barrigan", 
+        "coord":  [-12.6905, 18.5278], 
+        "country": "Barzona",
+        "city" : "Barzona",
+        "class": "B",
+        "WAAT": "BAB",
+        "ANACA" : "MBBA",
+        "runway": 1
+    },
+    "MON": {
+        "name": "Mondier Airport", 
+        "coord":  [-15.1530, 20.3594], 
+        "country": "Barzona",
+        "city" : "Mondier",
+        "class": "C",
+        "WAAT": "MON",
+        "ANACA" : "MBMO",
+        "runway": 1
+    },
+    "NAR": {
+        "name": "Narvas Airport", 
+        "coord":  [-15.1570, 18.1304], 
+        "country": "Barzona",
+        "city" : "Narvas",
+        "class": "C",
+        "WAAT": "NAR",
+        "ANACA" : "MBNA",
+        "runway": 1
+    },
+    "MTF": {
+        "name": "Montfort Airport", 
+        "coord":  [-19.6776, 18.9059], 
+        "country": "Barzona",
+        "city" : "Simonet",
+        "class": "C",
+        "WAAT": "MFT",
+        "ANACA" : "MBMF",
+        "runway": 1 
+    },
+    "CMR": {
+        "name": "Camarere Airport", 
+        "coord":  [14.37145, 18.52923], 
+        "country": "Barzona",
+        "city" : "Port-Camarere",
+        "class": "C",
+        "WAAT": "CMR",
+        "ANACA" : "MBCM",
+        "runway": 1
     }
+
 
 
 }`

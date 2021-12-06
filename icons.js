@@ -50,7 +50,7 @@ var medium = L.icon({
     iconUrl: 'resources/medium.png',
     iconSize: [18, 18],
     iconAnchor: [8, 10],
-    popupAnchor: [5, -20],
+    popupAnchor: [0, -20],
 });
 var large = L.icon({
     iconUrl: 'resources/airplane_largeY.png',
