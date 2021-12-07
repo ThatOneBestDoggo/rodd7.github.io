@@ -102,7 +102,20 @@ const flight = `
         "aircraft": "W36",
         "age": "2020",
         "opt_livery": ""
+    },
+
+    "FR015": {
+        "name": "FR015", 
+        "liftoff_hour": 7,
+        "liftoff_minute": 45,
+        "from_WAAT": "SBD",
+        "to_WAAT": "LCX",
+        "aircraft": "W36",
+        "age": "2007",
+        "opt_livery": ""
     }
+
+
 }
 `
 

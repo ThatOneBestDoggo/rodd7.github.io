@@ -213,17 +213,19 @@ function loadMap() {
         }
 
         //functions
-        createDuringFlight(LY500live,LY500popup,airports.SIA.coord,airports.LYR.coord,aircrafts.AV_Nieida200.speed,LY500,small);
+        createDuringFlight(LY500live,LY500popup,airports.SIA.coord,airports.LYR.coord,aircrafts.AV_Nieida200.cruise,LY500,small);
 
-        createDuringFlight(UE403live,UE403popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed,UE403,medium);
-        createDuringFlight(UE405live,UE405popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed,UE405,medium);
-        createDuringFlight(UE407live,UE407popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W34.speed,UE407,medium);
-        createDuringFlight(UE409live,UE409popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed,UE409,medium);
-        createDuringFlight(UE411live,UE411popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed,UE411,medium);
-        createDuringFlight(UE413live,UE413popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed,UE413,medium);
-        createDuringFlight(UE415live,UE415popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed,UE415,medium);
-        createDuringFlight(UE417live,UE417popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W39_B.speed,UE417,medium);
-        createDuringFlight(UE419live,UE419popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed,UE419,medium);
+        createDuringFlight(UE403live,UE403popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise,UE403,medium);
+        createDuringFlight(UE405live,UE405popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise,UE405,medium);
+        createDuringFlight(UE407live,UE407popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W34.cruise,UE407,medium);
+        createDuringFlight(UE409live,UE409popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise,UE409,medium);
+        createDuringFlight(UE411live,UE411popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise,UE411,medium);
+        createDuringFlight(UE413live,UE413popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise,UE413,medium);
+        createDuringFlight(UE415live,UE415popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise,UE415,medium);
+        createDuringFlight(UE417live,UE417popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W39_B.cruise,UE417,medium);
+        createDuringFlight(UE419live,UE419popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise,UE419,medium);
+
+        createDuringFlight(FR015live,FR015popup,airports.SBD.coord,airports.LCX.coord,aircrafts.W36.cruise,FR015,medium);
 
     }
     
@@ -243,6 +245,7 @@ function loadMap() {
         const UE417schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE417.liftoff_hour, flights.UE417.liftoff_minute, 0);
         const UE419schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE419.liftoff_hour, flights.UE419.liftoff_minute, 0);
 
+        const FR015schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.FR015.liftoff_hour, flights.FR015.liftoff_minute, 0);
 
         //main
         function createBeforeLift(scheduleVar,visibleBeforeSeconds,invisibleAfterSeconds,markerVar,popup,from,to,aircraft){
@@ -250,16 +253,17 @@ function loadMap() {
             if ((scheduleVar-now)/1000 <= -1 * duration(getDistanceFromLatLonInKm(from, to),aircraft)  && (scheduleVar-now)/1000 >=  (-1 * duration(getDistanceFromLatLonInKm(from, to),aircraft) - invisibleAfterSeconds)){markerVar.stop(); markerVar.setOpacity(1)} else { if ((scheduleVar-now)/1000 < (-1 * duration(getDistanceFromLatLonInKm(from, to),aircraft) - invisibleAfterSeconds)){ markerVar.setOpacity(0)}};
         }
         //functions
-        createBeforeLift(LY500schedule,60*60,60*30,LY500,LY500popup,airports.SIA.coord,airports.LYR.coord,aircrafts.AV_Nieida200.speed);
-        createBeforeLift(UE403schedule,60*60,60*30,UE403,UE403popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed);
-        createBeforeLift(UE405schedule,60*60,60*30,UE405,UE405popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed);
-        createBeforeLift(UE407schedule,60*60,60*30,UE407,UE407popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W34.speed);
-        createBeforeLift(UE409schedule,60*60,60*30,UE409,UE409popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed);
-        createBeforeLift(UE411schedule,60*60,60*30,UE411,UE411popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed);
-        createBeforeLift(UE413schedule,60*60,60*30,UE413,UE413popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed);
-        createBeforeLift(UE415schedule,60*60,60*30,UE415,UE415popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed);
-        createBeforeLift(UE417schedule,60*60,60*30,UE417,UE417popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W39_B.speed);
-        createBeforeLift(UE419schedule,60*60,60*30,UE419,UE419popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.speed);
+        createBeforeLift(LY500schedule,60*60,60*30,LY500,LY500popup,airports.SIA.coord,airports.LYR.coord,aircrafts.AV_Nieida200.cruise);
+        createBeforeLift(UE403schedule,60*60,60*30,UE403,UE403popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise);
+        createBeforeLift(UE405schedule,60*60,60*30,UE405,UE405popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise);
+        createBeforeLift(UE407schedule,60*60,60*30,UE407,UE407popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W34.cruise);
+        createBeforeLift(UE409schedule,60*60,60*30,UE409,UE409popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise);
+        createBeforeLift(UE411schedule,60*60,60*30,UE411,UE411popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise);
+        createBeforeLift(UE413schedule,60*60,60*30,UE413,UE413popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise);
+        createBeforeLift(UE415schedule,60*60,60*30,UE415,UE415popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise);
+        createBeforeLift(UE417schedule,60*60,60*30,UE417,UE417popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W39_B.cruise);
+        createBeforeLift(UE419schedule,60*60,60*30,UE419,UE419popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise);
+        createBeforeLift(FR015schedule,60*60,60*30,FR015,FR015popup,airports.SBD.coord,airports.LCX.coord,aircrafts.W36.cruise);
         
 
 
@@ -289,18 +293,20 @@ function loadMap() {
     const UE417live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE417.liftoff_hour, flights.UE417.liftoff_minute, 0);
     const UE419live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE419.liftoff_hour, flights.UE419.liftoff_minute, 0);
 
-    var LY500 = makeMarker(airports.SIA.coord, airports.LYR.coord, aircrafts.AV_Nieida200.speed, small); LY500.setOpacity(0);
-    // var UE400 = makeMarker(airports.KNU.coord, airports.SAG.coord, aircrafts.W36.speed, medium); UE400.setOpacity(0);
-    var UE403 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.speed, medium); UE403.setOpacity(0);
-    var UE405 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.speed, medium); UE405.setOpacity(0);
-    var UE407 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W34.speed, medium); UE407.setOpacity(0);
-    var UE409 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.speed, medium); UE409.setOpacity(0);
-    var UE411 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.speed, medium); UE411.setOpacity(0);
-    var UE413 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.speed, medium); UE413.setOpacity(0);
-    var UE415 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.speed, medium); UE415.setOpacity(0);
-    var UE417 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W39_B.speed, medium); UE417.setOpacity(0);
-    var UE419 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.speed, medium); UE419.setOpacity(0);
-    
+    const FR015live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.FR015.liftoff_hour, flights.FR015.liftoff_minute, 0);
+
+    var LY500 = makeMarker(airports.SIA.coord, airports.LYR.coord, aircrafts.AV_Nieida200.cruise, small); LY500.setOpacity(0);
+    // var UE400 = makeMarker(airports.KNU.coord, airports.SAG.coord, aircrafts.W36.cruise, medium); UE400.setOpacity(0);
+    var UE403 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.cruise, medium); UE403.setOpacity(0);
+    var UE405 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.cruise, medium); UE405.setOpacity(0);
+    var UE407 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W34.cruise, medium); UE407.setOpacity(0);
+    var UE409 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.cruise, medium); UE409.setOpacity(0);
+    var UE411 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.cruise, medium); UE411.setOpacity(0);
+    var UE413 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.cruise, medium); UE413.setOpacity(0);
+    var UE415 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.cruise, medium); UE415.setOpacity(0);
+    var UE417 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W39_B.cruise, medium); UE417.setOpacity(0);
+    var UE419 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.W36.cruise, medium); UE419.setOpacity(0);
+    var FR015 = makeMarker(airports.SBD.coord, airports.LCX.coord, aircrafts.W36.cruise, medium); FR015.setOpacity(0);
     live();
     schedule();
 
