@@ -37,10 +37,10 @@ function loadMap() {
     L.marker(airports.TZY.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.TZY, flags.Lany, 5));
     L.marker(airports.AMB.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.AMB, flags.Barzona, 1));
     L.marker(airports.TSA.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.TSA, flags.Arecales, 11.5));
-    L.marker(airports.DIA.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.DIA, flags.FSA, 0));
-    L.marker(airports.ELR.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.ELR, flags.FSA, 0));
-    L.marker(airports.LON.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.LON, flags.FSA, 0));
-    L.marker(airports.SDA.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.SDA, flags.FSA, 0));
+    L.marker(airports.DIA.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.DIA, flags.FSA, 9));
+    L.marker(airports.ELR.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.ELR, flags.FSA, 9));
+    L.marker(airports.LON.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.LON, flags.FSA, 9));
+    L.marker(airports.SDA.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.SDA, flags.FSA, 9));
     L.marker(airports.ARC.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.ARC, flags.Arecales, 11.5));
     L.marker(airports.SJA.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.SJA, flags.Arecales, 11.5));
     L.marker(airports.SCR.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.SCR, flags.Arecales, 11.5));
@@ -127,7 +127,7 @@ function loadMap() {
     L.marker(airports.LGD.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.LGD, flags.Ruoguovvas, 2, "<img src='https://old.opengeofiction.wiki/images/f/ff/Jiemiasflag.png' width='35'> &nbsp"));
     L.marker(airports.BLM.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.BLM, flags.Bromley, 3));
     L.marker(airports.VDL.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.VDL, flags.Freedemia, 2));
-    L.marker(airports.SVD.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.SVD, flags.FSA, 0));
+    L.marker(airports.SVD.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.SVD, flags.FSA, 9));
     L.marker(airports.IOL.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.IOL, flags.Mauretia, 2.5));
     L.marker(airports.POM.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.POM, flags.Mauretia, 2.5));
     L.marker(airports.SKY.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.SKY, flags.Mauretia, 2.5));
@@ -232,10 +232,10 @@ function loadMap() {
         var today = new Date();
         var now = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), today.getUTCHours(), today.getUTCMinutes(), today.getUTCSeconds());
         //schedule
-        const LY500schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 1, 0, 0, 0);
+        const LY500schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 0, 0, 0);
         const UE403schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE403.liftoff_hour, flights.UE403.liftoff_minute, 0);
         const UE405schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE405.liftoff_hour, flights.UE405.liftoff_minute, 0);
-        const UE407schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE405.liftoff_hour, flights.UE407.liftoff_minute, 0);
+        const UE407schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE407.liftoff_hour, flights.UE407.liftoff_minute, 0);
         const UE409schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE409.liftoff_hour, flights.UE409.liftoff_minute, 0);
         const UE411schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE411.liftoff_hour, flights.UE411.liftoff_minute, 0);
         const UE413schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE413.liftoff_hour, flights.UE413.liftoff_minute, 0);
@@ -277,11 +277,11 @@ function loadMap() {
 
     
         
-    const LY500live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 1, 23, 10, 0);
+    const LY500live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), 0, 0, 0);
     // const UE400live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), 20, 23, 10, 0);
     const UE403live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE403.liftoff_hour, flights.UE403.liftoff_minute, 0);
     const UE405live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE405.liftoff_hour, flights.UE405.liftoff_minute, 0);
-    const UE407live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE405.liftoff_hour, flights.UE407.liftoff_minute, 0);
+    const UE407live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE407.liftoff_hour, flights.UE407.liftoff_minute, 0);
     const UE409live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE409.liftoff_hour, flights.UE409.liftoff_minute, 0);
     const UE411live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE411.liftoff_hour, flights.UE411.liftoff_minute, 0);
     const UE413live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE413.liftoff_hour, flights.UE413.liftoff_minute, 0);

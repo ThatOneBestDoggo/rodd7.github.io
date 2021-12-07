@@ -80,10 +80,10 @@ function flightdetail(flightobject, airlineobject, optcollab, image, fromZone, t
 var LY500popup = flightdetail("LY", "LY", "Operated by OhemiAir", pic1, 2, 3, flags.Ohemia, worldstar);
 var UE403popup = flightdetail("UE403", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
 var UE405popup = flightdetail("UE405", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
-var UE407popup = flightdetail("UE407", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
+var UE407popup = flightdetail("UE407", "UE", "", aircrafts.W34.image, 8, 8, flags.Izaland, onesky);
 var UE409popup = flightdetail("UE409", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
 var UE411popup = flightdetail("UE411", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
 var UE413popup = flightdetail("UE413", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
 var UE415popup = flightdetail("UE415", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
-var UE417popup = flightdetail("UE417", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
+var UE417popup = flightdetail("UE417", "UE", "", aircrafts.W36_B.image, 8, 8, flags.Izaland, onesky);
 var UE419popup = flightdetail("UE419", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
