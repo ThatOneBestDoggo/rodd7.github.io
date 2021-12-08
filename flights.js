@@ -13,6 +13,16 @@ const flight = `
         "age": "2016",
         "opt_livery": ""
     },
+    "UE401": {
+        "name": "UE401", 
+        "liftoff_hour": 23,
+        "liftoff_minute": 35,
+        "from_WAAT": "SAG",
+        "to_WAAT": "KNU",
+        "aircraft": "NM90",
+        "age": "2017",
+        "opt_livery": ""
+    },
     "UE403": {
         "name": "UE403", 
         "liftoff_hour": 0,
@@ -103,7 +113,36 @@ const flight = `
         "age": "2020",
         "opt_livery": ""
     },
-
+    "UE421": {
+        "name": "UE421", 
+        "liftoff_hour": 14,
+        "liftoff_minute": 25,
+        "from_WAAT": "SAG",
+        "to_WAAT": "KNU",
+        "aircraft": "W34",
+        "age": "2008",
+        "opt_livery": ""
+    },
+    "UE400": {
+        "name": "UE400", 
+        "liftoff_hour": 22,
+        "liftoff_minute": 15,
+        "from_WAAT": "KNU",
+        "to_WAAT": "SAG",
+        "aircraft": "W39_B",
+        "age": "2020",
+        "opt_livery": ""
+    },
+    "FR001": {
+        "name": "FR001", 
+        "liftoff_hour": 18,
+        "liftoff_minute": 30,
+        "from_WAAT": "SBD",
+        "to_WAAT": "GWP",
+        "aircraft": "W39",
+        "age": "2016",
+        "opt_livery": ""
+    },
     "FR015": {
         "name": "FR015", 
         "liftoff_hour": 7,
@@ -112,6 +151,26 @@ const flight = `
         "to_WAAT": "LCX",
         "aircraft": "W36",
         "age": "2007",
+        "opt_livery": ""
+    },
+    "FR017": {
+        "name": "FR017", 
+        "liftoff_hour": 10,
+        "liftoff_minute": 45,
+        "from_WAAT": "SBD",
+        "to_WAAT": "LCX",
+        "aircraft": "W36",
+        "age": "2007",
+        "opt_livery": ""
+    },
+    "FR019": {
+        "name": "FR019", 
+        "liftoff_hour": 14,
+        "liftoff_minute": 45,
+        "from_WAAT": "SBD",
+        "to_WAAT": "LCX",
+        "aircraft": "W36",
+        "age": "2009",
         "opt_livery": ""
     }
 

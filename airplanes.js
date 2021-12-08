@@ -74,7 +74,7 @@ const aircraft = `
     "NM70": {
         "model": "NM70",
         "name": "Shobetsuki Aerospace \\"Nulbimyūha\\" NM70",
-        "cruise": 810,
+        "cruise": 800,
         "class": "Standard Jet Airliner", 
         "type": "medium",
         "capacity": 75
@@ -82,7 +82,7 @@ const aircraft = `
     "NM90": {
         "model": "NM90",
         "name": "Shobetsuki Aerospace \\"Nulbimyūha\\" NM90",
-        "cruise": 810,
+        "cruise": 800,
         "class": "Standard Jet Airliner", 
         "type": "medium",
         "capacity": 94
@@ -196,7 +196,7 @@ const aircraft = `
     "W36":{
         "model": "W36",
         "name": "Wātānābe Ärospás W36",
-        "cruise": 820,
+        "cruise": 821,
         "class": "Standard Jet Airliner", 
         "type": "medium",
         "capacity": 204,
@@ -206,7 +206,7 @@ const aircraft = `
         "model": "W39",
         "name": "Wātānābe Ärospás W39",
         "cruise": 885,
-        "class": "Standard Jet Airliner", 
+        "class": "Large Jet Airliner", 
         "type": "large",
         "capacity": 292,
         "image": "https://old.opengeofiction.wiki/images/9/95/Guai_Airways_W39-b.jpg"
@@ -215,7 +215,7 @@ const aircraft = `
         "model": "W39-B",
         "name": "Wātānābe Ärospás W39-B",
         "speed": 905,
-        "class": "Standard Jet Airliner", 
+        "class": "Large Jet Airliner", 
         "type": "large",
         "capacity": 312,
         "image": "https://old.opengeofiction.wiki/images/9/95/Guai_Airways_W39-b.jpg"
