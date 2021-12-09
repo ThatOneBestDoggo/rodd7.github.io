@@ -143,6 +143,16 @@ const flight = `
         "age": "2016",
         "opt_livery": ""
     },
+    "FR002": {
+        "name": "FR002", 
+        "liftoff_hour": 7,
+        "liftoff_minute": 40,
+        "from_WAAT": "GWP",
+        "to_WAAT": "SBD",
+        "aircraft": "W39",
+        "age": "2016",
+        "opt_livery": ""
+    },
     "FR015": {
         "name": "FR015", 
         "liftoff_hour": 7,
@@ -171,6 +181,46 @@ const flight = `
         "to_WAAT": "LCX",
         "aircraft": "W36",
         "age": "2009",
+        "opt_livery": ""
+    },
+    "FR016": {
+        "name": "FR016", 
+        "liftoff_hour": 23,
+        "liftoff_minute": 45,
+        "from_WAAT": "LCX",
+        "to_WAAT": "SBD",
+        "aircraft": "W36",
+        "age": "2007",
+        "opt_livery": ""
+    },
+    "FR018": {
+        "name": "FR016", 
+        "liftoff_hour": 2,
+        "liftoff_minute": 45,
+        "from_WAAT": "LCX",
+        "to_WAAT": "SBD",
+        "aircraft": "W36",
+        "age": "2007",
+        "opt_livery": ""
+    },
+    "FR020": {
+        "name": "FR016", 
+        "liftoff_hour": 6,
+        "liftoff_minute": 45,
+        "from_WAAT": "LCX",
+        "to_WAAT": "SBD",
+        "aircraft": "W36",
+        "age": "2009",
+        "opt_livery": ""
+    },
+    "LT001": {
+        "name": "LT001", 
+        "liftoff_hour": 2,
+        "liftoff_minute": 30,
+        "from_WAAT": "AMB",
+        "to_WAAT": "SBD",
+        "aircraft": "Contair_D20a",
+        "age": "2019",
         "opt_livery": ""
     }
 

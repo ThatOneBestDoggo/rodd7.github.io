@@ -161,7 +161,7 @@ const aircraft = `
     "Contair_D20a": {
         "model": "D20a",
         "name": "Contair D20a",
-        "cruise": 875,
+        "cruise": 825,
         "class": "Medium narrowbody jet plane", 
         "type": "medium",
         "capacity": 88,

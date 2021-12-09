@@ -41,7 +41,7 @@ const airline = `
         "name": "LAT",
         "WAAT": "LT", 
         "callsign": "Tarephian",
-        "image": "https://i.imgur.com/XvjkXZl.png",
+        "image": "https://images-ext-2.discordapp.net/external/sH-vsZeadEGzha9xWmBadmoqUn2EUf5Urik40T3DqUc/https/i.imgur.com/XvjkXZl.png",
         "alliance": "WorldStar"
     },
     "IA": {
