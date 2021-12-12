@@ -101,3 +101,9 @@ var FR018popup = flightdetail("FR018", "FR", "", aircrafts.W36.image, 9, 2, flag
 var FR020popup = flightdetail("FR020", "FR", "", aircrafts.W36.image, 9, 2, flags.Freedemia, onesky);
 
 var LT001popup = flightdetail("LT001", "LT", "", aircrafts.Contair_D20a.image, 1, 2, flags.Barzona, worldstar);
+var LT003popup = flightdetail("LT003", "LT", "", aircrafts.Contair_D20a.image, 1, 2, flags.Barzona, worldstar);
+var LT005popup = flightdetail("LT005", "LT", "", aircrafts.Contair_D20a.image, 1, 2, flags.Barzona, worldstar);
+var LT007popup = flightdetail("LT007", "LT", "", aircrafts.Contair_D20a.image, 1, 2, flags.Barzona, worldstar);
+var LT009popup = flightdetail("LT009", "LT", "", aircrafts.Contair_D20a.image, 1, 2, flags.Barzona, worldstar);
+var LT011popup = flightdetail("LT011", "LT", "", aircrafts.Contair_D20a.image, 1, 2, flags.Barzona, worldstar);
+var LT013popup = flightdetail("LT013", "LT", "", aircrafts.Contair_D20a.image, 1, 2, flags.Barzona, worldstar);

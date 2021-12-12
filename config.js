@@ -238,6 +238,12 @@ function loadMap() {
         createDuringFlight(FR020live,FR020popup,airports.LCX.coord,airports.SBD.coord,aircrafts.W36.cruise,FR020,medium);
 
         createDuringFlight(LT001live,LT001popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise,LT001,medium);
+        createDuringFlight(LT003live,LT003popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise,LT003,medium);
+        createDuringFlight(LT005live,LT005popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise,LT005,medium);
+        createDuringFlight(LT007live,LT007popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise,LT007,medium);
+        createDuringFlight(LT009live,LT009popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise,LT009,medium);
+        createDuringFlight(LT011live,LT011popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise,LT011,medium);
+        createDuringFlight(LT013live,LT013popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise,LT013,medium);
 
     }
     
@@ -271,6 +277,12 @@ function loadMap() {
         const FR020schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.FR020.liftoff_hour, flights.FR020.liftoff_minute, 0);
 
         const LT001schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT001.liftoff_hour, flights.LT001.liftoff_minute, 0);
+        const LT003schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT003.liftoff_hour, flights.LT003.liftoff_minute, 0);
+        const LT005schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT005.liftoff_hour, flights.LT005.liftoff_minute, 0);
+        const LT007schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT007.liftoff_hour, flights.LT007.liftoff_minute, 0);
+        const LT009schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT009.liftoff_hour, flights.LT009.liftoff_minute, 0);
+        const LT011schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT011.liftoff_hour, flights.LT011.liftoff_minute, 0);
+        const LT013schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT013.liftoff_hour, flights.LT013.liftoff_minute, 0);
 
         //main
         function createBeforeLift(scheduleVar,visibleBeforeSeconds,invisibleAfterSeconds,markerVar,popup,from,to,aircraft){
@@ -302,6 +314,12 @@ function loadMap() {
         createBeforeLift(FR020schedule,60*60,60*30,FR020,FR020popup,airports.LCX.coord,airports.SBD.coord,aircrafts.W36.cruise);
         
         createBeforeLift(LT001schedule,60*40,60*30,LT001,LT001popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise);
+        createBeforeLift(LT003schedule,60*40,60*30,LT003,LT003popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise);
+        createBeforeLift(LT005schedule,60*40,60*30,LT005,LT005popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise);
+        createBeforeLift(LT007schedule,60*40,60*30,LT007,LT007popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise);
+        createBeforeLift(LT009schedule,60*40,60*30,LT009,LT009popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise);
+        createBeforeLift(LT011schedule,60*40,60*30,LT011,LT011popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise);
+        createBeforeLift(LT013schedule,60*40,60*30,LT013,LT013popup,airports.AMB.coord,airports.SBD.coord,aircrafts.Contair_D20a.cruise);
         
 
         setTimeout(function () { schedule()}, 1000);
@@ -343,6 +361,12 @@ function loadMap() {
     const FR020live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.FR020.liftoff_hour, flights.FR020.liftoff_minute, 0);
 
     const LT001live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT001.liftoff_hour, flights.LT001.liftoff_minute, 0);
+    const LT003live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT003.liftoff_hour, flights.LT003.liftoff_minute, 0);
+    const LT005live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT005.liftoff_hour, flights.LT005.liftoff_minute, 0);
+    const LT007live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT007.liftoff_hour, flights.LT007.liftoff_minute, 0);
+    const LT009live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT009.liftoff_hour, flights.LT009.liftoff_minute, 0);
+    const LT011live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT011.liftoff_hour, flights.LT011.liftoff_minute, 0);
+    const LT013live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT013.liftoff_hour, flights.LT013.liftoff_minute, 0);
 
     var LY500 = makeMarker(airports.SIA.coord, airports.LYR.coord, aircrafts.AV_Nieida200.cruise, small); LY500.setOpacity(0);
     var UE401 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.NM90.cruise, medium); UE401.setOpacity(0);
@@ -368,6 +392,12 @@ function loadMap() {
     var FR020 = makeMarker(airports.LCX.coord, airports.SBD.coord, aircrafts.W36.cruise, medium); FR020.setOpacity(0);
     
     var LT001 = makeMarker(airports.AMB.coord, airports.SBD.coord, aircrafts.Contair_D20a.cruise, medium); LT001.setOpacity(0);
+    var LT003 = makeMarker(airports.AMB.coord, airports.SBD.coord, aircrafts.Contair_D20a.cruise, medium); LT003.setOpacity(0);
+    var LT005 = makeMarker(airports.AMB.coord, airports.SBD.coord, aircrafts.Contair_D20a.cruise, medium); LT005.setOpacity(0);
+    var LT007 = makeMarker(airports.AMB.coord, airports.SBD.coord, aircrafts.Contair_D20a.cruise, medium); LT007.setOpacity(0);
+    var LT009 = makeMarker(airports.AMB.coord, airports.SBD.coord, aircrafts.Contair_D20a.cruise, medium); LT009.setOpacity(0);
+    var LT011 = makeMarker(airports.AMB.coord, airports.SBD.coord, aircrafts.Contair_D20a.cruise, medium); LT011.setOpacity(0);
+    var LT013 = makeMarker(airports.AMB.coord, airports.SBD.coord, aircrafts.Contair_D20a.cruise, medium); LT013.setOpacity(0);
 
     live();
     schedule();

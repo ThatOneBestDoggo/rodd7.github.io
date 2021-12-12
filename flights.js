@@ -222,6 +222,66 @@ const flight = `
         "aircraft": "Contair_D20a",
         "age": "2019",
         "opt_livery": ""
+    },
+    "LT003": {
+        "name": "LT003", 
+        "liftoff_hour": 5,
+        "liftoff_minute": 10,
+        "from_WAAT": "AMB",
+        "to_WAAT": "SBD",
+        "aircraft": "Contair_D20a",
+        "age": "2019",
+        "opt_livery": ""
+    },
+    "LT005": {
+        "name": "LT005", 
+        "liftoff_hour": 8,
+        "liftoff_minute": 15,
+        "from_WAAT": "AMB",
+        "to_WAAT": "SBD",
+        "aircraft": "Contair_D20a",
+        "age": "2019",
+        "opt_livery": ""
+    },
+    "LT007": {
+        "name": "LT007", 
+        "liftoff_hour": 11,
+        "liftoff_minute": 30,
+        "from_WAAT": "AMB",
+        "to_WAAT": "SBD",
+        "aircraft": "Contair_D20a",
+        "age": "2019",
+        "opt_livery": ""
+    },
+    "LT009": {
+        "name": "LT009", 
+        "liftoff_hour": 14,
+        "liftoff_minute": 30,
+        "from_WAAT": "AMB",
+        "to_WAAT": "SBD",
+        "aircraft": "Contair_D20a",
+        "age": "2019",
+        "opt_livery": ""
+    },
+    "LT011": {
+        "name": "LT011", 
+        "liftoff_hour": 17,
+        "liftoff_minute": 45,
+        "from_WAAT": "AMB",
+        "to_WAAT": "SBD",
+        "aircraft": "Contair_D20a",
+        "age": "2019",
+        "opt_livery": ""
+    },
+    "LT013": {
+        "name": "LT013", 
+        "liftoff_hour": 20,
+        "liftoff_minute": 15,
+        "from_WAAT": "AMB",
+        "to_WAAT": "SBD",
+        "aircraft": "Contair_D20a",
+        "age": "2019",
+        "opt_livery": ""
     }
 
 
