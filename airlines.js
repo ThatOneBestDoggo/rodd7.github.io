@@ -120,7 +120,29 @@ const airline = `
         "callsign": "Volare",
         "image": "https://media.discordapp.net/attachments/913558405220802592/915807410281644042/unknown.png ",
         "alliance": ""
-    } 
+    },
+    "LN": {
+        "name": "LanAir"
+        "WAAT": "LN", 
+        "callsign": "LanAir",
+        "image": ""
+        "alliance": "OneSky"
+    },
+    "GK": {
+        "name": "GekLines"
+        "WAAT": "GK", 
+        "callsign": "GekLines",
+        "image": ""
+        "alliance": "OneSky"
+    },
+    "DL": {
+        "name": "Aviakompaniya Dregolot"
+        "WAAT": "DL", 
+        "callsign": "Dregolot",
+        "image": ""
+        "alliance": ""
+    }
+
 
 
 

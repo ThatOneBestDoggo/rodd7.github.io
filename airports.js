@@ -310,13 +310,13 @@ const airport = `
         "ANACA" : "ESPH",
         "runway": 1
     },
-    "SBD": {
+    "QBX": {
         "name": "Sean Bond International Airport", 
         "coord":  [-21.1481, 28.6220], 
         "country": "Freedemia",
         "city" : "Quentinsburgh",
         "class": "A",
-        "WAAT": "SBD",
+        "WAAT": "QBX",
         "ANACA" : "MFQB",
         "runway": 3
     },
@@ -1044,13 +1044,13 @@ const airport = `
         "ANACA" : "NBRB",
         "runway": 1
     },
-    "VDL": { 
-        "name": "Vandoveur-Laneston Baum National Airport",
+    "VFR": { 
+        "name": "Vandoveur-Frankelyn National Airport",
         "coord": [-19.3467,26.5691], 
         "country": "Freedemia", 
         "city":"Vandoveur", 
         "class": "B", 
-        "WAAT": "VDL", 
+        "WAAT": "VFR", 
         "ANACA" : "MFVL", 
         "runway": 2
     },
@@ -1570,7 +1570,7 @@ const airport = `
         "country": "Federal States of Archanta",
         "city":"Wallawaukee",
         "class": "B",
-        "WAAT": "WLW",
+        "WAAT": "WVN",
         "ANACA" : "BAWW",
         "runway": 1
     },
@@ -1654,7 +1654,7 @@ const airport = `
         "ANACA" : "????", 
         "runway": 4
     },
-    "JHD": {
+    "JIX": {
         "name": "Jhuandan International Airport", 
         "coord":  [-23.9094, 32.7266], 
         "country": "Freedemia",
@@ -1733,9 +1733,47 @@ const airport = `
         "WAAT": "CMR",
         "ANACA" : "MBCM",
         "runway": 1
+    },
+    "DOB": { 
+        "name": "Dobrzanka-Zygmuntów International Airport",
+        "coord": [58.20578, 78.03967],
+        "country": "Geklinia-Dregolesia",
+        "city":"Dobrzanka",
+        "class": "A",
+        "WAAT": "DOB",
+        "ANACA" : "IDOB",
+        "runway": 2
+    },
+    "CSV": { 
+        "name": "International Airport Ceshnavisk",
+        "coord": [56.40615, 75.65018],
+        "country": "Geklinia-Dregolesia",
+        "city":"Ceshnavisk",
+        "class": "A",
+        "WAAT": "CSV",
+        "ANACA" : "ICSV",
+        "runway": 2
+    },
+    "BOG": { 
+        "name": "International Airport Bogań",
+        "coord": [57.73911, 74.15181],
+        "country": "Geklinia-Dregolesia",
+        "city":"Bogań",
+        "class": "B",
+        "WAAT": "BOG",
+        "ANACA" : "IBOG",
+        "runway": 1
+    },
+    "BOG": { 
+        "name": "International Airport Tizharomir",
+        "coord": [55.82330, 72.93244],
+        "country": "Geklinia-Dregolesia",
+        "city":"Tizharomir",
+        "class": "B",
+        "WAAT": "TZH",
+        "ANACA" : "ITZH",
+        "runway": 1
     }
-
-
 
 }`
 var airports = JSON.parse(airport);
