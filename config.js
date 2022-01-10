@@ -178,7 +178,7 @@ function loadMap() {
     L.marker(airports.VMW.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.VMW, flags.FSA, 0));
     L.marker(airports.MGX.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.MGX, flags.FSA, 0));
     L.marker(airports.WFF.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.WFF, flags.FSA, 0));
-    L.marker(airports.WVN.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.WVN, flags.FSA, 0));
+    L.marker(airports.WLW.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.WLW, flags.FSA, 0));
     L.marker(airports.KSE.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.KSE, flags.Default, 0));
     L.marker(airports.WHN.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.WHN, flags.Default, 0));
     L.marker(airports.NAO.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.NAO, flags.Default, 0));
@@ -187,7 +187,7 @@ function loadMap() {
     L.marker(airports.RBI.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.RBI, flags.Default, 0));
     L.marker(airports.YOU.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.YOU, flags.Default, 0));
     L.marker(airports.ACS.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.ACS, flags.Default, 0));
-    L.marker(airports.JHD.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.JHD, flags.Freedemia, 2));
+    L.marker(airports.JIX.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.JIX, flags.Freedemia, 2));
     L.marker(airports.JHA.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.JHA, flags.Freedemia, 2));
     L.marker(airports.GWP.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.GWP, flags.Gobras, 5));
     L.marker(airports.BAB.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.BAB, flags.Barzona, 1));

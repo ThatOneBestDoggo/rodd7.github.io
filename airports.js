@@ -1564,13 +1564,13 @@ const airport = `
         "ANACA" : "BAWF",
         "runway": 4
     },
-    "WVN": { 
+    "WLW": { 
         "name": "Wallawaukee Vernon International Airport",
         "coord": [ -41.7064, 144.0846],
         "country": "Federal States of Archanta",
         "city":"Wallawaukee",
         "class": "B",
-        "WAAT": "WVN",
+        "WAAT": "WLW",
         "ANACA" : "BAWW",
         "runway": 1
     },
