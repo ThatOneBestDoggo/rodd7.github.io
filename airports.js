@@ -317,7 +317,7 @@ const airport = `
         "city" : "Quentinsburgh",
         "class": "A",
         "WAAT": "SBD",
-        "ANACA" : "MFSB",
+        "ANACA" : "MFQB",
         "runway": 3
     },
     "MAT": {
@@ -1038,7 +1038,7 @@ const airport = `
         "name": "Bellamcole Airport", 
         "coord": [-36.4402954, 45.9088258], 
         "country": "Bromley",
-        "city": "Crwatham, Bellamcole",
+        "city": "Crawtham, Bellamcole",
         "class": "B",
         "WAAT": "BLM",
         "ANACA" : "NBRB",
@@ -1570,8 +1570,8 @@ const airport = `
         "country": "Federal States of Archanta",
         "city":"Wallawaukee",
         "class": "B",
-        "WAAT": "WVN",
-        "ANACA" : "BAWV",
+        "WAAT": "WLW",
+        "ANACA" : "BAWW",
         "runway": 1
     },
     "KSE": { 
@@ -1660,8 +1660,8 @@ const airport = `
         "country": "Freedemia",
         "city" : "Jhuandan",
         "class": "A",
-        "WAAT": "JHD",
-        "ANACA" : "MFJD",
+        "WAAT": " JIX",
+        "ANACA" : "MFJX",
         "runway": 3
     },
     "JHA": {

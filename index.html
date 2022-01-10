@@ -14,6 +14,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     
     <script src="tools/leaflet.rotatedMarker.js"></script>
@@ -22,7 +26,7 @@
     <script src="config.js"></script> <!--configuration and airports-->
     
     <script src="icons.js"></script> <!--icons for all markers-->
-    <script src="time.js"></script> <!--dynamic time on browser-->
+    <script src="misc.js"></script> <!--dynamic time on browser-->
     <script src="airports.js"></script> <!--all airports-->
     <script src="airlines.js"></script> <!--airline list and logos-->
     <script src="airplanes.js"></script> <!--airplane models and speeds-->
@@ -33,19 +37,161 @@
 
     
 </head>
-
+<!-- <b style="position:absolute; left:300px; bottom: 500px;">HI THIS IS A TEST</b> -->
 <body style="margin:0px;" onload="loadMap()">
+    
     <nav class="navbar navbar-dark bg-dark">
         <a class="text-white navbar-brand">OGFLiveFlight</a>
         <span class="time" id="utcTime"></span>
         <span class></span>
+        
+        
+        <div class="btn-group">
+            
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Generate</button>
+            <div class="dropdown-menu dropdown-menu-left">
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                      <h3>Flightlines Generator</h3>
+                      <p>Useful tool for easy generation of flights using functions. Once the flights are validated manually, they will be entered.</p>
+                    <div>
+                        
+                    </div>
+                    <table>
+                        <tr>
+                            <td colspan=2>
+                                <h6>Primary Configuration</h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <label>Flight</label>
+                                <input class="form-control" id="Gflight" placeholder="AB001">   
+                            </td>
+                            <td>
+                                <label>Airline WAAT</label>   
+                                <input class="form-control" id="Gairlinewaat" placeholder="AB">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <label>Takeoff Hours (WUT)</label>
+                                <input class="form-control" id="Gtakeoffhour" placeholder="12  (as in 12 WUT+0)">   
+                            </td>
+                            <td>
+                                <label>Takeoff Minutes (WUT)</label>
+                                <input class="form-control" id="Gtakeoffminute" placeholder="0">  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <label>Timezone from City</label>
+                                <input class="form-control" id="Gtimezonefrom" placeholder="5  (as in WUT+5)">   
+                            </td>
+                            <td>
+                                <label>Timezone to City</label>
+                                <input class="form-control" id="Gtimezoneto" placeholder="9  (as in WUT+9)">  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <label>WAAT from City</label>
+                                <input required class="form-control" id="Gwaatfrom" placeholder="GWP">   
+                            </td>
+                            <td>
+                                <label>WAAT to City</label>
+                                <input class="form-control" id="Gwaatto" placeholder="LCX">  
+                            </td>
+
+                            
+                        </tr>
+
+                        <tr>
+                            <td> 
+                                <label>Aircraft</label>
+                                <select class="form-select" aria-label="Default select example" id="airplanes">
+                                    <option value= "0" selected>MacDougall Graham DG-70</option>
+                                    <option value="1">MacDougall Graham DG-80</option>
+                                    <option value="2">MacDougall Graham DG-86</option>
+                                    <option value="3">Contair D20a</option>
+                                    <option value="4">Wātānābe Ärospás W34</option>
+                                    <option value="5">Wātānābe Ärospás W36</option>
+                                    <option value="6">Wātānābe Ärospás W39</option>
+                                    <option value="7">Wātānābe Ärospás W39B</option>
+                                    <option value="8">{Add Approved Aircraft}</option>
+                                </select>  
+                            </td>
+                            <td>
+                                <label>Aircraft Age</label>
+                                <input class="form-control" id="Gaircraftage" placeholder="2010">  
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> 
+                                <label>Airline Alliance</label>
+                                <select class="form-select" aria-label="Default select example" id="alliances">
+                                    <option selected>None</option>
+                                    <option value="1">WorldStar</option>
+                                    <option value="2">Onesky</option>
+                                    <option value="3">Four Corners</option>
+                                    <option value="4">Geolliance</option>
+                                </select>  
+                            </td>
+                            <td>
+                                <label>Aircraft Registration</label>
+                                <input class="form-control" id="Gregistration" placeholder="Gobrassanya">  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2>
+                                <hr>
+                                <h6>Optional Configuration</h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <label>Preparation Time</label>
+                                <input class="form-control" id="Gprepare" placeholder="(default = 60)"> 
+                            </td>
+                            <td>
+                                <label>Disembarkation Time</label>
+                                <input class="form-control" id="Gdisembark" placeholder="(default = 30)">  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan=2>
+                                <label>Optional Codeshare Flights description</label>
+                                <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="right" title="This is an optional line you can use in case you have an agreement with another airline. With airline alliances or partnerships, you may see examples where one airline may be the operator of the flight, while another aircraft would be the marketer or the name-bearer of the airline."></i>
+                                <input size="4" class="form-control" id="Gcodeshare" placeholder="(e.g. Operated by Gobrassian Airlines)">  
+                                
+                            </td>
+                        </tr>
+
+                    </table>
+                      
+                    
+                  </div>
+                  
+                  <div class="form-group">
+                    
+                  </div>
+                  <button onclick="generate()" type="button" class="btn btn-primary">Generate</button>
+                </form>
+                <textarea name="name" id="areaoutput" cols="50" rows="5"></textarea>
+                <a class="dropdown-item" onclick="clipboard()" >Copy to Clipboard</a>
+              </div>
+          </div>
     </nav>
+    
     <div id="map"></div>
+    
     <br><br><br>
-    <b>Data pane under construction</b>
 
     
     
     
+    
 </body>
+
 </html>

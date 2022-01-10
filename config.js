@@ -22,7 +22,6 @@ function loadMap() {
         t.setTime();
     }
     // setTimeout(function(){ map.setZoom(5); }, 2000);
-    
 
     const airports = JSON.parse(airport);
     const flags = JSON.parse(flag);
@@ -214,7 +213,7 @@ function loadMap() {
 
         //functions
         createDuringFlight(LY500live,LY500popup,airports.SIA.coord,airports.LYR.coord,aircrafts.AV_Nieida200.cruise,LY500,small);
-
+        
         createDuringFlight(UE401live,UE401popup,airports.SAG.coord,airports.KNU.coord,aircrafts.NM90.cruise,UE401,medium);
         createDuringFlight(UE403live,UE403popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise,UE403,medium);
         createDuringFlight(UE405live,UE405popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W36.cruise,UE405,medium);
@@ -283,7 +282,8 @@ function loadMap() {
         const LT009schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT009.liftoff_hour, flights.LT009.liftoff_minute, 0);
         const LT011schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT011.liftoff_hour, flights.LT011.liftoff_minute, 0);
         const LT013schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.LT013.liftoff_hour, flights.LT013.liftoff_minute, 0);
-
+        
+        
         //main
         function createBeforeLift(scheduleVar,visibleBeforeSeconds,invisibleAfterSeconds,markerVar,popup,from,to,aircraft){
             if ((scheduleVar-now)/1000 <= visibleBeforeSeconds && (scheduleVar-now)/1000 > 0){markerVar.setOpacity(1);} if ((scheduleVar-now) == 0){ markerVar.start(); markerVar.setOpacity(1); markerVar.bindPopup(popup);}

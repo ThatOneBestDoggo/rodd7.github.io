@@ -1,5 +1,5 @@
 #map{
-    width:85%;
+    width:100%;
     height:95%;
     float:right
 }
@@ -8,6 +8,7 @@
     color: rgb(255, 255, 255);
     font-size: 20pt;
     font-family: sans-serif;
+    margin-left: 400px;
 }
 
 .img{
@@ -92,4 +93,19 @@ td {
     font-weight: bold;
   }
 
+  .dropdown-menu {
+    left : -300  !important; 
+    top: 45 !important;
+    width: 400px;
+  }
+  .btn btn-secondary dropdown-toggle{
+    padding: 15px;
+  }
+
+  #areaoutput{
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
   
