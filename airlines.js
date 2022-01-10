@@ -122,24 +122,24 @@ const airline = `
         "alliance": ""
     },
     "LN": {
-        "name": "LanAir"
+        "name": "LanAir",
         "WAAT": "LN", 
         "callsign": "LanAir",
-        "image": ""
+        "image": "",
         "alliance": "OneSky"
     },
     "GK": {
-        "name": "GekLines"
+        "name": "GekLines",
         "WAAT": "GK", 
         "callsign": "GekLines",
-        "image": ""
+        "image": "",
         "alliance": "OneSky"
     },
     "DL": {
-        "name": "Aviakompaniya Dregolot"
+        "name": "Aviakompaniya Dregolot",
         "WAAT": "DL", 
         "callsign": "Dregolot",
-        "image": ""
+        "image": "",
         "alliance": ""
     }
 
