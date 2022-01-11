@@ -138,9 +138,9 @@ function generate(){
     fulltext = fulltext + "\"name\": \"" + flight.value + "\",\n";
     fulltext = fulltext + "\"liftoff_hour\": " + takeoff_hour.value + ",\n";
     fulltext = fulltext + "\"liftoff_minute\": " + takeoff_minute.value + ",\n";
-    fulltext = fulltext + "\"from_WAAT\": " + WAAT_from.value + ",\n";
-    fulltext = fulltext + "\"to_WAAT\": " + WAAT_to.value + ",\n";
-    fulltext = fulltext + "\"aircraft\": " + airplanevalue + ",\n";
+    fulltext = fulltext + "\"from_WAAT\": \"" + WAAT_from.value + "\",\n";
+    fulltext = fulltext + "\"to_WAAT\": \"" + WAAT_to.value + "\",\n";
+    fulltext = fulltext + "\"aircraft\": \"" + airplanevalue + "\",\n";
     fulltext = fulltext + "\"age\": " + age.value + ",\n";
     fulltext = fulltext + "\"opt_livery\": " + "\"\"" + " \n";
     fulltext = fulltext + "},";

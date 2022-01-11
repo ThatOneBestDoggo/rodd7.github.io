@@ -133,6 +133,16 @@ const flight = `
         "age": "2020",
         "opt_livery": ""
     },
+    "UE300": {
+        "name": "UE300",
+        "liftoff_hour": 7,
+        "liftoff_minute": 0,
+        "from_WAAT": "KNU",
+        "to_WAAT": "WRH",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
     "FR001": {
         "name": "FR001", 
         "liftoff_hour": 18,

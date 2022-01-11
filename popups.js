@@ -90,6 +90,7 @@ var UE417popup = flightdetail("UE417", "UE", "", aircrafts.W39_B.image, 8, 8, fl
 var UE419popup = flightdetail("UE419", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
 var UE421popup = flightdetail("UE421", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
 var UE400popup = flightdetail("UE400", "UE", "", aircrafts.W39_B.image, 8, 8, flags.Izaland, onesky);
+var UE300popup = flightdetail("UE300", "UE", "FR4500",aircrafts.W36.image,8,8,flags.Izaland,onesky); 
 
 var FR001popup = flightdetail("FR001", "FR", "", aircrafts.W39.image, 2, 5, flags.Freedemia, onesky);
 var FR002popup = flightdetail("FR002", "FR", "", aircrafts.W39.image, 5, 2, flags.Freedemia, onesky);

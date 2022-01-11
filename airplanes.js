@@ -214,7 +214,7 @@ const aircraft = `
     "W39_B":{
         "model": "W39-B",
         "name": "Wātānābe Ärospás W39-B",
-        "speed": 905,
+        "cruise": 905,
         "class": "Large Jet Airliner", 
         "type": "large",
         "capacity": 312,
