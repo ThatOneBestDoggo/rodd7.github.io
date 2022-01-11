@@ -227,17 +227,17 @@ function loadMap() {
         createDuringFlight(UE421live,UE421popup,airports.SAG.coord,airports.KNU.coord,aircrafts.W34.cruise,UE421,medium);
         createDuringFlight(UE400live,UE400popup,airports.KNU.coord,airports.SAG.coord,aircrafts.W39_B.cruise,UE400,large);
         createDuringFlight(UE300live,UE300popup,airports.KNU.coord,airports.WRH.coord,aircrafts.W36.cruise,UE300,medium);
-        createDuringFlight(UE301live,UE301popup,airports.WRH.coord,airports.KNU.coord,aircrafts.W36.cruise,UE301,medium);
-        createDuringFlight(UE305live,UE305popup,airports.WRH.coord,airports.KNU.coord,aircrafts.W36.cruise,UE305,medium);
-        createDuringFlight(UE307live,UE307popup,airports.WRH.coord,airports.KNU.coord,aircrafts.W36.cruise,UE307,medium);
-        createDuringFlight(UE100live,UE100popup,airports.SUL.coord,airports.DGY.coord,aircrafts.W36.cruise,UE100,medium);
-        createDuringFlight(UE102live,UE102popup,airports.SUL.coord,airports.DGY.coord,aircrafts.W36.cruise,UE102,medium);
-        createDuringFlight(UE104live,UE104popup,airports.SUL.coord,airports.DGY.coord,aircrafts.W36.cruise,UE104,medium);
-        createDuringFlight(UE101live,UE101popup,airports.DGY.coord,airports.SUL.coord,aircrafts.W36.cruise,UE101,medium);
-        createDuringFlight(UE103live,UE103popup,airports.DGY.coord,airports.SUL.coord,aircrafts.W36.cruise,UE103,medium);
-        createDuringFlight(UE105live,UE105popup,airports.DGY.coord,airports.SUL.coord,aircrafts.W36.cruise,UE105,medium);
-        createDuringFlight(UE050live,UE050popup,airports.SUL.coord,airports.OSI.coord,aircrafts.W39.cruise,UE050,large);
-        createDuringFlight(UE051live,UE051popup,airports.OSI.coord,airports.SUL.coord,aircrafts.W39.cruise,UE051,large);
+        // createDuringFlight(UE301live,UE301popup,airports.WRH.coord,airports.KNU.coord,aircrafts.W36.cruise,UE301,medium);
+        // createDuringFlight(UE305live,UE305popup,airports.WRH.coord,airports.KNU.coord,aircrafts.W36.cruise,UE305,medium);
+        // createDuringFlight(UE307live,UE307popup,airports.WRH.coord,airports.KNU.coord,aircrafts.W36.cruise,UE307,medium);
+        // createDuringFlight(UE100live,UE100popup,airports.SUL.coord,airports.DGY.coord,aircrafts.W36.cruise,UE100,medium);
+        // createDuringFlight(UE102live,UE102popup,airports.SUL.coord,airports.DGY.coord,aircrafts.W36.cruise,UE102,medium);
+        // createDuringFlight(UE104live,UE104popup,airports.SUL.coord,airports.DGY.coord,aircrafts.W36.cruise,UE104,medium);
+        // createDuringFlight(UE101live,UE101popup,airports.DGY.coord,airports.SUL.coord,aircrafts.W36.cruise,UE101,medium);
+        // createDuringFlight(UE103live,UE103popup,airports.DGY.coord,airports.SUL.coord,aircrafts.W36.cruise,UE103,medium);
+        // createDuringFlight(UE105live,UE105popup,airports.DGY.coord,airports.SUL.coord,aircrafts.W36.cruise,UE105,medium);
+        // createDuringFlight(UE050live,UE050popup,airports.SUL.coord,airports.OSI.coord,aircrafts.W39.cruise,UE050,large);
+        // createDuringFlight(UE051live,UE051popup,airports.OSI.coord,airports.SUL.coord,aircrafts.W39.cruise,UE051,large);
 
 
 
@@ -280,7 +280,7 @@ function loadMap() {
         const UE421schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE421.liftoff_hour, flights.UE421.liftoff_minute, 0);
         const UE400schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), first.getUTCDate(), flights.UE400.liftoff_hour, flights.UE400.liftoff_minute, 0);
         const UE300schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE300.liftoff_hour, flights.UE300.liftoff_minute, 0);
-        const UE301schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE301.liftoff_hour, flights.UE301.liftoff_minute, 0);
+        // const UE301schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.UE301.liftoff_hour, flights.UE301.liftoff_minute, 0);
         
 
         const FR001schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), first.getUTCDate(), flights.FR001.liftoff_hour, flights.FR001.liftoff_minute, 0);
