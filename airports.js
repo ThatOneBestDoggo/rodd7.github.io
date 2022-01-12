@@ -29,7 +29,8 @@ const flag = `
     "Mauretia": "<img src='https://old.opengeofiction.wiki/images/c/c5/MauretiaFlag.svg' width='35'>",
     "Adaria": "<img src='https://wiki.opengeofiction.net/images/1/17/Adariaflag.png' width='35'>",
     "Bai": "<img src='https://wiki.opengeofiction.net/images/d/d1/Bai_flag.png' width='35'>",
-    "Aden": "<img src='https://wiki.opengeofiction.net/images/2/2d/Aden_New_Flag.png' width='35'>"
+    "Aden": "<img src='https://wiki.opengeofiction.net/images/2/2d/Aden_New_Flag.png' width='35'>",
+    "Gekdreg": "<img src='https://wiki.opengeofiction.net/images/8/8d/UL14b_flag.png' width='35'>"
 
     
     
@@ -1764,7 +1765,7 @@ const airport = `
         "ANACA" : "IBOG",
         "runway": 1
     },
-    "BOG": { 
+    "TZH": { 
         "name": "International Airport Tizharomir",
         "coord": [55.82330, 72.93244],
         "country": "Geklinia-Dregolesia",

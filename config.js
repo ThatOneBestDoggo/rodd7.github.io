@@ -195,6 +195,10 @@ function loadMap() {
     L.marker(airports.NAR.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.NAR, flags.Barzona, 1));
     L.marker(airports.MTF.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.MTF, flags.Barzona, 1));
     L.marker(airports.CMR.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.CMR, flags.Barzona, 1));
+    L.marker(airports.DOB.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.DOB, flags.Gekdreg, 5));
+    L.marker(airports.CSV.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.CSV, flags.Gekdreg, 5));
+    L.marker(airports.BOG.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.BOG, flags.Gekdreg, 5));
+    L.marker(airports.TZH.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.TZH, flags.Gekdreg, 5));
 
     L.marker([-38.74783, 32.14310], { icon: generalAirport }).addTo(map); //flying school
 
