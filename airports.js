@@ -1727,7 +1727,7 @@ const airport = `
     },
     "CMR": {
         "name": "Camarere Airport", 
-        "coord":  [14.37145, 18.52923], 
+        "coord":  [-14.37145, 18.52923], 
         "country": "Barzona",
         "city" : "Port-Camarere",
         "class": "C",

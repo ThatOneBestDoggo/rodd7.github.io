@@ -91,6 +91,17 @@ var UE419popup = flightdetail("UE419", "UE", "", aircrafts.W36.image, 8, 8, flag
 var UE421popup = flightdetail("UE421", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
 var UE400popup = flightdetail("UE400", "UE", "", aircrafts.W39_B.image, 8, 8, flags.Izaland, onesky);
 var UE300popup = flightdetail("UE300", "UE", "FR4500",aircrafts.W36.image,8,8,flags.Izaland,onesky); 
+var UE301popup = flightdetail("UE301", "UE", "FR4501",aircrafts.W36.image,8,8,flags.Izaland,onesky); 
+var UE305popup = flightdetail("UE305", "UE", "FR4505",aircrafts.W36.image,8,8,flags.Izaland,onesky); 
+var UE307popup = flightdetail("UE307", "UE", "FR4507",aircrafts.W36.image,8,8,flags.Izaland,onesky); 
+var UE100popup = flightdetail("UE100", "UE", "FR4850",aircrafts.W36.image,8,9.5,flags.Izaland,onesky); 
+var UE102popup = flightdetail("UE102", "UE", "",aircrafts.W36.image,8,9.5,flags.Izaland,onesky); 
+var UE104popup = flightdetail("UE104", "UE", "",aircrafts.W36.image,8,9.5,flags.Izaland,onesky); 
+var UE101popup = flightdetail("UE101", "UE", "",aircrafts.W36.image,9.5,8,flags.Izaland,onesky); 
+var UE103popup = flightdetail("UE103", "UE", "",aircrafts.W36.image,9.5,8,flags.Izaland,onesky); 
+var UE105popup = flightdetail("UE105", "UE", "",aircrafts.W36.image,9.5,8,flags.Izaland,onesky); 
+var UE050popup = flightdetail("UE050", "UE", "",aircrafts.W39.image,8,4,flags.Izaland,onesky); 
+var UE051popup = flightdetail("UE051", "UE", "",aircrafts.W39.image,4,8,flags.Izaland,onesky); 
 
 var FR001popup = flightdetail("FR001", "FR", "", aircrafts.W39.image, 2, 5, flags.Freedemia, onesky);
 var FR002popup = flightdetail("FR002", "FR", "", aircrafts.W39.image, 5, 2, flags.Freedemia, onesky);
@@ -108,3 +119,7 @@ var LT007popup = flightdetail("LT007", "LT", "", aircrafts.Contair_D20a.image, 1
 var LT009popup = flightdetail("LT009", "LT", "", aircrafts.Contair_D20a.image, 1, 2, flags.Barzona, worldstar);
 var LT011popup = flightdetail("LT011", "LT", "", aircrafts.Contair_D20a.image, 1, 2, flags.Barzona, worldstar);
 var LT013popup = flightdetail("LT013", "LT", "", aircrafts.Contair_D20a.image, 1, 2, flags.Barzona, worldstar);
+
+var SA0001popup = flightdetail("SA0001", "SA", "",aircrafts.DG_80.image,9,10,flags.FSA,fourcorners); 
+var IC001popup = flightdetail("IC001", "IC", "",aircrafts.DG_70.image,6,5,flags.Iscu,worldstar); 
+var AL714popup = flightdetail("AL714", "AL", "",aircrafts.W36.image,1,5,flags.Allendea,); 

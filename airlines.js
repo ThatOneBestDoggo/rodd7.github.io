@@ -1,5 +1,6 @@
 const worldstar = "<img src='https://old.opengeofiction.wiki/images/thumb/c/cd/WorldstarLogo.png/515px-WorldstarLogo.png' width='15'";
 const onesky = "<img src='https://old.opengeofiction.wiki/images/thumb/0/0b/OneSkyLogo.png/1198px-OneSkyLogo.png' width='65'";
+fourcorners = "<img src='https://media.discordapp.net/attachments/913558405220802592/915790319289782272/4C.png' width='65'";
 const airline = `
 {
     "LY": {

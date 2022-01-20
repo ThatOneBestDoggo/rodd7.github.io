@@ -143,6 +143,116 @@ const flight = `
         "age": 2005,
         "opt_livery": "" 
     },
+    "UE301": {
+        "name": "UE301",
+        "liftoff_hour": 6,
+        "liftoff_minute": 30,
+        "from_WAAT": "WRH",
+        "to_WAAT": "KNU",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "UE305": {
+        "name": "UE305",
+        "liftoff_hour": 7,
+        "liftoff_minute": 55,
+        "from_WAAT": "WRH",
+        "to_WAAT": "KNU",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "UE307": {
+        "name": "UE307",
+        "liftoff_hour": 10,
+        "liftoff_minute": 0,
+        "from_WAAT": "WRH",
+        "to_WAAT": "KNU",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "UE100": {
+        "name": "UE100",
+        "liftoff_hour": 8,
+        "liftoff_minute": 30,
+        "from_WAAT": "SUL",
+        "to_WAAT": "DGY",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "UE102": {
+        "name": "UE102",
+        "liftoff_hour": 12,
+        "liftoff_minute": 0,
+        "from_WAAT": "SUL",
+        "to_WAAT": "DGY",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "UE104": {
+        "name": "UE104",
+        "liftoff_hour": 17,
+        "liftoff_minute": 30,
+        "from_WAAT": "SUL",
+        "to_WAAT": "DGY",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "UE101": {
+        "name": "UE101",
+        "liftoff_hour": 8,
+        "liftoff_minute": 30,
+        "from_WAAT": "DGY",
+        "to_WAAT": "SUL",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "UE103": {
+        "name": "UE103",
+        "liftoff_hour": 15,
+        "liftoff_minute": 0,
+        "from_WAAT": "DGY",
+        "to_WAAT": "SUL",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "UE105": {
+        "name": "UE105",
+        "liftoff_hour": 18,
+        "liftoff_minute": 0,
+        "from_WAAT": "DGY",
+        "to_WAAT": "SUL",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "UE050": {
+        "name": "UE050",
+        "liftoff_hour": 15,
+        "liftoff_minute": 30,
+        "from_WAAT": "SUL",
+        "to_WAAT": "OSI",
+        "aircraft": "W39",
+        "age": 2018,
+        "opt_livery": "" 
+    },
+    "UE051": {
+        "name": "UE051",
+        "liftoff_hour": 19,
+        "liftoff_minute": 15,
+        "from_WAAT": "OSI",
+        "to_WAAT": "SUL",
+        "aircraft": "W39",
+        "age": 2018,
+        "opt_livery": "" 
+    },
     "FR001": {
         "name": "FR001", 
         "liftoff_hour": 18,
@@ -292,6 +402,36 @@ const flight = `
         "aircraft": "Contair_D20a",
         "age": "2019",
         "opt_livery": ""
+    },
+    "AL714": {
+        "name": "AL714",
+        "liftoff_hour": 10,
+        "liftoff_minute": 24,
+        "from_WAAT": "FJA",
+        "to_WAAT": "GWP",
+        "aircraft": "W36",
+        "age": 2009,
+        "opt_livery": "" 
+    },
+    "IC001": {
+        "name": "IC001",
+        "liftoff_hour": 12,
+        "liftoff_minute": 15,
+        "from_WAAT": "ICI",
+        "to_WAAT": "GWP",
+        "aircraft": "DG_70",
+        "age": 2009,
+        "opt_livery": "" 
+    },
+    "SA0001": {
+        "name": "SA0001",
+        "liftoff_hour": 1,
+        "liftoff_minute": 5,
+        "from_WAAT": "LCX",
+        "to_WAAT": "STI",
+        "aircraft": "DG_80",
+        "age": 2008,
+        "opt_livery": "" 
     }
 
 
