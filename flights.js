@@ -405,7 +405,7 @@ const flight = `
     },
     "IC001": {
         "name": "IC001",
-        "liftoff_hour": 12,
+        "liftoff_hour": 4,
         "liftoff_minute": 15,
         "from_WAAT": "ICI",
         "to_WAAT": "GWP",
@@ -415,7 +415,7 @@ const flight = `
     },
     "SA0001": {
         "name": "SA0001",
-        "liftoff_hour": 1,
+        "liftoff_hour": 17,
         "liftoff_minute": 5,
         "from_WAAT": "LCX",
         "to_WAAT": "STI",
@@ -425,7 +425,7 @@ const flight = `
     },
     "UE204": {
         "name": "UE204",
-        "liftoff_hour": 11,
+        "liftoff_hour": 3,
         "liftoff_minute": 50,
         "from_WAAT": "WRH",
         "to_WAAT": "GWP",
@@ -435,7 +435,7 @@ const flight = `
     },
     "UE205": {
         "name": "UE205",
-        "liftoff_hour": 11,
+        "liftoff_hour": 3,
         "liftoff_minute": 30,
         "from_WAAT": "GWP",
         "to_WAAT": "WRH",
@@ -445,7 +445,7 @@ const flight = `
     },
         "UE070": {
         "name": "UE070",
-        "liftoff_hour": 0,
+        "liftoff_hour": 16,
         "liftoff_minute": 5,
         "from_WAAT": "SUL",
         "to_WAAT": "SNM",
@@ -455,7 +455,7 @@ const flight = `
     },
     "UE071": {
         "name": "UE071",
-        "liftoff_hour": 10,
+        "liftoff_hour": 2,
         "liftoff_minute": 30,
         "from_WAAT": "SNM",
         "to_WAAT": "SUL",
@@ -465,7 +465,7 @@ const flight = `
     },
     "UE072": {
         "name": "UE072",
-        "liftoff_hour": 8,
+        "liftoff_hour": 0,
         "liftoff_minute": 15,
         "from_WAAT": "SUL",
         "to_WAAT": "PTR",
@@ -475,7 +475,7 @@ const flight = `
     },
     "UE073": {
         "name": "UE073",
-        "liftoff_hour": 12,
+        "liftoff_hour": 4,
         "liftoff_minute": 15,
         "from_WAAT": "PTR",
         "to_WAAT": "SUL",
@@ -485,7 +485,7 @@ const flight = `
     },
     "UE074": {
         "name": "UE074",
-        "liftoff_hour": 16,
+        "liftoff_hour": 8,
         "liftoff_minute": 15,
         "from_WAAT": "SUL",
         "to_WAAT": "PTR",
@@ -495,7 +495,7 @@ const flight = `
     },
     "UE075": {
         "name": "UE075",
-        "liftoff_hour": 20,
+        "liftoff_hour": 12,
         "liftoff_minute": 15,
         "from_WAAT": "PTR",
         "to_WAAT": "SUL",
@@ -505,7 +505,7 @@ const flight = `
     },
     "UE076": {
         "name": "UE076",
-        "liftoff_hour": 11,
+        "liftoff_hour": 3,
         "liftoff_minute": 45,
         "from_WAAT": "SUL",
         "to_WAAT": "NCH",
@@ -515,7 +515,7 @@ const flight = `
     },
     "UE077": {
         "name": "UE077",
-        "liftoff_hour": 22,
+        "liftoff_hour": 14,
         "liftoff_minute": 30,
         "from_WAAT": "NCH",
         "to_WAAT": "SUL",
@@ -525,7 +525,7 @@ const flight = `
     },
     "UE064": {
         "name": "UE064",
-        "liftoff_hour": 20,
+        "liftoff_hour": 12,
         "liftoff_minute": 35,
         "from_WAAT": "SUL",
         "to_WAAT": "ARC",
@@ -535,7 +535,7 @@ const flight = `
     },
     "UE065": {
         "name": "UE065",
-        "liftoff_hour": 12,
+        "liftoff_hour": 4,
         "liftoff_minute": 30,
         "from_WAAT": "ARC",
         "to_WAAT": "SUL",
@@ -545,7 +545,7 @@ const flight = `
     },
     "UE004": {
         "name": "UE004",
-        "liftoff_hour": 20,
+        "liftoff_hour": 12,
         "liftoff_minute": 45,
         "from_WAAT": "SUL",
         "to_WAAT": "STI",
@@ -555,7 +555,7 @@ const flight = `
     },
     "UE005": {
         "name": "UE005",
-        "liftoff_hour": 12,
+        "liftoff_hour": 4,
         "liftoff_minute": 30,
         "from_WAAT": "STI",
         "to_WAAT": "SUL",
@@ -565,7 +565,7 @@ const flight = `
     },
     "UE106": {
         "name": "UE106",
-        "liftoff_hour": 7,
+        "liftoff_hour": 23,
         "liftoff_minute": 20,
         "from_WAAT": "SUL",
         "to_WAAT": "BKD",
@@ -575,7 +575,7 @@ const flight = `
     },
     "UE108": {
         "name": "UE108",
-        "liftoff_hour": 16,
+        "liftoff_hour": 8,
         "liftoff_minute": 15,
         "from_WAAT": "SUL",
         "to_WAAT": "BKD",
@@ -585,7 +585,7 @@ const flight = `
     },
     "UE107": {
         "name": "UE107",
-        "liftoff_hour": 23,
+        "liftoff_hour": 15,
         "liftoff_minute": 10,
         "from_WAAT": "BKD",
         "to_WAAT": "SUL",
@@ -595,7 +595,7 @@ const flight = `
     },
     "UE109": {
         "name": "UE109",
-        "liftoff_hour": 14,
+        "liftoff_hour": 6,
         "liftoff_minute": 0,
         "from_WAAT": "BKD",
         "to_WAAT": "SUL",
@@ -605,7 +605,7 @@ const flight = `
     },
     "UE002": {
         "name": "UE002",
-        "liftoff_hour": 22,
+        "liftoff_hour": 14,
         "liftoff_minute": 30,
         "from_WAAT": "SUL",
         "to_WAAT": "LCX",
@@ -615,7 +615,7 @@ const flight = `
     },
         "UE003": {
         "name": "UE003",
-        "liftoff_hour": 11,
+        "liftoff_hour": 3,
         "liftoff_minute": 0,
         "from_WAAT": "LCX",
         "to_WAAT": "SUL",
@@ -625,7 +625,7 @@ const flight = `
     },
         "UE328": {
         "name": "UE328",
-        "liftoff_hour": 7,
+        "liftoff_hour": 23,
         "liftoff_minute": 15,
         "from_WAAT": "KNU",
         "to_WAAT": "DAI",
@@ -635,7 +635,7 @@ const flight = `
     },
         "UE330": {
         "name": "UE330",
-        "liftoff_hour": 9,
+        "liftoff_hour": 1,
         "liftoff_minute": 50,
         "from_WAAT": "KNU",
         "to_WAAT": "DAI",
@@ -645,7 +645,7 @@ const flight = `
     },
         "UE332": {
         "name": "UE332",
-        "liftoff_hour": 13,
+        "liftoff_hour": 5,
         "liftoff_minute": 0,
         "from_WAAT": "KNU",
         "to_WAAT": "DAI",
@@ -655,7 +655,7 @@ const flight = `
     },
     "UE334": {
         "name": "UE334",
-        "liftoff_hour": 19,
+        "liftoff_hour": 11,
         "liftoff_minute": 30,
         "from_WAAT": "KNU",
         "to_WAAT": "DAI",
@@ -665,7 +665,7 @@ const flight = `
     },
     "UE329": {
         "name": "UE329",
-        "liftoff_hour": 8,
+        "liftoff_hour": 0,
         "liftoff_minute": 30,
         "from_WAAT": "DAI",
         "to_WAAT": "KNU",
@@ -675,7 +675,7 @@ const flight = `
     },
     "UE331": {
         "name": "UE331",
-        "liftoff_hour": 11,
+        "liftoff_hour": 3,
         "liftoff_minute": 15,
         "from_WAAT": "DAI",
         "to_WAAT": "KNU",
@@ -685,7 +685,7 @@ const flight = `
     },
     "UE333": {
         "name": "UE333",
-        "liftoff_hour": 15,
+        "liftoff_hour": 7,
         "liftoff_minute": 20,
         "from_WAAT": "DAI",
         "to_WAAT": "KNU",
@@ -695,7 +695,7 @@ const flight = `
     },
     "UE335": {
         "name": "UE335",
-        "liftoff_hour": 21,
+        "liftoff_hour": 13,
         "liftoff_minute": 30,
         "from_WAAT": "DAI",
         "to_WAAT": "KNU",
