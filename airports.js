@@ -1774,6 +1774,56 @@ const airport = `
         "WAAT": "TZH",
         "ANACA" : "ITZH",
         "runway": 1
+    },
+    "BKH": {
+        "name": "Benjamin K. Hedstrom International Airport", 
+        "coord": [-40.0205,159.9718], 
+        "country": "Federal States of Archanta",
+        "city":"Warwick, Penquisset",
+        "class": "A",
+        "WAAT": "BKH",
+        "ANACA" : "BAPQ",
+        "runway": 3
+    },
+    "BNA": {
+        "name": "Burton - New Atwick International Airport", 
+        "coord": [-41.9942,161.4413], 
+        "country": "Federal States of Archanta",
+        "city":"Burton, Passamaqueets",
+        "class": "A",
+        "WAAT": "BNA",
+        "ANACA" : "BABU",
+        "runway": 3
+    },
+    "RAD": {
+        "name": "Aèroport Radogož",
+        "coord": [51.6634, 70.6696],
+        "country": "Suria",
+        "city":"Radogozh",
+        "class": "A",
+        "WAAT": "RAD",
+        "ANACA" : "ISRA",
+        "runway": 3
+    },
+    "ZHL": {
+        "name": "Meždunarodnyj Aèroport Železnâ",
+        "coord": [50.0317, 77.1253],
+        "country": "Suria",
+        "city":"Zheleznya",
+        "class": "A",
+        "WAAT": "ZHL",
+        "ANACA" : "ISZH",
+        "runway": 2
+    },    
+    "RAZ": {
+        "name": "Aèroport Ordyn'-Razlët",
+        "coord": [40.2098, 91.4586],
+        "country": "Suria",
+        "city":"Ordyn",
+        "class": "A",
+        "WAAT": "RAZ",
+        "ANACA" : "ISOR",
+        "runway": 2
     }
 
 }`

@@ -196,7 +196,7 @@ const aircraft = `
     "W36":{
         "model": "W36",
         "name": "Wātānābe Ärospás W36",
-        "cruise": 821,
+        "cruise": 815,
         "class": "Standard Jet Airliner", 
         "type": "medium",
         "capacity": 204,
@@ -205,7 +205,7 @@ const aircraft = `
     "W39":{
         "model": "W39",
         "name": "Wātānābe Ärospás W39",
-        "cruise": 885,
+        "cruise": 870,
         "class": "Large Jet Airliner", 
         "type": "large",
         "capacity": 292,
@@ -214,7 +214,7 @@ const aircraft = `
     "W39_B":{
         "model": "W39-B",
         "name": "Wātānābe Ärospás W39-B",
-        "cruise": 905,
+        "cruise": 900,
         "class": "Large Jet Airliner", 
         "type": "large",
         "capacity": 312,

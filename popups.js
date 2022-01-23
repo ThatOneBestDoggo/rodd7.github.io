@@ -76,8 +76,6 @@ function flightdetail(flightobject, airlineobject, optcollab, image, fromZone, t
     datapopup = datapopup + " <table> <tr><td colspan=\"2\" style=\"text-align:left; padding-left:15px; padding-bottom:2px; font-size:15; color:black; background-color:#DCDCDC;\"> <b>Airline Details </b> </td> </tr> <tr><td colspan=\"2\" style=\"text-align:left; padding-top: 8px; padding-left:15px; font-size:15; color:grey;\"> <b>Airline </b>  <span style=\"padding-left: 15px; color:black; font-size:15;\">" + airlines[airlineobject].name + "</span></td> </tr> <tr><td style=\"text-align:left; color:grey; padding-left:15px; font-size:15;\"><b>WAAT </b>  <span style=\"padding-left: 19px; color:black; font-size:15;\">" + airlines[airlineobject].WAAT + "</span></td><td style=\"text-align:left; font-size:15; color:grey;\"> <b style=\"padding-left: 62px;\">Callsign</b>  <span style=\"padding-left: 15px; font-size:15; color:black;\">" + (airlines[airlineobject].callsign).toUpperCase() + "</span></td></tr>  </tr> <tr><td colspan=\"2\" style=\"text-align:left; padding-left:15px; font-size:15; color:grey;\"> <b>Alliance </b>  <span style=\"padding-left: 5px; color:black; font-size:15;\">" + airlines[airlineobject].alliance + "&nbsp &nbsp" + allianceimage + "</span></td> </tr> ";
     return datapopup;
 }
-
-var LY500popup = flightdetail("LY", "LY", "Operated by OhemiAir", pic1, 2, 3, flags.Ohemia, worldstar);
 var UE401popup = flightdetail("UE401", "UE", "", aircrafts.NM90.image, 8, 8, flags.Izaland, onesky);
 var UE403popup = flightdetail("UE403", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
 var UE405popup = flightdetail("UE405", "UE", "", aircrafts.W36.image, 8, 8, flags.Izaland, onesky);
@@ -122,4 +120,35 @@ var LT013popup = flightdetail("LT013", "LT", "", aircrafts.Contair_D20a.image, 1
 
 var SA0001popup = flightdetail("SA0001", "SA", "",aircrafts.DG_80.image,9,10,flags.FSA,fourcorners); 
 var IC001popup = flightdetail("IC001", "IC", "",aircrafts.DG_70.image,6,5,flags.Iscu,worldstar); 
-var AL714popup = flightdetail("AL714", "AL", "",aircrafts.W36.image,1,5,flags.Allendea,); 
+var AL714popup = flightdetail("AL714", "AL", "",aircrafts.W36.image,1,5,flags.Allendea,""); 
+var UE204popup = flightdetail("UE204", "UE", "",aircrafts.W36.image,8,5,flags.Izaland,worldstar); 
+var UE205popup = flightdetail("UE205", "UE", "",aircrafts.W36.image,5,8,flags.Izaland,worldstar); 
+var UE070popup = flightdetail("UE070", "UE", "",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var UE071popup = flightdetail("UE071", "UE", "",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var UE072popup = flightdetail("UE072", "UE", "FR5250",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var UE073popup = flightdetail("UE073", "UE", "FR5251",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var UE074popup = flightdetail("UE074", "UE", "FR5252",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var UE075popup = flightdetail("UE075", "UE", "FR5253",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var UE076popup = flightdetail("UE076", "UE", "",aircrafts.W36.image,8,8,flags.Izaland,worldstar); 
+var UE077popup = flightdetail("UE077", "UE", "",aircrafts.W36.image,8,8,flags.Izaland,worldstar); 
+var UE064popup = flightdetail("UE064", "UE", "",aircrafts.W36.image,8,11.5,flags.Izaland,worldstar); 
+var UE065popup = flightdetail("UE065", "UE", "",aircrafts.W36.image,11.5,8,flags.Izaland,worldstar); 
+var UE004popup = flightdetail("UE004", "UE", "",aircrafts.W39.image,8,10,flags.Izaland,worldstar); 
+var UE005popup = flightdetail("UE005", "UE", "",aircrafts.W39.image,10,8,flags.Izaland,worldstar); 
+var UE106popup = flightdetail("UE106", "UE", "FR5106",aircrafts.W34.image,8,10,flags.Izaland,worldstar); 
+var UE108popup = flightdetail("UE108", "UE", "FR5108",aircrafts.W34.image,8,10,flags.Izaland,worldstar); 
+var UE107popup = flightdetail("UE107", "UE", "FR5107",aircrafts.W34.image,10,8,flags.Izaland,worldstar); 
+var UE109popup = flightdetail("UE109", "UE", "FR5109",aircrafts.W34.image,10,8,flags.Izaland,worldstar); 
+var UE002popup = flightdetail("UE002", "UE", "",aircrafts.W36.image,8,9,flags.Izaland,worldstar); 
+var UE003popup = flightdetail("UE003", "UE", "",aircrafts.W36.image,9,8,flags.Izaland,worldstar); 
+var UE328popup = flightdetail("UE328", "UE", "",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var UE330popup = flightdetail("UE330", "UE", "",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var UE332popup = flightdetail("UE332", "UE", "",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var UE334popup = flightdetail("UE334", "UE", "",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var UE329popup = flightdetail("UE329", "UE", "",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var UE331popup = flightdetail("UE331", "UE", "",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var UE333popup = flightdetail("UE333", "UE", "",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var UE335popup = flightdetail("UE335", "UE", "",aircrafts.W34.image,8,8,flags.Izaland,worldstar); 
+var LY617popup = flightdetail("LY617", "LY", "",aircrafts.W34.image,3,0,flags.Layr,); 
+var LY023popup = flightdetail("LY023", "LY", "",aircrafts.W36.image,3,5,flags.Layr,); 
+var GK001popup = flightdetail("GK001", "GK", "Operated by GekLines",aircrafts.W34.image,5,5,flags.Gekdreg,onesky); 

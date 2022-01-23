@@ -80,7 +80,8 @@
                             </td>
                             <td>
                                 <label>Takeoff Minutes (WUT)</label>
-                                <input class="form-control" id="Gtakeoffminute" placeholder="0">  
+                                <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="right" title="For values under 10, please do not add a zero at the front (e.g. 05 -> 5, 09 -> 9);"></i>    
+                                <input class="form-control" id="Gtakeoffminute" placeholder="5" > 
                             </td>
                         </tr>
                         <tr>
@@ -131,7 +132,7 @@
                             <td> 
                                 <label>Airline Alliance</label>
                                 <select class="form-select" aria-label="Default select example" id="alliances">
-                                    <option selected>None</option>
+                                    <option selected value="0">None</option>
                                     <option value="1">WorldStar</option>
                                     <option value="2">Onesky</option>
                                     <option value="3">Four Corners</option>

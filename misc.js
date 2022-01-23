@@ -101,6 +101,9 @@ function generate(){
     var alliancevalue;
 
     switch (selectedAlliance) {
+        case "0":
+            alliancevalue = "\"\"";
+            break;
         case "1":
             alliancevalue = "worldstar";
             break;
