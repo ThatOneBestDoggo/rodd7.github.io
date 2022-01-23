@@ -107,7 +107,7 @@ const aircraft = `
     "Contair_B20b": {
         "model": "B20b",
         "name": "Contair B20b",
-        "cruise": 484,
+        "cruise": 445,
         "class": "Turboprop Regional Plane", 
         "type": "small",
         "capacity": 50,
@@ -116,7 +116,7 @@ const aircraft = `
     "Contair_B20c": {
         "model": "B20c",
         "name": "Contair B20c",
-        "cruise": 556,
+        "cruise": 436,
         "class": "Turboprop Regional Plane", 
         "type": "small",
         "capacity": 50,
@@ -125,7 +125,7 @@ const aircraft = `
     "Contair_B30a": {
         "model": "B30a",
         "name": "Contair B30a",
-        "cruise": 490,
+        "cruise": 425,
         "class": "Turboprop regional plane", 
         "type": "medium",
         "capacity": 68,
@@ -134,7 +134,7 @@ const aircraft = `
     "Contair_B30b": {
         "model": "B30b",
         "name": "Contair B30b",
-        "cruise": 510,
+        "cruise": 420,
         "class": "Turboprop regional plane",
         "type": "medium",
         "capacity": 70,
@@ -152,7 +152,7 @@ const aircraft = `
     "Contair_B30d": {
         "model": "B30d",
         "name": "Contair B30d",
-        "cruise": 490,
+        "cruise": 460,
         "class": "Turboprop regional plane", 
         "type": "medium",
         "capacity": 68,

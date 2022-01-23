@@ -142,6 +142,13 @@ const airline = `
         "callsign": "Dregolot",
         "image": "",
         "alliance": ""
+    },
+    "PV": {
+        "name": "Air Plevia",
+        "WAAT": "PV", 
+        "callsign": "Mediterra",
+        "image": "https://wiki.opengeofiction.net/images/9/92/Air_Plevia.png",
+        "alliance": "OneSky"
     }
 
 

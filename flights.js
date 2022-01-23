@@ -729,8 +729,248 @@ const flight = `
         "liftoff_minute": 0,
         "from_WAAT": "DOB",
         "to_WAAT": "CSV",
+        "aircraft": "Contair_B30b",
+        "age": 2004,
+        "opt_livery": "" 
+    },
+    "IZ200": {
+        "name": "IZ200",
+        "liftoff_hour": 1,
+        "liftoff_minute": 30,
+        "from_WAAT": "SUL",
+        "to_WAAT": "LCX",
+        "aircraft": "DG_80",
+        "age": 2010,
+        "opt_livery": "" 
+    },
+    "IZ201": {
+        "name": "IZ201",
+        "liftoff_hour": 12,
+        "liftoff_minute": 55,
+        "from_WAAT": "LCX",
+        "to_WAAT": "SUL",
+        "aircraft": "DG_80",
+        "age": 2010,
+        "opt_livery": "" 
+    },
+        "IZ300": {
+        "name": "IZ300",
+        "liftoff_hour": 23,
+        "liftoff_minute": 25,
+        "from_WAAT": "SUL",
+        "to_WAAT": "GWP",
+        "aircraft": "DG_80",
+        "age": 2008,
+        "opt_livery": "" 
+    },
+    "IZ302": {
+        "name": "IZ302",
+        "liftoff_hour": 13,
+        "liftoff_minute": 25,
+        "from_WAAT": "SUL",
+        "to_WAAT": "GWP",
+        "aircraft": "DG_80",
+        "age": 2010,
+        "opt_livery": "" 
+    },
+    "IZ301": {
+        "name": "IZ301",
+        "liftoff_hour": 6,
+        "liftoff_minute": 15,
+        "from_WAAT": "GWP",
+        "to_WAAT": "SUL",
+        "aircraft": "DG_80",
+        "age": 2007,
+        "opt_livery": "" 
+    },
+    "IZ303": {
+        "name": "IZ303",
+        "liftoff_hour": 20,
+        "liftoff_minute": 50,
+        "from_WAAT": "GWP",
+        "to_WAAT": "SUL",
+        "aircraft": "DG_80",
+        "age": 2008,
+        "opt_livery": "" 
+    },
+    "IZ304": {
+        "name": "IZ304",
+        "liftoff_hour": 0,
+        "liftoff_minute": 40,
+        "from_WAAT": "WRH",
+        "to_WAAT": "GWP",
+        "aircraft": "W36",
+        "age": 2009,
+        "opt_livery": "" 
+    },
+    "IZ305": {
+        "name": "IZ305",
+        "liftoff_hour": 8,
+        "liftoff_minute": 5,
+        "from_WAAT": "GWP",
+        "to_WAAT": "WRH",
+        "aircraft": "W36",
+        "age": 2008,
+        "opt_livery": "" 
+    },
+    "IZ306": {
+        "name": "IZ306",
+        "liftoff_hour": 5,
+        "liftoff_minute": 0,
+        "from_WAAT": "SUL",
+        "to_WAAT": "ICI",
         "aircraft": "W34",
-        "age": 2013 ,
+        "age": 2009,
+        "opt_livery": "" 
+    },
+    "IZ307": {
+        "name": "IZ307",
+        "liftoff_hour": 15,
+        "liftoff_minute": 35,
+        "from_WAAT": "ICI",
+        "to_WAAT": "SUL",
+        "aircraft": "W34",
+        "age": 2010,
+        "opt_livery": "" 
+    },
+    "IZ240": {
+        "name": "IZ240",
+        "liftoff_hour": 12,
+        "liftoff_minute": 30,
+        "from_WAAT": "SUL",
+        "to_WAAT": "IOL",
+        "aircraft": "W39",
+        "age": 2010,
+        "opt_livery": "" 
+    },
+    "IZ241": {
+        "name": "IZ241",
+        "liftoff_hour": 21,
+        "liftoff_minute": 30,
+        "from_WAAT": "IOL",
+        "to_WAAT": "SUL",
+        "aircraft": "W39",
+        "age": 2010,
+        "opt_livery": "" 
+    },
+    "PV100": {
+        "name": "PV100",
+        "liftoff_hour": 5,
+        "liftoff_minute": 30,
+        "from_WAAT": "OSI",
+        "to_WAAT": "MIR",
+        "aircraft": "W34",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "PV102": {
+        "name": "PV102",
+        "liftoff_hour": 12,
+        "liftoff_minute": 30,
+        "from_WAAT": "OSI",
+        "to_WAAT": "MIR",
+        "aircraft": "W34",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "PV104": {
+        "name": "PV104",
+        "liftoff_hour": 19,
+        "liftoff_minute": 30,
+        "from_WAAT": "OSI",
+        "to_WAAT": "MIR",
+        "aircraft": "W34",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "PV101": {
+        "name": "PV101",
+        "liftoff_hour": 9,
+        "liftoff_minute": 10,
+        "from_WAAT": "MIR",
+        "to_WAAT": "OSI",
+        "aircraft": "W34",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "PV103": {
+        "name": "PV103",
+        "liftoff_hour": 16,
+        "liftoff_minute": 0,
+        "from_WAAT": "MIR",
+        "to_WAAT": "OSI",
+        "aircraft": "W34",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "PV105": {
+        "name": "PV105",
+        "liftoff_hour": 1,
+        "liftoff_minute": 55,
+        "from_WAAT": "MIR",
+        "to_WAAT": "OSI",
+        "aircraft": "W34",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "PV180": {
+        "name": "PV180",
+        "liftoff_hour": 5,
+        "liftoff_minute": 15,
+        "from_WAAT": "OSI",
+        "to_WAAT": "GWP",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "PV182": {
+        "name": "PV182",
+        "liftoff_hour": 14,
+        "liftoff_minute": 30,
+        "from_WAAT": "OSI",
+        "to_WAAT": "GWP",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "PV181": {
+        "name": "PV181",
+        "liftoff_hour": 11,
+        "liftoff_minute": 0,
+        "from_WAAT": "GWP",
+        "to_WAAT": "OSI",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "PV183": {
+        "name": "PV183",
+        "liftoff_hour": 1,
+        "liftoff_minute": 0,
+        "from_WAAT": "GWP",
+        "to_WAAT": "OSI",
+        "aircraft": "W36",
+        "age": 2005,
+        "opt_livery": "" 
+    },
+    "PV190": {
+        "name": "PV190",
+        "liftoff_hour": 14,
+        "liftoff_minute": 45,
+        "from_WAAT": "OSI",
+        "to_WAAT": "QBX",
+        "aircraft": "DG_86",
+        "age": 2016,
+        "opt_livery": "" 
+    },
+    "PV191": {
+        "name": "PV191",
+        "liftoff_hour": 7,
+        "liftoff_minute": 45,
+        "from_WAAT": "QBX",
+        "to_WAAT": "OSI",
+        "aircraft": "DG_86",
+        "age": 2016,
         "opt_livery": "" 
     }
         
