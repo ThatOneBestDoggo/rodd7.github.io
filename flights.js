@@ -304,7 +304,7 @@ const flight = `
         "opt_livery": ""
     },
     "FR018": {
-        "name": "FR016", 
+        "name": "FR018", 
         "liftoff_hour": 2,
         "liftoff_minute": 45,
         "from_WAAT": "LCX",
@@ -314,7 +314,7 @@ const flight = `
         "opt_livery": ""
     },
     "FR020": {
-        "name": "FR016", 
+        "name": "FR020", 
         "liftoff_hour": 6,
         "liftoff_minute": 45,
         "from_WAAT": "LCX",
