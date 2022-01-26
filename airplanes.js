@@ -53,7 +53,8 @@ const aircraft = `
         "cruise": 775,
         "class": "Standard Jet Airliner", 
         "type": "medium",
-        "capacity": 212
+        "capacity": 212,
+        "image" : "https://old.opengeofiction.wiki/images/f/fc/DG70_unknown1.png"
     },
     "DG_80": {
         "model": "DG-80",
@@ -61,7 +62,8 @@ const aircraft = `
         "cruise": 820,
         "class": "Standard Jet Airliner", 
         "type": "medium",
-        "capacity": 292
+        "capacity": 292,
+        "image" : "https://old.opengeofiction.wiki/images/e/e3/DG80_EshenAir.png"
     },
     "DG_86": {
         "model": "DG-86",
@@ -69,7 +71,8 @@ const aircraft = `
         "cruise": 835,
         "class": "Standard Jet Airliner", 
         "type": "large",
-        "capacity": 372
+        "capacity": 372,
+        "image" : "https://old.opengeofiction.wiki/images/d/db/DG86_hetzair001a.jpg"
     },
     "NM70": {
         "model": "NM70",
@@ -187,7 +190,7 @@ const aircraft = `
     "W34":{
         "model": "W34",
         "name": "Wātānābe Ärospás W34",
-        "cruise": 830,
+        "cruise": 810,
         "class": "Standard Jet Airliner", 
         "type": "medium",
         "capacity": 172,
@@ -205,7 +208,7 @@ const aircraft = `
     "W39":{
         "model": "W39",
         "name": "Wātānābe Ärospás W39",
-        "cruise": 870,
+        "cruise": 830,
         "class": "Large Jet Airliner", 
         "type": "large",
         "capacity": 292,
@@ -214,7 +217,7 @@ const aircraft = `
     "W39_B":{
         "model": "W39-B",
         "name": "Wātānābe Ärospás W39-B",
-        "cruise": 900,
+        "cruise": 830,
         "class": "Large Jet Airliner", 
         "type": "large",
         "capacity": 312,
