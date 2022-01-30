@@ -222,6 +222,15 @@ const aircraft = `
         "type": "large",
         "capacity": 312,
         "image": "https://old.opengeofiction.wiki/images/9/95/Guai_Airways_W39-b.jpg"
+    },
+    "LC_13": {
+        "model": "LC-13",
+        "name": "Aero-Mini LC-13",
+        "cruise": 350,
+        "class": "Turboprop Regional Plane", 
+        "type": "small",
+        "capacity": 30,
+        "image" : "https://i.pinimg.com/736x/fa/8c/91/fa8c910ef3f30eed91a72e970be1897e.jpg"
     }
 
     

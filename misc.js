@@ -91,6 +91,10 @@ function generate(){
             airplanesize = "large";
             break;
         case "8":
+            airplanevalue = "LC_13";
+            airplanesize = "small";
+            break;
+        case "9":
             airplanevalue = "ADD_AIRCRAFT";
             airplanesize = "ADD_SIZE";
             break;

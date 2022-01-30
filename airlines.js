@@ -133,7 +133,7 @@ const airline = `
         "name": "GekLines",
         "WAAT": "GK", 
         "callsign": "GekLines",
-        "image": "",
+        "image": "https://cdn.discordapp.com/attachments/913558405220802592/937250667435790356/unknown.png",
         "alliance": "OneSky"
     },
     "DL": {
