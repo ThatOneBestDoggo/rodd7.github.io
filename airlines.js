@@ -156,7 +156,15 @@ const airline = `
         "callsign": "SMAR",
         "image": "https://old.opengeofiction.wiki/images/0/00/FlySMART_logo.png",
         "alliance": "WorldStar"
-    }
+    },
+    "DS": {
+        "name": "Dumbo Star Airlines",
+        "WAAT": "DS", 
+        "callsign": "Dumbostar",
+        "image": "https://cdn.discordapp.com/attachments/913558405220802592/937298402998366208/IMG_3810.png",
+        "alliance": " "
+    } 
+
 
 
 

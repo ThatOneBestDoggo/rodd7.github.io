@@ -1795,7 +1795,7 @@ const flight = `
         },
         "SA0020": {
         "name": "SA0020",
-        "liftoff_hour": 0,
+        "liftoff_hour": 1,
         "liftoff_minute": 15,
         "from_WAAT": "BKH",
         "to_WAAT": "LCX",
@@ -1815,7 +1815,7 @@ const flight = `
         },
         "SA0022": {
         "name": "SA0022",
-        "liftoff_hour": 2,
+        "liftoff_hour": 3,
         "liftoff_minute": 15,
         "from_WAAT": "BKH",
         "to_WAAT": "LCX",
@@ -1835,7 +1835,7 @@ const flight = `
         },
         "SA0024": {
         "name": "SA0024",
-        "liftoff_hour": 4,
+        "liftoff_hour": 5,
         "liftoff_minute": 15,
         "from_WAAT": "BKH",
         "to_WAAT": "LCX",
@@ -1855,7 +1855,7 @@ const flight = `
         },
         "SA0026": {
         "name": "SA0026",
-        "liftoff_hour": 6,
+        "liftoff_hour": 7,
         "liftoff_minute": 15,
         "from_WAAT": "BKH",
         "to_WAAT": "LCX",
@@ -1875,7 +1875,7 @@ const flight = `
         },
         "SA0028": {
         "name": "SA0028",
-        "liftoff_hour": 8,
+        "liftoff_hour": 9,
         "liftoff_minute": 15,
         "from_WAAT": "BKH",
         "to_WAAT": "LCX",
@@ -1895,7 +1895,7 @@ const flight = `
         },
         "SA0030": {
         "name": "SA0030",
-        "liftoff_hour": 10,
+        "liftoff_hour": 11,
         "liftoff_minute": 15,
         "from_WAAT": "BKH",
         "to_WAAT": "LCX",
@@ -1915,7 +1915,7 @@ const flight = `
         },
         "SA0032": {
         "name": "SA0032",
-        "liftoff_hour": 12,
+        "liftoff_hour": 13,
         "liftoff_minute": 15,
         "from_WAAT": "BKH",
         "to_WAAT": "LCX",
@@ -1935,7 +1935,7 @@ const flight = `
         },
         "SA0034": {
         "name": "SA0034",
-        "liftoff_hour": 20,
+        "liftoff_hour": 21,
         "liftoff_minute": 15,
         "from_WAAT": "BKH",
         "to_WAAT": "LCX",
@@ -1955,7 +1955,7 @@ const flight = `
         },
         "SA0036": {
         "name": "SA0036",
-        "liftoff_hour": 22,
+        "liftoff_hour": 23,
         "liftoff_minute": 15,
         "from_WAAT": "BKH",
         "to_WAAT": "LCX",
@@ -2862,7 +2862,168 @@ const flight = `
             "aircraft": "W34",
             "age": 2009,
             "opt_livery": "" 
-            }
+            },
+            "DS001": {
+                "name": "DS001",
+                "liftoff_hour": 3,
+                "liftoff_minute": 0,
+                "from_WAAT": "BAK",
+                "to_WAAT": "FYR",
+                "aircraft": "LC_13",
+                "age": 2010,
+                "opt_livery": "" 
+                },
+                "DS002": {
+                "name": "DS002",
+                "liftoff_hour": 15,
+                "liftoff_minute": 0,
+                "from_WAAT": "FYR",
+                "to_WAAT": "BAK",
+                "aircraft": "LC_13",
+                "age": 2010,
+                "opt_livery": "" 
+                },
+                "DS101": {
+                "name": "DS101",
+                "liftoff_hour": 6,
+                "liftoff_minute": 0,
+                "from_WAAT": "BAK",
+                "to_WAAT": "SAR",
+                "aircraft": "W39",
+                "age": 2015,
+                "opt_livery": "" 
+                },
+                "DS102": {
+                "name": "DS102",
+                "liftoff_hour": 8,
+                "liftoff_minute": 0,
+                "from_WAAT": "SAR",
+                "to_WAAT": "BAK",
+                "aircraft": "W39",
+                "age": 2015,
+                "opt_livery": "" 
+                },
+                "DS103": {
+                "name": "DS103",
+                "liftoff_hour": 13,
+                "liftoff_minute": 0,
+                "from_WAAT": "BAK",
+                "to_WAAT": "SAR",
+                "aircraft": "W39",
+                "age": 2015,
+                "opt_livery": "" 
+                },
+                "DS104": {
+                "name": "DS104",
+                "liftoff_hour": 15,
+                "liftoff_minute": 15,
+                "from_WAAT": "SAR",
+                "to_WAAT": "BAK",
+                "aircraft": "W39",
+                "age": 2015,
+                "opt_livery": "" 
+                },
+                "DS105": {
+                "name": "DS105",
+                "liftoff_hour": 7,
+                "liftoff_minute": 0,
+                "from_WAAT": "SJC",
+                "to_WAAT": "SAR",
+                "aircraft": "W34",
+                "age": 2013,
+                "opt_livery": "" 
+                },
+                "DS106": {
+                "name": "DS106",
+                "liftoff_hour": 9,
+                "liftoff_minute": 15,
+                "from_WAAT": "SAR",
+                "to_WAAT": "SJC",
+                "aircraft": "W34",
+                "age": 2013,
+                "opt_livery": "" 
+                },
+                "DS107": {
+                "name": "DS107",
+                "liftoff_hour": 14,
+                "liftoff_minute": 30,
+                "from_WAAT": "SJC",
+                "to_WAAT": "SAR",
+                "aircraft": "W34",
+                "age": 2013,
+                "opt_livery": "" 
+                },
+                "DS108": {
+                "name": "DS108",
+                "liftoff_hour": 16,
+                "liftoff_minute": 45,
+                "from_WAAT": "SAR",
+                "to_WAAT": "SJC",
+                "aircraft": "W34",
+                "age": 2013,
+                "opt_livery": "" 
+                },
+                "DS109": {
+                "name": "DS109",
+                "liftoff_hour": 4,
+                "liftoff_minute": 30,
+                "from_WAAT": "BAK",
+                "to_WAAT": "JDN",
+                "aircraft": "DG_86",
+                "age": 2013,
+                "opt_livery": "" 
+                },
+                "DS110": {
+                "name": "DS110",
+                "liftoff_hour": 7,
+                "liftoff_minute": 45,
+                "from_WAAT": "JDN",
+                "to_WAAT": "BAK",
+                "aircraft": "DG_86",
+                "age": 2013,
+                "opt_livery": "" 
+                },
+                "DS112": {
+                "name": "DS112",
+                "liftoff_hour": 4,
+                "liftoff_minute": 30,
+                "from_WAAT": "BAK",
+                "to_WAAT": "GWP",
+                "aircraft": "W39",
+                "age": 2016,
+                "opt_livery": "" 
+                },
+                "DS113": {
+                "name": "DS113",
+                "liftoff_hour": 15,
+                "liftoff_minute": 30,
+                "from_WAAT": "GWP",
+                "to_WAAT": "BAK",
+                "aircraft": "W39",
+                "age": 2016,
+                "opt_livery": "" 
+                },
+        "DS114": {
+            "name": "DS114",
+            "liftoff_hour": 23,
+            "liftoff_minute": 0,
+            "from_WAAT": "BAK",
+            "to_WAAT": "JDN",
+            "aircraft": "LC_13",
+            "age": 2018,
+            "opt_livery": "" 
+        },
+        "DS115": {
+            "name": "DS115",
+            "liftoff_hour": 4,
+            "liftoff_minute": 30,
+            "from_WAAT": "JDN",
+            "to_WAAT": "AUS",
+            "aircraft": "LC_13",
+            "age": 2018,
+            "opt_livery": "" 
+        }
+            
 
 
 }
