@@ -201,6 +201,12 @@ function loadMap() {
     L.marker(airports.TZH.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.TZH, flags.Gekdreg, 5));
     L.marker(airports.BKH.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.BKH, flags.FSA, 10));
     L.marker(airports.BNA.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.BNA, flags.FSA, 10));
+    L.marker(airports.AAA.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.AAA, flags.GT, 4));
+    L.marker(airports.SWP.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.SWP, flags.Gekdreg, 5));
+    L.marker(airports.NDL.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.NDL, flags.Gekdreg, 5));
+    L.marker(airports.MRM.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.MRM, flags.Gekdreg, 5));
+    L.marker(airports.HUZ.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.HUZ, flags.Kofuku, 5));
+
 
     L.marker([-38.74783, 32.14310], { icon: generalAirport }).addTo(map); //flying school
 
@@ -518,6 +524,14 @@ function loadMap() {
         createDuringFlight(DS113live,DS113popup,airports.GWP.coord,airports.BAK.coord,aircrafts.W39.cruise,DS113,large);
         createDuringFlight(DS114live,DS114popup,airports.BAK.coord,airports.JDN.coord,aircrafts.LC_13.cruise,DS114,small);
         createDuringFlight(DS115live,DS115popup,airports.JDN.coord,airports.AUS.coord,aircrafts.LC_13.cruise,DS115,small);
+        createDuringFlight(DS116live,DS116popup,airports.BAK.coord,airports.KSE.coord,aircrafts.DG_80.cruise,DS116,medium);
+        createDuringFlight(DS117live,DS117popup,airports.BAK.coord,airports.KSE.coord,aircrafts.DG_80.cruise,DS117,medium);
+        createDuringFlight(DS118live,DS118popup,airports.KSE.coord,airports.BAK.coord,aircrafts.DG_80.cruise,DS118,medium);
+        createDuringFlight(DS119live,DS119popup,airports.KSE.coord,airports.BAK.coord,aircrafts.DG_80.cruise,DS119,medium);
+        createDuringFlight(DS120live,DS120popup,airports.BAK.coord,airports.BLM.coord,aircrafts.W36.cruise,DS120,medium);
+        createDuringFlight(DS121live,DS121popup,airports.BAK.coord,airports.BLM.coord,aircrafts.DG_70.cruise,DS121,medium);
+        createDuringFlight(DS122live,DS122popup,airports.BLM.coord,airports.BAK.coord,aircrafts.W36.cruise,DS122,medium);
+        createDuringFlight(DS123live,DS123popup,airports.BLM.coord,airports.BAK.coord,aircrafts.DG_70.cruise,DS123,medium);
 
 
     }
@@ -829,6 +843,14 @@ function loadMap() {
         const DS113schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), first.getUTCDate(), flights.DS113.liftoff_hour, flights.DS113.liftoff_minute, 0);
         const DS114schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), first.getUTCDate(), flights.DS114.liftoff_hour, flights.DS114.liftoff_minute, 0);
         const DS115schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS114.liftoff_hour, flights.DS114.liftoff_minute, 0);
+        const DS116schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS116.liftoff_hour, flights.DS116.liftoff_minute, 0);
+        const DS117schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS117.liftoff_hour, flights.DS117.liftoff_minute, 0);
+        const DS118schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS118.liftoff_hour, flights.DS118.liftoff_minute, 0);
+        const DS119schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS119.liftoff_hour, flights.DS119.liftoff_minute, 0);
+        const DS120schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS120.liftoff_hour, flights.DS120.liftoff_minute, 0);
+        const DS121schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS121.liftoff_hour, flights.DS121.liftoff_minute, 0);
+        const DS122schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS122.liftoff_hour, flights.DS122.liftoff_minute, 0);
+        const DS123schedule = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS123.liftoff_hour, flights.DS123.liftoff_minute, 0);
         
         
         //main
@@ -1137,6 +1159,14 @@ function loadMap() {
         createBeforeLift(DS113schedule,4800,2700,DS113,DS113popup,airports.GWP.coord,airports.BAK.coord,aircrafts.W39.cruise);
         createBeforeLift(DS114schedule,0,0,DS114,DS114popup,airports.BAK.coord,airports.JDN.coord,aircrafts.LC_13.cruise);
         createBeforeLift(DS115schedule,0,0,DS115,DS115popup,airports.JDN.coord,airports.AUS.coord,aircrafts.LC_13.cruise);
+        createBeforeLift(DS116schedule,0,0,DS116,DS116popup,airports.BAK.coord,airports.KSE.coord,aircrafts.DG_80.cruise);
+        createBeforeLift(DS117schedule,0,0,DS117,DS117popup,airports.BAK.coord,airports.KSE.coord,aircrafts.DG_80.cruise);
+        createBeforeLift(DS118schedule,0,0,DS118,DS118popup,airports.KSE.coord,airports.BAK.coord,aircrafts.DG_80.cruise);
+        createBeforeLift(DS119schedule,0,0,DS119,DS119popup,airports.KSE.coord,airports.BAK.coord,aircrafts.DG_80.cruise);
+        createBeforeLift(DS120schedule,0,0,DS120,DS120popup,airports.BAK.coord,airports.BLM.coord,aircrafts.W36.cruise);
+        createBeforeLift(DS121schedule,0,0,DS121,DS121popup,airports.BAK.coord,airports.BLM.coord,aircrafts.DG_70.cruise);
+        createBeforeLift(DS122schedule,0,0,DS122,DS122popup,airports.BLM.coord,airports.BAK.coord,aircrafts.W36.cruise);
+        createBeforeLift(DS123schedule,0,0,DS123,DS123popup,airports.BLM.coord,airports.BAK.coord,aircrafts.DG_70.cruise);
         
 
         setTimeout(function () { schedule()}, 1000);
@@ -1453,6 +1483,14 @@ function loadMap() {
     const DS113live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), first.getUTCDate(), flights.DS113.liftoff_hour, flights.DS113.liftoff_minute, 0);
     const DS114live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), first.getUTCDate(), flights.DS114.liftoff_hour, flights.DS114.liftoff_minute, 0);
     const DS115live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS115.liftoff_hour, flights.DS115.liftoff_minute, 0);
+    const DS116live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS116.liftoff_hour, flights.DS116.liftoff_minute, 0);
+    const DS117live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS117.liftoff_hour, flights.DS117.liftoff_minute, 0);
+    const DS118live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS118.liftoff_hour, flights.DS118.liftoff_minute, 0);
+    const DS119live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS119.liftoff_hour, flights.DS119.liftoff_minute, 0);
+    const DS120live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS120.liftoff_hour, flights.DS120.liftoff_minute, 0);
+    const DS121live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS121.liftoff_hour, flights.DS121.liftoff_minute, 0);
+    const DS122live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS122.liftoff_hour, flights.DS122.liftoff_minute, 0);
+    const DS123live = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate(), flights.DS123.liftoff_hour, flights.DS123.liftoff_minute, 0);
 
 
     var UE401 = makeMarker(airports.SAG.coord, airports.KNU.coord, aircrafts.NM90.cruise, medium); UE401.setOpacity(0);
@@ -1755,6 +1793,14 @@ function loadMap() {
     var DS113= makeMarker(airports.GWP.coord,airports.BAK.coord,aircrafts.W39.cruise,large); DS113.setOpacity(0);
     var DS114= makeMarker(airports.BAK.coord,airports.JDN.coord,aircrafts.LC_13.cruise,small); DS114.setOpacity(0);
     var DS115= makeMarker(airports.JDN.coord,airports.AUS.coord,aircrafts.LC_13.cruise,small); DS115.setOpacity(0);
+    var DS116= makeMarker(airports.BAK.coord,airports.KSE.coord,aircrafts.DG_80.cruise,medium); DS116.setOpacity(0);
+    var DS117= makeMarker(airports.BAK.coord,airports.KSE.coord,aircrafts.DG_80.cruise,medium); DS117.setOpacity(0);
+    var DS118= makeMarker(airports.KSE.coord,airports.BAK.coord,aircrafts.DG_80.cruise,medium); DS118.setOpacity(0);
+    var DS119= makeMarker(airports.KSE.coord,airports.BAK.coord,aircrafts.DG_80.cruise,medium); DS119.setOpacity(0);
+    var DS120= makeMarker(airports.BAK.coord,airports.BLM.coord,aircrafts.W36.cruise,medium); DS120.setOpacity(0);
+    var DS121= makeMarker(airports.BAK.coord,airports.BLM.coord,aircrafts.DG_70.cruise,medium); DS121.setOpacity(0);
+    var DS122= makeMarker(airports.BLM.coord,airports.BAK.coord,aircrafts.W36.cruise,medium); DS122.setOpacity(0);
+    var DS123= makeMarker(airports.BLM.coord,airports.BAK.coord,aircrafts.DG_70.cruise,medium); DS123.setOpacity(0);
 
     live();
     schedule();

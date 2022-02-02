@@ -1746,10 +1746,10 @@ const airport = `
         "runway": 2
     },
     "CSV": { 
-        "name": "International Airport Ceshnavisk",
+        "name": "International Airport Chashavinsk",
         "coord": [56.40615, 75.65018],
         "country": "Geklinia-Dregolesia",
-        "city":"Ceshnavisk",
+        "city":"Chashavinsk",
         "class": "A",
         "WAAT": "CSV",
         "ANACA" : "ICSV",
@@ -1815,7 +1815,7 @@ const airport = `
         "ANACA" : "ISZH",
         "runway": 2
     },    
-    "RAZ": {
+    "RAZ": {    
         "name": "Aèroport Ordyn'-Razlët",
         "coord": [40.2098, 91.4586],
         "country": "Suria",
@@ -1824,6 +1824,56 @@ const airport = `
         "WAAT": "RAZ",
         "ANACA" : "ISOR",
         "runway": 2
+    },
+    "AAA": { 
+        "name": "Alatyn International Airport",
+        "coord": [-46.6866806, 65.6141978],
+        "country": "Grisean-Thrirranic Commonwealth",
+        "city":"Alatyn",
+        "class": "B",
+        "WAAT": "AAA",
+        "ANACA" : "OTAA",
+        "runway": 2
+    },
+    "SWP": { 
+        "name": "Śwjyntoprykopice-Podwjyrch Regional Airport",
+        "coord": [56.7871, 79.1644],
+        "country": "Geklinia-Dregolesia",
+        "city":"Śwjyntoprykopice-Podwjyrch",
+        "class": "C",
+        "WAAT": "SWP",
+        "ANACA" : "ISWP",
+        "runway": 1
+    },
+    "NDL": { 
+        "name": "Airport Nedelica",
+        "coord": [55.9536, 78.6078],
+        "country": "Geklinia-Dregolesia",
+        "city":"Nedelica/Niedzialica",
+        "class": "B",
+        "WAAT": "NDL",
+        "ANACA" : "INDL",
+        "runway": 1
+    },
+    "HUZ": { 
+        "name": "Huz Islands Airport",
+        "coord": [-53.5933039, 79.1069054],
+        "country": "Kofuku",
+        "city":"Huz Islands",
+        "class": "C",
+        "WAAT": "HUZ",
+        "ANACA" : "OHZI",
+        "runway": 1
+    },
+    "MRM": { 
+        "name": "International Airport Moremir",
+        "coord": [55.82330, 72.93244],
+        "country": "Geklinia-Dregolesia",
+        "city":"Moremir",
+        "class": "B",
+        "WAAT": "MRM",
+        "ANACA" : "IMRM",
+        "runway": 1
     }
 
 }`

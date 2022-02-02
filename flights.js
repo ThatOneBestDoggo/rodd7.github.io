@@ -3022,7 +3022,87 @@ const flight = `
             "aircraft": "LC_13",
             "age": 2018,
             "opt_livery": "" 
-        }
+        },
+        "DS116": {
+            "name": "DS116",
+            "liftoff_hour": 6,
+            "liftoff_minute": 30,
+            "from_WAAT": "BAK",
+            "to_WAAT": "KSE",
+            "aircraft": "DG_80",
+            "age": 2019,
+            "opt_livery": "" 
+            },
+            "DS117": {
+            "name": "DS117",
+            "liftoff_hour": 11,
+            "liftoff_minute": 30,
+            "from_WAAT": "BAK",
+            "to_WAAT": "KSE",
+            "aircraft": "DG_80",
+            "age": 2019,
+            "opt_livery": "" 
+            },
+            "DS118": {
+            "name": "DS118",
+            "liftoff_hour": 9,
+            "liftoff_minute": 50,
+            "from_WAAT": "KSE",
+            "to_WAAT": "BAK",
+            "aircraft": "DG_80",
+            "age": 2019,
+            "opt_livery": "" 
+            },
+            "DS119": {
+            "name": "DS119",
+            "liftoff_hour": 14,
+            "liftoff_minute": 50,
+            "from_WAAT": "KSE",
+            "to_WAAT": "BAK",
+            "aircraft": "DG_80",
+            "age": 2019,
+            "opt_livery": "" 
+            },
+            "DS120": {
+            "name": "DS120",
+            "liftoff_hour": 7,
+            "liftoff_minute": 0,
+            "from_WAAT": "BAK",
+            "to_WAAT": "BLM",
+            "aircraft": "W36",
+            "age": 2014,
+            "opt_livery": "" 
+            },
+            "DS121": {
+            "name": "DS121",
+            "liftoff_hour": 13,
+            "liftoff_minute": 0,
+            "from_WAAT": "BAK",
+            "to_WAAT": "BLM",
+            "aircraft": "DG_70",
+            "age": 2014,
+            "opt_livery": "" 
+            },
+            "DS122": {
+            "name": "DS122",
+            "liftoff_hour": 11,
+            "liftoff_minute": 45,
+            "from_WAAT": "BLM",
+            "to_WAAT": "BAK",
+            "aircraft": "W36",
+            "age": 2014,
+            "opt_livery": "" 
+            },
+            "DS123": {
+            "name": "DS123",
+            "liftoff_hour": 17,
+            "liftoff_minute": 45,
+            "from_WAAT": "BLM",
+            "to_WAAT": "BAK",
+            "aircraft": "DG_70",
+            "age": 2014,
+            "opt_livery": "" 
+            }
             
 
 
