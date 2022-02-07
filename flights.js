@@ -3102,7 +3102,657 @@ const flight = `
             "aircraft": "DG_70",
             "age": 2014,
             "opt_livery": "" 
-            }
+            },
+        "LY525": {
+        "name": "LY525",
+        "liftoff_hour": 12,
+        "liftoff_minute": 45,
+        "from_WAAT": "BAK",
+        "to_WAAT": "LYR",
+        "aircraft": "DG_86",
+        "age": 2013,
+        "opt_livery": "" 
+        },
+        "LY524": {
+        "name": "LY524",
+        "liftoff_hour": 11,
+        "liftoff_minute": 5,
+        "from_WAAT": "LYR",
+        "to_WAAT": "BAK",
+        "aircraft": "DG_86",
+        "age": 2013,
+        "opt_livery": "" 
+        },
+        "LY517": {
+        "name": "LY517",
+        "liftoff_hour": 16,
+        "liftoff_minute": 15,
+        "from_WAAT": "AAA",
+        "to_WAAT": "LYR",
+        "aircraft": "W36",
+        "age": 2012,
+        "opt_livery": "" 
+        },
+        "LY516": {
+        "name": "LY516",
+        "liftoff_hour": 10,
+        "liftoff_minute": 15,
+        "from_WAAT": "LYR",
+        "to_WAAT": "AAA",
+        "aircraft": "W36",
+        "age": 2012,
+        "opt_livery": "" 
+        },
+        "LY241": {
+        "name": "LY241",
+        "liftoff_hour": 14,
+        "liftoff_minute": 35,
+        "from_WAAT": "LYR",
+        "to_WAAT": "JDN",
+        "aircraft": "W36",
+        "age": 2019,
+        "opt_livery": "" 
+        },
+        "LY240": {
+        "name": "LY240",
+        "liftoff_hour": 10,
+        "liftoff_minute": 35,
+        "from_WAAT": "JDN",
+        "to_WAAT": "LYR",
+        "aircraft": "W36",
+        "age": 2021,
+        "opt_livery": "" 
+        },
+        "LY132": {
+        "name": "LY132",
+        "liftoff_hour": 10,
+        "liftoff_minute": 25,
+        "from_WAAT": "LYR",
+        "to_WAAT": "CRS",
+        "aircraft": "W34",
+        "age": 2018,
+        "opt_livery": "" 
+        },
+        "LY133": {
+        "name": "LY133",
+        "liftoff_hour": 12,
+        "liftoff_minute": 25,
+        "from_WAAT": "CRS",
+        "to_WAAT": "LYR",
+        "aircraft": "W34",
+        "age": 2018,
+        "opt_livery": "" 
+        },
+        "LY131": {
+        "name": "LY131",
+        "liftoff_hour": 8,
+        "liftoff_minute": 25,
+        "from_WAAT": "CRS",
+        "to_WAAT": "LYR",
+        "aircraft": "W34",
+        "age": 2018,
+        "opt_livery": "" 
+        },
+        "LY130": {
+        "name": "LY130",
+        "liftoff_hour": 6,
+        "liftoff_minute": 25,
+        "from_WAAT": "LYR",
+        "to_WAAT": "CRS",
+        "aircraft": "W34",
+        "age": 2018,
+        "opt_livery": "" 
+        },
+        "LY247": {
+        "name": "LY247",
+        "liftoff_hour": 14,
+        "liftoff_minute":0 ,
+        "from_WAAT": "LYR",
+        "to_WAAT": "QBX",
+        "aircraft": "W34",
+        "age": 2009,
+        "opt_livery": "" 
+        },
+        "LY246": {
+        "name": "LY246",
+        "liftoff_hour": 12,
+        "liftoff_minute":0 ,
+        "from_WAAT": "QBX",
+        "to_WAAT": "LYR",
+        "aircraft": "W34",
+        "age": 2009,
+        "opt_livery": "" 
+        },
+        "LY615": {
+        "name": "LY615",
+        "liftoff_hour": 8,
+        "liftoff_minute": 15,
+        "from_WAAT": "KSE",
+        "to_WAAT": "LYR",
+        "aircraft": "W34",
+        "age": 2009,
+        "opt_livery": "" 
+        },
+        "LY616": {
+        "name": "LY616",
+        "liftoff_hour": 12,
+        "liftoff_minute": 30 ,
+        "from_WAAT": "LYR",
+        "to_WAAT": "KSE",
+        "aircraft": "W34",
+        "age": 2009,
+        "opt_livery": "" 
+        },
+        "LY618": {
+        "name": "LY618",
+        "liftoff_hour": 20,
+        "liftoff_minute": 15,
+        "from_WAAT": "KSE",
+        "to_WAAT": "LYR",
+        "aircraft": "W34",
+        "age": 2009,
+        "opt_livery": "" 
+        },
+        "LY876": {
+        "name": "LY876",
+        "liftoff_hour": 4,
+        "liftoff_minute": 30 ,
+        "from_WAAT": "RJP",
+        "to_WAAT": "LYR",
+        "aircraft": "W39",
+        "age": 2017,
+        "opt_livery": "" 
+        },
+        "LY874": {
+        "name": "LY874",
+        "liftoff_hour": 16,
+        "liftoff_minute": 30 ,
+        "from_WAAT": "RJP",
+        "to_WAAT": "LYR",
+        "aircraft": "W39",
+        "age": 2017,
+        "opt_livery": "" 
+        },
+        "LY875": {
+        "name": "LY875",
+        "liftoff_hour": 22,
+        "liftoff_minute": 30 ,
+        "from_WAAT": "LYR",
+        "to_WAAT": "RJP",
+        "aircraft": "W39",
+        "age": 2018,
+        "opt_livery": "" 
+        },
+        "LY873": {
+        "name": "LY873",
+        "liftoff_hour": 10,
+        "liftoff_minute": 30 ,
+        "from_WAAT": "LYR",
+        "to_WAAT": "RJP",
+        "aircraft": "W39",
+        "age": 2018,
+        "opt_livery": "" 
+        },
+        "GK003": {
+        "name": "GK003",
+        "liftoff_hour": 5,
+        "liftoff_minute": 10,
+        "from_WAAT": "DOB",
+        "to_WAAT": "CSV",
+        "aircraft": "Contair_D20a",
+        "age": 2019,
+        "opt_livery": "" 
+        },
+        "GK004": {
+        "name": "GK004",
+        "liftoff_hour": 7,
+        "liftoff_minute": 15,
+        "from_WAAT": "CSV",
+        "to_WAAT": "DOB",
+        "aircraft": "Contair_D20a",
+        "age": 2017 ,
+        "opt_livery": "" 
+        },
+        "GK006": {
+        "name": "GK006",
+        "liftoff_hour": 11,
+        "liftoff_minute": 25,
+        "from_WAAT": "CSV",
+        "to_WAAT": "DOB",
+        "aircraft": "Contair_D20a",
+        "age": 2018 ,
+        "opt_livery": "" 
+        },
+        "GK008": {
+        "name": "GK008",
+        "liftoff_hour": 15,
+        "liftoff_minute": 35,
+        "from_WAAT": "CSV",
+        "to_WAAT": "DOB",
+        "aircraft": "Contair_D20a",
+        "age": 2019 ,
+        "opt_livery": "" 
+        },
+        "GK005": {
+        "name": "GK005",
+        "liftoff_hour": 9,
+        "liftoff_minute": 20,
+        "from_WAAT": "DOB",
+        "to_WAAT": "CSV",
+        "aircraft": "Contair_D20a",
+        "age": 2017 ,
+        "opt_livery": "" 
+        },
+        "GK007": {
+        "name": "GK007",
+        "liftoff_hour": 13,
+        "liftoff_minute": 30,
+        "from_WAAT": "DOB",
+        "to_WAAT": "CSV",
+        "aircraft": "Contair_D20a",
+        "age": 2018,
+        "opt_livery": "" 
+        },
+        "GK011": {
+        "name": "GK011",
+        "liftoff_hour": 1,
+        "liftoff_minute": 10,
+        "from_WAAT": "BOG",
+        "to_WAAT": "DOB",
+        "aircraft": "Contair_D20a",
+        "age": 2019,
+        "opt_livery": "" 
+        },
+        "GK013": {
+        "name": "GK013",
+        "liftoff_hour": 11,
+        "liftoff_minute": 10,
+        "from_WAAT": "BOG",
+        "to_WAAT": "DOB",
+        "aircraft": "Contair_D20a",
+        "age": 2019,
+        "opt_livery": "" 
+        },
+        "GK012": {
+        "name": "GK012",
+        "liftoff_hour": 3,
+        "liftoff_minute": 30,
+        "from_WAAT": "DOB",
+        "to_WAAT": "BOG",
+        "aircraft": "Contair_D20a",
+        "age": 2017,
+        "opt_livery": "" 
+        },
+        "GK014": {
+        "name": "GK014",
+        "liftoff_hour": 13,
+        "liftoff_minute": 30,
+        "from_WAAT": "DOB",
+        "to_WAAT": "BOG",
+        "aircraft": "Contair_D20a",
+        "age": 2019,
+        "opt_livery": "" 
+        },
+        "GK015": {
+        "name": "GK015",
+        "liftoff_hour": 1,
+        "liftoff_minute": 25,
+        "from_WAAT": "BOG",
+        "to_WAAT": "TZY",
+        "aircraft": "Contair_D20a",
+        "age": 2018 ,
+        "opt_livery": "" 
+        },
+        "GK016": {
+        "name": "GK016",
+        "liftoff_hour": 13,
+        "liftoff_minute": 50,
+        "from_WAAT": "TZY",
+        "to_WAAT": "BOG",
+        "aircraft": "Contair_D20a",
+        "age": 2018,
+        "opt_livery": "" 
+        },
+        "GK017": {
+        "name": "GK017",
+        "liftoff_hour": 2,
+        "liftoff_minute": 0,
+        "from_WAAT": "DOB",
+        "to_WAAT": "MIR",
+        "aircraft": "W36",
+        "age": 2014,
+        "opt_livery": "" 
+        },
+        "GK019": {
+        "name": "GK019",
+        "liftoff_hour": 12,
+        "liftoff_minute": 20,
+        "from_WAAT": "DOB",
+        "to_WAAT": "MIR",
+        "aircraft": "W36",
+        "age": 2014,
+        "opt_livery": "" 
+        },
+        "GK018": {
+        "name": "GK018",
+        "liftoff_hour": 4,
+        "liftoff_minute": 20,
+        "from_WAAT": "MIR",
+        "to_WAAT": "DOB",
+        "aircraft": "W36",
+        "age": 2014,
+        "opt_livery": "" 
+        },
+        "GK020": {
+        "name": "GK020",
+        "liftoff_hour": 14,
+        "liftoff_minute": 30,
+        "from_WAAT": "MIR",
+        "to_WAAT": "DOB",
+        "aircraft": "W36",
+        "age": 2014,
+        "opt_livery": "" 
+        },
+        "DS003": {
+        "name": "DS003",
+        "liftoff_hour": 2,
+        "liftoff_minute": 0,
+        "from_WAAT": "BAK",
+        "to_WAAT": "HUZ",
+        "aircraft": "W34",
+        "age": 2010,
+        "opt_livery": "" 
+        },
+        "DS004": {
+        "name": "DS004",
+        "liftoff_hour": 10,
+        "liftoff_minute": 0,
+        "from_WAAT": "BAK",
+        "to_WAAT": "HUZ",
+        "aircraft": "W34",
+        "age": 2010,
+        "opt_livery": "" 
+        },
+        "DS005": {
+        "name": "DS005",
+        "liftoff_hour": 18,
+        "liftoff_minute": 0,
+        "from_WAAT": "BAK",
+        "to_WAAT": "HUZ",
+        "aircraft": "W34",
+        "age": 2010,
+        "opt_livery": "" 
+        },
+        "DS006": {
+        "name": "DS006",
+        "liftoff_hour": 6,
+        "liftoff_minute": 0,
+        "from_WAAT": "HUZ",
+        "to_WAAT": "BAK",
+        "aircraft": "W34",
+        "age": 2010,
+        "opt_livery": "" 
+        },
+        "DS007": {
+        "name": "DS007",
+        "liftoff_hour": 14,
+        "liftoff_minute": 0,
+        "from_WAAT": "HUZ",
+        "to_WAAT": "BAK",
+        "aircraft": "W34",
+        "age": 2010,
+        "opt_livery": "" 
+        },
+        "DS008": {
+        "name": "DS008",
+        "liftoff_hour": 22,
+        "liftoff_minute": 0,
+        "from_WAAT": "HUZ",
+        "to_WAAT": "BAK",
+        "aircraft": "W34",
+        "age": 2010,
+        "opt_livery": "" 
+        },
+        "DS220": {
+        "name": "DS220",
+        "liftoff_hour": 3,
+        "liftoff_minute": 0,
+        "from_WAAT": "BAK",
+        "to_WAAT": "SNM",
+        "aircraft": "W39",
+        "age": 2015,
+        "opt_livery": "" 
+        },
+        "DS221": {
+        "name": "DS221",
+        "liftoff_hour": 15,
+        "liftoff_minute": 0,
+        "from_WAAT": "BAK",
+        "to_WAAT": "SNM",
+        "aircraft": "W39",
+        "age": 2015,
+        "opt_livery": "" 
+        },
+        "DS222": {
+        "name": "DS222",
+        "liftoff_hour": 9,
+        "liftoff_minute": 0,
+        "from_WAAT": "SNM",
+        "to_WAAT": "SNM",
+        "aircraft": "W39",
+        "age": 2015,
+        "opt_livery": "" 
+        },
+        "DS223": {
+        "name": "DS223",
+        "liftoff_hour": 21,
+        "liftoff_minute": 0,
+        "from_WAAT": "SNM",
+        "to_WAAT": "SNM",
+        "aircraft": "W39",
+        "age": 2015,
+        "opt_livery": "" 
+        },
+        "DS124": {
+        "name": "DS124",
+        "liftoff_hour": 10,
+        "liftoff_minute": 30,
+        "from_WAAT": "BAK",
+        "to_WAAT": "SUL",
+        "aircraft": "DG_86",
+        "age": 2020,
+        "opt_livery": "" 
+        },
+        "DS125": {
+        "name": "DS125",
+        "liftoff_hour": 22,
+        "liftoff_minute": 30,
+        "from_WAAT": "BAK",
+        "to_WAAT": "SUL",
+        "aircraft": "DG_86",
+        "age": 2020,
+        "opt_livery": "" 
+        },
+        "DS126": {
+        "name": "DS126",
+        "liftoff_hour": 4,
+        "liftoff_minute": 30,
+        "from_WAAT": "SUL",
+        "to_WAAT": "BAK",
+        "aircraft": "DG_86",
+        "age": 2020,
+        "opt_livery": "" 
+        },
+        "DS127": {
+        "name": "DS127",
+        "liftoff_hour": 16,
+        "liftoff_minute": 30,
+        "from_WAAT": "SUL",
+        "to_WAAT": "BAK",
+        "aircraft": "DG_86",
+        "age": 2020,
+        "opt_livery": "" 
+        },
+        "DS128": {
+        "name": "DS128",
+        "liftoff_hour": 9,
+        "liftoff_minute": 15,
+        "from_WAAT": "BAK",
+        "to_WAAT": "HAR",
+        "aircraft": "DG_86",
+        "age": 2017,
+        "opt_livery": "" 
+        },
+        "DS129": {
+        "name": "DS129",
+        "liftoff_hour": 21,
+        "liftoff_minute": 15,
+        "from_WAAT": "BAK",
+        "to_WAAT": "HAR",
+        "aircraft": "DG_86",
+        "age": 2017,
+        "opt_livery": "" 
+        },
+        "DS130": {
+        "name": "DS130",
+        "liftoff_hour": 3,
+        "liftoff_minute": 20,
+        "from_WAAT": "HAR",
+        "to_WAAT": "BAK",
+        "aircraft": "DG_86",
+        "age": 2017,
+        "opt_livery": "" 
+        },
+        "DS131": {
+        "name": "DS131",
+        "liftoff_hour": 15,
+        "liftoff_minute": 20,
+        "from_WAAT": "HAR",
+        "to_WAAT": "BAK",
+        "aircraft": "DG_86",
+        "age": 2017,
+        "opt_livery": "" 
+        },
+        "DS132": {
+        "name": "DS132",
+        "liftoff_hour": 8,
+        "liftoff_minute": 45,
+        "from_WAAT": "BAK",
+        "to_WAAT": "QBX",
+        "aircraft": "W39",
+        "age": 2016,
+        "opt_livery": "" 
+        },
+        "DS133": {
+        "name": "DS133",
+        "liftoff_hour": 20,
+        "liftoff_minute": 45,
+        "from_WAAT": "BAK",
+        "to_WAAT": "QBX",
+        "aircraft": "W39",
+        "age": 2016,
+        "opt_livery": "" 
+        },
+        "DS134": {
+        "name": "DS134",
+        "liftoff_hour": 2,
+        "liftoff_minute": 40,
+        "from_WAAT": "QBX",
+        "to_WAAT": "BAK",
+        "aircraft": "W39",
+        "age": 2016,
+        "opt_livery": "" 
+        },
+        "DS135": {
+        "name": "DS135",
+        "liftoff_hour": 14,
+        "liftoff_minute": 40,
+        "from_WAAT": "QBX",
+        "to_WAAT": "BAK",
+        "aircraft": "W39",
+        "age": 2016,
+        "opt_livery": "" 
+        },
+        "DS136": {
+        "name": "DS136",
+        "liftoff_hour": 1,
+        "liftoff_minute": 0,
+        "from_WAAT": "GWP",
+        "to_WAAT": "DDA",
+        "aircraft": "DG_86",
+        "age": 2014,
+        "opt_livery": "" 
+        },
+        "DS137": {
+        "name": "DS137",
+        "liftoff_hour": 13,
+        "liftoff_minute": 0,
+        "from_WAAT": "GWP",
+        "to_WAAT": "DDA",
+        "aircraft": "DG_86",
+        "age": 2014,
+        "opt_livery": "" 
+        },
+        "DS138": {
+        "name": "DS138",
+        "liftoff_hour": 7,
+        "liftoff_minute": 15,
+        "from_WAAT": "DDA",
+        "to_WAAT": "GWP",
+        "aircraft": "DG_86",
+        "age": 2014,
+        "opt_livery": "" 
+        },
+        "DS139": {
+        "name": "DS139",
+        "liftoff_hour": 19,
+        "liftoff_minute": 15,
+        "from_WAAT": "DDA",
+        "to_WAAT": "GWP",
+        "aircraft": "DG_86",
+        "age": 2014,
+        "opt_livery": "" 
+        },
+        "DS140": {
+        "name": "DS140",
+        "liftoff_hour": 1,
+        "liftoff_minute": 10,
+        "from_WAAT": "MTA",
+        "to_WAAT": "GWP",
+        "aircraft": "W36",
+        "age": 2013,
+        "opt_livery": "" 
+        },
+        "DS141": {
+        "name": "DS141",
+        "liftoff_hour": 13,
+        "liftoff_minute": 10,
+        "from_WAAT": "MTA",
+        "to_WAAT": "GWP",
+        "aircraft": "W36",
+        "age": 2013,
+        "opt_livery": "" 
+        },
+        "DS142": {
+        "name": "DS142",
+        "liftoff_hour": 7,
+        "liftoff_minute": 30,
+        "from_WAAT": "GWP",
+        "to_WAAT": "MTA",
+        "aircraft": "W36",
+        "age": 2013,
+        "opt_livery": "" 
+        },
+        "DS143": {
+        "name": "DS143",
+        "liftoff_hour": 19,
+        "liftoff_minute": 30,
+        "from_WAAT": "GWP",
+        "to_WAAT": "MTA",
+        "aircraft": "W36",
+        "age": 2013,
+        "opt_livery": "" 
+        }
             
 
 

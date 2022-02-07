@@ -1874,6 +1874,26 @@ const airport = `
         "WAAT": "MRM",
         "ANACA" : "IMRM",
         "runway": 1
+    },
+    "DBY": { 
+        "name": "Donnerbyle Airport",
+        "coord": [-49.4920046, 72.8773629],
+        "country": "Kofuku",
+        "city":"Donnerbyle",
+        "class": "C",
+        "WAAT": "DBY",
+        "ANACA" : "ODNE",
+        "runway": 1
+    },
+    "KBO": { 
+        "name": "Kabøy Island Airport",
+        "coord": [-49.6572297, 73.3737691],
+        "country": "Kofuku",
+        "city":"Kabøy",
+        "class": "C",
+        "WAAT": "KBO",
+        "ANACA" : "OKBO",
+        "runway": 1
     }
 
 }`
