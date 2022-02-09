@@ -139,7 +139,7 @@ function loadMap() {
     L.marker(airports.MIR.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.MIR, flags.Suria, 4));
     L.marker(airports.BTR.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.BTR, flags.Aden, 3));
     L.marker(airports.ADM.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.ADM, flags.Aden, 3));
-    L.marker(airports.NDL.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.NDL, flags.Aden, 3));
+    L.marker(airports.NDA.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.NDA, flags.Aden, 3));
     L.marker(airports.OSN.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.OSN, flags.Aden, 3));
     L.marker(airports.ALN.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.ALN, flags.Aden, 3));
     L.marker(airports.INR.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.INR, flags.Aden, 3));
@@ -203,12 +203,19 @@ function loadMap() {
     L.marker(airports.BNA.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.BNA, flags.FSA, 10));
     L.marker(airports.AAA.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.AAA, flags.GT, 4));
     L.marker(airports.SWP.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.SWP, flags.Gekdreg, 5));
-    L.marker(airports.NDL.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.NDL, flags.Gekdreg, 5));
+    L.marker(airports.NDL.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.NDL, flags.Gekdreg, 5));
     L.marker(airports.MRM.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.MRM, flags.Gekdreg, 5));
     L.marker(airports.HUZ.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.HUZ, flags.Kofuku, 5));
     L.marker(airports.DBY.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.DBY, flags.Kofuku, 5));
     L.marker(airports.KBO.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.KBO, flags.Kofuku, 5));
-
+    L.marker(airports.RLS.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.RLS, flags.Izaland, 8));
+    L.marker(airports.SNP.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.SNP, flags.Izaland, 8));
+    L.marker(airports.MRY.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.MRY, flags.Izaland, 8));
+    L.marker(airports.NCL.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.NCL, flags.Mallyore, 6));
+    L.marker(airports.SHJ.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.SHJ, flags.Kalisanjo, 4));
+    L.marker(airports.YAK.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.YAK, flags.Kalisanjo, 4));
+    L.marker(airports.KRS.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.KRS, flags.Kalisanjo, 4));
+    L.marker(airports.OKU.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.OKU, flags.Kalisanjo, 4));
 
     L.marker([-38.74783, 32.14310], { icon: generalAirport }).addTo(map); //flying school
 

@@ -30,7 +30,10 @@ const flag = `
     "Adaria": "<img src='https://wiki.opengeofiction.net/images/1/17/Adariaflag.png' width='35'>",
     "Bai": "<img src='https://wiki.opengeofiction.net/images/d/d1/Bai_flag.png' width='35'>",
     "Aden": "<img src='https://wiki.opengeofiction.net/images/2/2d/Aden_New_Flag.png' width='35'>",
-    "Gekdreg": "<img src='https://wiki.opengeofiction.net/images/8/8d/UL14b_flag.png' width='35'>"
+    "Gekdreg": "<img src='https://wiki.opengeofiction.net/images/8/8d/UL14b_flag.png' width='35'>",
+    "Mallyore": "<img src='https://wiki.opengeofiction.net/images/4/4d/Mallyorianflag.png' width='35'>",
+    "Kalisanjo": "<img src='https://wiki.opengeofiction.net/images/8/8b/Flag_of_Kalisanjo.png' width='35'>"
+    
 
     
     
@@ -98,7 +101,7 @@ const airport = `
         "city": "Tazów",
         "class": "B",
         "WAAT": "TZY",
-        "ANACA" : "ITAZ",
+        "ANACA" : "ILTZ",
         "runway": 1
     },
     "AMB": {
@@ -1185,13 +1188,13 @@ const airport = `
         "ANACA" : "KADM",
         "runway": 3
     },
-    "NDL":{
+    "NDA":{
         "name": "Nadal International Airport", 
         "coord": [19.2971, 52.7608], 
         "country": "Aden",
         "city": "Nadal",
         "class": "B",
-        "WAAT": "NDL",
+        "WAAT": "NDA",
         "ANACA" : "KANL",
         "runway": 1
     },
@@ -1742,7 +1745,7 @@ const airport = `
         "city":"Dobrzanka",
         "class": "A",
         "WAAT": "DOB",
-        "ANACA" : "IDOB",
+        "ANACA" : "IUDB",
         "runway": 2
     },
     "CSV": { 
@@ -1752,7 +1755,7 @@ const airport = `
         "city":"Chashavinsk",
         "class": "A",
         "WAAT": "CSV",
-        "ANACA" : "ICSV",
+        "ANACA" : "IUCS",
         "runway": 2
     },
     "BOG": { 
@@ -1762,7 +1765,7 @@ const airport = `
         "city":"Bogań",
         "class": "B",
         "WAAT": "BOG",
-        "ANACA" : "IBOG",
+        "ANACA" : "IUBG",
         "runway": 1
     },
     "TZH": { 
@@ -1842,7 +1845,7 @@ const airport = `
         "city":"Śwjyntoprykopice-Podwjyrch",
         "class": "C",
         "WAAT": "SWP",
-        "ANACA" : "ISWP",
+        "ANACA" : "IUSP",
         "runway": 1
     },
     "NDL": { 
@@ -1850,9 +1853,9 @@ const airport = `
         "coord": [55.9536, 78.6078],
         "country": "Geklinia-Dregolesia",
         "city":"Nedelica/Niedzialica",
-        "class": "B",
+        "class": "C",
         "WAAT": "NDL",
-        "ANACA" : "INDL",
+        "ANACA" : "IUND",
         "runway": 1
     },
     "HUZ": { 
@@ -1872,7 +1875,7 @@ const airport = `
         "city":"Moremir",
         "class": "B",
         "WAAT": "MRM",
-        "ANACA" : "IMRM",
+        "ANACA" : "IUMM",
         "runway": 1
     },
     "DBY": { 
@@ -1894,6 +1897,86 @@ const airport = `
         "WAAT": "KBO",
         "ANACA" : "OKBO",
         "runway": 1
+    },
+    "RLS": { 
+        "name": "Reilusahna International Airport (清浦國際空港)",
+        "coord": [36.6987,127.1716],
+        "country": "Izaland",
+        "city":"Reilusahna",
+        "class": "R",
+        "WAAT": "RLS",
+        "ANACA" : "DZRS",
+        "runway": 1
+    },
+    "SNP": { 
+        "name": "Sannupuri International Airport (乾山國際空港)",
+        "coord": [40.5816,129.5942],
+        "country": "Izaland",
+        "city":"Sannupuri",
+        "class": "A",
+        "WAAT": "SNP",
+        "ANACA" : "DZSN",
+        "runway": 2
+    },
+    "MRY": { 
+        "name": "Makkeriya International Airport (平追國際空港)",
+        "coord": [39.0782,128.5554],
+        "country": "Izaland",
+        "city":"Riyatoma - Makkenoke",
+        "class": "B",
+        "WAAT": "MRY",
+        "ANACA" : "DZMR",
+        "runway": 2
+    },
+    "NCL": { 
+        "name": "Dmitar Krešimir IV Airport Nikolovac",
+        "coord": [52.80465,87.74748],
+        "country": "Mallyore",
+        "city":"Nikolovac",
+        "class": "A",
+        "WAAT": "NCL",
+        "ANACA" : "IMNC",
+        "runway": 2
+    },
+    "SHJ": {
+        "name": "Emilija Tanaka Kaporavo Sediharaja/Senzyou International Airport", 
+        "coord":  [-49.9897,65.3884], 
+        "country": "Kalisänjo",
+        "city" : "Sediharaja",
+        "class": "G",
+        "WAAT": "SHJ",
+        "ANACA" : "OSHJ",
+        "runway": 5
+    },
+    "YAK": {
+        "name": "Mirijaku-Northwest Kalisänjo Regional Airport", 
+        "coord":  [-48.22029,64.24768], 
+        "country": "Kalisänjo",
+        "city" : "Mirijaku",
+        "class": "R",
+        "WAAT": "YAK",
+        "ANACA" : "OYAK",
+        "runway": 2
+    },
+    "KRS": {
+        "name": "Ǩarsyände Airport", 
+        "coord":  [-50.03864,67.52785], 
+        "country": "Kalisänjo",
+        "city" : "Ǩarsyände",
+        "class": "R",
+        "WAAT": "KRS",
+        "ANACA" : "OKRS",
+        "runway": 3
+    },
+    "OKU": {
+        "name": "Osenkou International Airport", 
+        "coord":  [-50.44803,68.63119], 
+        "country": "Kalisänjo",
+        "city" : "Osenkou",
+        "class": "R",
+        "WAAT": "OKU",
+        "ANACA" : "OOKU",
+        "runway": 2
     }
 
 }`
