@@ -4,6 +4,16 @@
     float:right
 }
 
+/* #map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 0;
+} */
+
 #utcTime{
     color: rgb(255, 255, 255);
     font-size: 20pt;
@@ -107,5 +117,16 @@ td {
     margin-left: auto;
     margin-right: auto;
   }
- 
+
+  .navbar{
+    padding: 0;
+  }
+
+  .leaflet-control-zoom { position: absolute; left: 2500px; top: 60px; };
   
+  #card-panel-1 {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    z-index: 400;
+  }

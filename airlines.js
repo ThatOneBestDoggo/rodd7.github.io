@@ -163,7 +163,28 @@ const airline = `
         "callsign": "Dumbostar",
         "image": "https://cdn.discordapp.com/attachments/913558405220802592/937298402998366208/IMG_3810.png",
         "alliance": " "
-    } 
+    },
+    "SM": {
+        "name": "Semanish",
+        "WAAT": "SM", 
+        "callsign": "SEMANISH",
+        "image": "https://cdn.discordapp.com/attachments/941853951521882133/944392910038790154/Semanish_Logo.png",
+        "alliance": "Geolliance"
+    },
+    "FZ": {
+        "name": "Fliza",
+        "WAAT": "FZ", 
+        "callsign": "FLY EASY",
+        "image": "https://cdn.discordapp.com/attachments/913558405220802592/952385095900209212/unknown.png",
+        "alliance": ""
+    },
+    "AD": {
+        "name": "Adair",
+        "WAAT": "AD", 
+        "callsign": "ADARIAN",
+        "image":"https://cdn.discordapp.com/attachments/913558405220802592/953083609965805578/Adairlogo.png",
+        "alliance": ""
+    }
 
 
 

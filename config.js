@@ -6,27 +6,27 @@ var synconst = 1000;
 function loadMap() {
     map = L.map('map', mapOptions).setView([17.95, 91.29], 0);
     map.flyTo([17.95, 91.29],3);
-    
-
     var loadingControl = L.Control.loading({
         separate: true
     });
     map.addControl(loadingControl);
     var ogfMap = ogf.map(map, { layers: 'Standard,TopoMap' });
-
     var t = L.terminator({fillOpacity: 0.39});
     t.addTo(map);
-    
     setInterval(function () { updateTerminator(t) }, synconst);
     function updateTerminator(t) {
         t.setTime();
     }
-    // setTimeout(function(){ map.setZoom(5); }, 2000);
-
     const airports = JSON.parse(airport);
     const flags = JSON.parse(flag);
     const aircrafts = JSON.parse(aircraft);
-    // const airlines = JSON.parse(airline);
+   
+var kuehong = [[27.1358031,156.3576378],[27.6365431,156.7741013],[28.2298719,157.0540297],[28.5312622,157.3535164],[28.965012,157.4870728],[28.9955892,157.8985577],[29.2115311,158.4203618],[29.4912511,158.7967608],[29.7249741,158.9222118],[30.078287,159.7362735],[30.5493052,159.9600319],[30.6783914,160.3358211],[30.5524715,160.522074],[30.2891047,160.5824003],[30.0485622,161.0318099],[29.4070445,161.9870259],[29.0851319,161.7629907],[28.809765,161.721493],[28.4353631,161.9733909],[27.7156929,161.8267766],[27.0270303,161.832385],[26.7162562,161.5530201],[26.7898373,161.0931239],[26.7060492,160.8155429],[26.460549,160.7487345],[26.36203,160.3329534],[26.3995128,159.5940783],[26.1682083,158.7698096],[26.4039785,158.5582065],[26.5637331,158.1764745],[26.858868,157.878974],[26.9758376,157.1619666],[26.9554318,156.6533658],[27.1358031,156.3576378]];
+
+L.polygon(kuehong, {color: 'red'}).addTo(map).bindPopup("<img src='resources/noflyzone.png' width='40'><b>家乡 Quê Hương</b> <br> Travelling through Kuehongese airspace is not permitted in any degree of Air Freedom. <br> <b style='color:red';> Reccomendation: Do not travel </b>");
+
+// zoom the map to the polygon
+
     var test = L.marker(airports.CRS.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.CRS, flags.Ohemia, 2, "Federal City of"));
     L.marker(airports.STI.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.STI, flags.FSA, 10));
     L.marker(airports.SIA.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.SIA, flags.Ohemia, 2, "Federal City of"));
@@ -216,6 +216,29 @@ function loadMap() {
     L.marker(airports.YAK.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.YAK, flags.Kalisanjo, 4));
     L.marker(airports.KRS.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.KRS, flags.Kalisanjo, 4));
     L.marker(airports.OKU.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.OKU, flags.Kalisanjo, 4));
+    L.marker(airports.PSM.coord, { icon: primaryAirport }).addTo(map).bindPopup(details(airports.PSM, flags.Kojo, 7));
+    L.marker(airports.FIN.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.FIN, flags.Kojo, 7));
+    L.marker(airports.JAK.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.JAK, flags.Kojo, 7));
+    L.marker(airports.KIP.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.KIP, flags.Kojo, 7));
+    L.marker(airports.YYM.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.YYM, flags.Kojo, 7));
+    L.marker(airports.RME.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.RME, flags.Default, 0));
+    L.marker(airports.APX.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.APX, flags.Izaland, 8));
+    L.marker(airports.SZH.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.SZH, flags.Izaland, 8));
+    L.marker(airports.KKX.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.KKX, flags.Izaland, 8));
+    L.marker(airports.TMA.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.TMA, flags.Izaland, 8));
+    L.marker(airports.TYS.coord, { icon: secondaryAirport }).addTo(map).bindPopup(details(airports.TYS, flags.Izaland, 8));
+    L.marker(airports.FDS.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.FDS, flags.Izaland, 8));
+    L.marker(airports.RKG.coord, { icon: tertiaryAirport }).addTo(map).bindPopup(details(airports.RKG, flags.Default, 0));
+
+
+
+
+
+
+
+    
+
+
 
     L.marker([-38.74783, 32.14310], { icon: generalAirport }).addTo(map); //flying school
 

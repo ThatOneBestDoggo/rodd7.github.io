@@ -32,7 +32,9 @@ const flag = `
     "Aden": "<img src='https://wiki.opengeofiction.net/images/2/2d/Aden_New_Flag.png' width='35'>",
     "Gekdreg": "<img src='https://wiki.opengeofiction.net/images/8/8d/UL14b_flag.png' width='35'>",
     "Mallyore": "<img src='https://wiki.opengeofiction.net/images/4/4d/Mallyorianflag.png' width='35'>",
-    "Kalisanjo": "<img src='https://wiki.opengeofiction.net/images/8/8b/Flag_of_Kalisanjo.png' width='35'>"
+    "Kalisanjo": "<img src='https://wiki.opengeofiction.net/images/8/8b/Flag_of_Kalisanjo.png' width='35'>",
+    "Kojo": "<img src='https://wiki.opengeofiction.net/images/6/60/Kojo_flag_ddtuga.png' width='35'>"
+    
     
 
     
@@ -1943,7 +1945,7 @@ const airport = `
         "coord":  [-49.9897,65.3884], 
         "country": "Kalisänjo",
         "city" : "Sediharaja",
-        "class": "G",
+        "class": "A",
         "WAAT": "SHJ",
         "ANACA" : "OSHJ",
         "runway": 5
@@ -1953,7 +1955,7 @@ const airport = `
         "coord":  [-48.22029,64.24768], 
         "country": "Kalisänjo",
         "city" : "Mirijaku",
-        "class": "R",
+        "class": "C",
         "WAAT": "YAK",
         "ANACA" : "OYAK",
         "runway": 2
@@ -1963,7 +1965,7 @@ const airport = `
         "coord":  [-50.03864,67.52785], 
         "country": "Kalisänjo",
         "city" : "Ǩarsyände",
-        "class": "R",
+        "class": "C",
         "WAAT": "KRS",
         "ANACA" : "OKRS",
         "runway": 3
@@ -1973,11 +1975,142 @@ const airport = `
         "coord":  [-50.44803,68.63119], 
         "country": "Kalisänjo",
         "city" : "Osenkou",
-        "class": "R",
+        "class": "C",
         "WAAT": "OKU",
         "ANACA" : "OOKU",
         "runway": 2
+    },
+    "PSM": { 
+        "name": "Pyingshum Mijizággai A'éropō",
+        "coord": [36.28598, 119.78732],
+        "country": "Kojo",
+        "city":"Pyingshum",
+        "class": "A",
+        "WAAT": "PSM",
+        "ANACA" : "MUST_BE_DEFINED",
+        "runway": 4
+    },
+    "FIN": { 
+        "name": "Fóskiman Mijizággai A'éropō",
+        "coord": [33.57121, 117.08323],
+        "country": "Kojo",
+        "city":"Finkyáse",
+        "class": "C",
+        "WAAT": "FIN",
+        "ANACA" : "MUST_BE_DEFINED",
+        "runway": 2
+    },
+    "JAK": { 
+        "name": "Jaka Mijizággai A'éropō",
+        "coord": [34.30325, 119.95665],
+        "country": "Kojo",
+        "city":"Jaka",
+        "class": "C",
+        "WAAT": "JAK",
+        "ANACA" : "MUST_BE_DEFINED",
+        "runway": 2
+    },
+    "KIP": { 
+        "name": "Kippa A'éropō",
+        "coord": [35.42886, 119.28762],
+        "country": "Kojo",
+        "city":"Jaka",
+        "class": "C",
+        "WAAT": "KIP",
+        "ANACA" : "MUST_BE_DEFINED",
+        "runway": 1
+    },
+    "YYM": { 
+        "name": "Yoyomi-Rō Mijizággai A'éropō",
+        "coord": [35.73592, 121.17797],
+        "country": "Kojo",
+        "city":"Yoyomi",
+        "class": "C",
+        "WAAT": "YYM",
+        "ANACA" : "MUST_BE_DEFINED",
+        "runway": 3
+    },
+    "RME": { 
+        "name": "Laeģevei Renkesi Meįahan",
+        "coord": [40.5882, 117.3876],
+        "country": "Semanya",
+        "city":"Renkesi",
+        "class": "C",
+        "WAAT": "RME",
+        "ANACA" : "MUST_BE_DEFINED",
+        "runway": 3
+    },
+    "APX": { 
+        "name": "Apashir Airport - Apasir Kantomari 上波果空港",
+        "coord": [40.6375,130.8309],
+        "country": "Izaland",
+        "city":"Apashir",
+        "class": "C",
+        "WAAT": "APX",
+        "ANACA" : "DZAP",
+        "runway": 1
+    },
+    "SZH": { 
+        "name": "Sonzhin International Airport 尊臣國際空港",
+        "coord": [39.1557,131.3446],
+        "country": "Izaland",
+        "city":"Sonzhin",
+        "class": "B",
+        "WAAT": "SZH",
+        "ANACA" : "DZZH",
+        "runway": 1
+    },
+    "KKX": { 
+        "name": "Kiikori Airport 貴伊飯空港",
+        "coord": [39.7604,125.3610],
+        "country": "Izaland",
+        "city":"Kiikori",
+        "class": "C",
+        "WAAT": "KKX",
+        "ANACA" : "DZKR",
+        "runway": 1
+    },
+    "TYS": { 
+        "name": "Tyensen International Airport 天仙國際空港",
+        "coord": [37.8545,126.1276],
+        "country": "Izaland",
+        "city":"Tyensen",
+        "class": "B",
+        "WAAT": "TYS",
+        "ANACA" : "DZTY",
+        "runway": 2
+    },
+    "TMA": { 
+        "name": "Togumua Airport 外門空港",
+        "coord": [38.2410,132.1362],
+        "country": "Izaland",
+        "city":"Togumua",
+        "class": "C",
+        "WAAT": "TMA",
+        "ANACA" : "DZTU",
+        "runway": 1
+    },
+    "FDS": { 
+        "name": "Fudoasamo Airport 皿山空港",
+        "coord": [39.9792,126.3000],
+        "country": "Izaland",
+        "city":"Fudoasamo, Hinastoboe",
+        "class": "C",
+        "WAAT": "FDS",
+        "ANACA" : "DZFD",
+        "runway": 1
+    },
+    "RKG": { 
+        "name": " Reun König John International Airport",
+        "coord": [40.5882, 117.3876],
+        "country": "Luthesia",
+        "city":"Reun",
+        "class": "G",
+        "WAAT": "RKG",
+        "ANACA" : "MUST_BE_DEFINED",
+        "runway": 4
     }
+
 
 }`
 var airports = JSON.parse(airport);
