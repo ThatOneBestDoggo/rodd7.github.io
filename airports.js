@@ -5,6 +5,7 @@ const flag = `
     "Default" : "<img src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/56/black-question-mark-ornament_2753.png' width='15' height='15' >",
     "FSA" : "<img src='https://wiki.opengeofiction.net/images/thumb/6/6f/Flag_of_the_FSA.svg/2880px-Flag_of_the_FSA.svg.png' width='35'>",
     "Izaland": "<img src='https://wiki.opengeofiction.net/images/7/79/Izaland_flag.png' width='35'>",
+    "Canterra": "<img src='https://cdn.discordapp.com/attachments/1123233378460778627/1134504994029178952/image.png' width='35'>",
     "Layr": "<img src='https://wiki.opengeofiction.net/images/thumb/f/f2/LayrFlag.svg/932px-LayrFlag.svg.png' width='35'>",
     "Demirhan": "<img src='https://wiki.opengeofiction.net/images/4/43/Flag_of_Demirhan_Empire.png' width='35'>",
     "Kofuku": "<img src='https://wiki.opengeofiction.net/images/b/b9/FlagKofuku.jpg' width='35'>",
@@ -95,6 +96,16 @@ const airport = `
         "WAAT": "QWI",
         "ANACA" : "KQWI",
         "runway": 1
+    },
+    "RCN": {
+        "name": "Roscal - Canal Nord International Airport", 
+        "coord": [44.0100.137.1284], 
+        "country": "Canterra",
+        "city": "Roscal",
+        "class": "B",
+        "WAAT": "RCN",
+        "ANACA" : "????",
+        "runway": 2
     },
     "TZY": {
         "name": "Port Lotniczy Tazów-Tymeń im. Mieczysława Wielkiego", 
@@ -1649,16 +1660,6 @@ const airport = `
         "WAAT": "YOU", 
         "ANACA" : "????", 
         "runway": 1 
-    },
-    "ACS": { 
-        "name": "Astoria Cedric Stewart International Airport", 
-        "coord": [43.5687,138.1599], 
-        "country": "Lucenius", 
-        "city":"Astoria", 
-        "class": "A", 
-        "WAAT": "ACS", 
-        "ANACA" : "????", 
-        "runway": 4
     },
     "JIX": {
         "name": "Jhuandan International Airport", 
